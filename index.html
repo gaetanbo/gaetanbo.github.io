@@ -354,6 +354,24 @@
                       let th2_citytrader ="";
                       let th3_citytrader ="";
                     //console.clear();
+                    $("#bgcitytrader").empty();
+                    $("#cacitytrader").empty();
+                    $("#fscitytrader").empty();
+                    $("#lycitytrader").empty();
+                    $("#macitytrader").empty();
+                    $("#thcitytrader").empty();
+                    $("#bg1_citytrader").empty();
+                    $("#ca1_citytrader").empty();
+                    $("#fs1_citytrader").empty();
+                    $("#ly1_citytrader").empty();
+                    $("#ma1_citytrader").empty();
+                    $("#th1_citytrader").empty();
+                    $("#bg2_citytrader").empty();
+                    $("#ca2_citytrader").empty();
+                    $("#fs2_citytrader").empty();
+                    $("#ly2_citytrader").empty();
+                    $("#ma2_citytrader").empty();
+                    $("#th2_citytrader").empty();
 
                     ressource_typeAsked = $("#select_ressource_type").children("option:selected").val();
                     //console.log(ressource_typeAsked);
@@ -361,13 +379,6 @@
                     $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked,function(d){
                         //  console.log(d);
                         $("select_city").empty();
-                          $("#bgcitytrader").empty();
-                          $("#cacitytrader").empty();
-                          $("#fscitytrader").empty();
-                          $("#lycitytrader").empty();
-                          $("#macitytrader").empty();
-                          $("#thcitytrader").empty();
-
                         var array2 = [];
                         $.each(d, function(index, val) {
                             var oo = new Option(val["city"],val["city"]);
@@ -474,12 +485,7 @@
                           $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(d1){
                             //console.log(d1);
                             $("select_city").empty();
-                            $("#bg1_citytrader").empty();
-                            $("#ca1_citytrader").empty();
-                            $("#fs1_citytrader").empty();
-                            $("#ly1_citytrader").empty();
-                            $("#ma1_citytrader").empty();
-                            $("#th1_citytrader").empty();
+
                             var array3 = [];
                             $.each(d1,function(index1,val1) {
                               switch (val1["city"]) {
@@ -521,14 +527,10 @@
                           });
 
                           $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d2){
+                            console.log('d2');
                             console.log(d2);
                             $("select_city").empty();
-                            $("#bg2_citytrader").empty();
-                            $("#ca2_citytrader").empty();
-                            $("#fs2_citytrader").empty();
-                            $("#ly2_citytrader").empty();
-                            $("#ma2_citytrader").empty();
-                            $("#th2_citytrader").empty();
+
                             var array3 = [];
                             $.each(d2,function(index2,val2) {
                               switch (val2["city"]) {
@@ -570,7 +572,9 @@
                           });
 
                           $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL3@3",function(d3){
-                            //console.log(d3);
+                            //console.log(ressource_typeAsked);
+                            console.log("d3");
+                            console.log(d3);
                             $("select_city").empty();
                             $("#bg3_citytrader").empty();
                             $("#ca3_citytrader").empty();
