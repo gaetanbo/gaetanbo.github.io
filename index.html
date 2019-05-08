@@ -328,44 +328,45 @@
                 });
                 let ressource_typeAsked = "";
                 $("#select_ressource_type").change(function(event) {
+                    //variable declaration
                     let bg_citytrader ="";
-                    let ca_citytrader ="";
-                    let fs_citytrader ="";
-                    let ly_citytrader ="";
-                    let ma_citytrader ="";
-                    let th_citytrader ="";
-                    let bg1_citytrader ="";
-                    let bg2_citytrader ="";
-                    let bg3_citytrader ="";
-                    let ca1_citytrader ="";
-                    let ca2_citytrader ="";
-                    let ca3_citytrader ="";
-                    let fs1_citytrader ="";
-                    let fs2_citytrader ="";
-                    let fs3_citytrader ="";
-                    let ly1_citytrader ="";
-                    let ly2_citytrader ="";
-                    let ly3_citytrader ="";
-                    let ma1_citytrader ="";
-                    let ma2_citytrader ="";
-                    let ma3_citytrader ="";
-                    let th1_citytrader ="";
-                    let th2_citytrader ="";
-                    let th3_citytrader ="";
-                    console.clear();
+                      let ca_citytrader ="";
+                      let fs_citytrader ="";
+                      let ly_citytrader ="";
+                      let ma_citytrader ="";
+                      let th_citytrader ="";
+                      let bg1_citytrader ="";
+                      let bg2_citytrader ="";
+                      let bg3_citytrader ="";
+                      let ca1_citytrader ="";
+                      let ca2_citytrader ="";
+                      let ca3_citytrader ="";
+                      let fs1_citytrader ="";
+                      let fs2_citytrader ="";
+                      let fs3_citytrader ="";
+                      let ly1_citytrader ="";
+                      let ly2_citytrader ="";
+                      let ly3_citytrader ="";
+                      let ma1_citytrader ="";
+                      let ma2_citytrader ="";
+                      let ma3_citytrader ="";
+                      let th1_citytrader ="";
+                      let th2_citytrader ="";
+                      let th3_citytrader ="";
+                    //console.clear();
 
                     ressource_typeAsked = $("#select_ressource_type").children("option:selected").val();
                     //console.log(ressource_typeAsked);
                     //
                     $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked,function(d){
-                        console.log(d);
+                        //  console.log(d);
                         $("select_city").empty();
-                        $("#bgcitytrader").empty();
-                        $("#cacitytrader").empty();
-                        $("#fscitytrader").empty();
-                        $("#lycitytrader").empty();
-                        $("#macitytrader").empty();
-                        $("#thcitytrader").empty();
+                          $("#bgcitytrader").empty();
+                          $("#cacitytrader").empty();
+                          $("#fscitytrader").empty();
+                          $("#lycitytrader").empty();
+                          $("#macitytrader").empty();
+                          $("#thcitytrader").empty();
 
                         var array2 = [];
                         $.each(d, function(index, val) {
@@ -381,6 +382,7 @@
                                     break;
                                 case "Caerleon":
                                     array2.push([val["city"],d[index].sell_price_min]);
+                                    // A la place de ça faire une vraie comparaison entre toutes les valeurs
                                     if (array2[1][1] > array2[0][1]) {
                                         $('#bgcitytrader').removeClass('red');
                                         $('#bgcitytrader').addClass('green');
@@ -466,9 +468,165 @@
                         $("#lycitytrader").append(ly_citytrader);
                         $("#macitytrader").append(ma_citytrader);
                         $("#thcitytrader").append(th_citytrader);
-                        console.log('apiwascalled_1');
+                        //console.log('apiwascalled_1');
+
+
+                          $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(d1){
+                            //console.log(d1);
+                            $("select_city").empty();
+                            $("#bg1_citytrader").empty();
+                            $("#ca1_citytrader").empty();
+                            $("#fs1_citytrader").empty();
+                            $("#ly1_citytrader").empty();
+                            $("#ma1_citytrader").empty();
+                            $("#th1_citytrader").empty();
+                            var array3 = [];
+                            $.each(d1,function(index1,val1) {
+                              switch (val1["city"]) {
+                                case "Bridgewatch":
+                                  array3.push([val1["city"],d1[index1].sell_price_min]);
+                                  bg1_citytrader = d1[index1].sell_price_min;
+                                  break;
+                                case "Caerleon":
+                                  array3.push([val1["city"],d1[index1].sell_price_min]);
+                                  ca1_citytrader = d1[index1].sell_price_min;
+                                  break;
+                                case "Fort Sterling":
+                                  array3.push([val1["city"],d1[index1].sell_price_min]);
+                                  fs1_citytrader = d1[index1].sell_price_min;
+                                  break;
+                                case "Lymhurst":
+                                  array3.push([val1["city"],d1[index1].sell_price_min]);
+                                  ly1_citytrader = d1[index1].sell_price_min;
+                                  break;
+                                case "Martlock":
+                                  array3.push([val1["city"],d1[index1].sell_price_min]);
+                                  ma1_citytrader = d1[index1].sell_price_min;
+                                  break;
+                                case "Thetford":
+                                  array3.push([val1["city"],d1[index1].sell_price_min]);
+                                  th1_citytrader = d1[index1].sell_price_min;
+                                  break;
+                                default:
+                                  // /console.log('default');
+
+                              }
+                            });
+                              $("#bg1citytrader").append(bg1_citytrader);
+                              $("#ca1citytrader").append(ca1_citytrader);
+                              $("#fs1citytrader").append(fs1_citytrader);
+                              $("#ly1citytrader").append(ly1_citytrader);
+                              $("#ma1citytrader").append(ma1_citytrader);
+                              $("#th1citytrader").append(th1_citytrader);
+                          });
+
+                          $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d2){
+                            console.log(d2);
+                            $("select_city").empty();
+                            $("#bg2_citytrader").empty();
+                            $("#ca2_citytrader").empty();
+                            $("#fs2_citytrader").empty();
+                            $("#ly2_citytrader").empty();
+                            $("#ma2_citytrader").empty();
+                            $("#th2_citytrader").empty();
+                            var array3 = [];
+                            $.each(d2,function(index2,val2) {
+                              switch (val2["city"]) {
+                                case "Bridgewatch":
+                                  array3.push([val2["city"],d2[index2].sell_price_min]);
+                                  bg2_citytrader = d2[index2].sell_price_min;
+                                  break;
+                                case "Caerleon":
+                                  array3.push([val2["city"],d2[index2].sell_price_min]);
+                                  ca2_citytrader = d2[index2].sell_price_min;
+                                  break;
+                                case "Fort Sterling":
+                                  array3.push([val2["city"],d2[index2].sell_price_min]);
+                                  fs2_citytrader = d2[index2].sell_price_min;
+                                  break;
+                                case "Lymhurst":
+                                  array3.push([val2["city"],d2[index2].sell_price_min]);
+                                  ly2_citytrader = d2[index2].sell_price_min;
+                                  break;
+                                case "Martlock":
+                                  array3.push([val2["city"],d2[index2].sell_price_min]);
+                                  ma2_citytrader = d2[index2].sell_price_min;
+                                  break;
+                                case "Thetford":
+                                  array3.push([val2["city"],d2[index2].sell_price_min]);
+                                  th2_citytrader = d2[index2].sell_price_min;
+                                  break;
+                                default:
+                                  //console.log('default');
+
+                              }
+                            });
+                            $("#bg2citytrader").append(bg2_citytrader);
+                            $("#ca2citytrader").append(ca2_citytrader);
+                            $("#fs2citytrader").append(fs2_citytrader);
+                            $("#l2ycitytrader").append(ly2_citytrader);
+                            $("#ma2citytrader").append(ma2_citytrader);
+                            $("#th2citytrader").append(th2_citytrader);
+                          });
+
+                          $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL3@3",function(d3){
+                            //console.log(d3);
+                            $("select_city").empty();
+                            $("#bg3_citytrader").empty();
+                            $("#ca3_citytrader").empty();
+                            $("#fs3_citytrader").empty();
+                            $("#ly3_citytrader").empty();
+                            $("#ma3_citytrader").empty();
+                            $("#th3_citytrader").empty();
+                            var array3 = [];
+                            $.each(d3,function(index2,val2) {
+                              switch (val2["city"]) {
+                                case "Bridgewatch":
+                                  array3.push([val2["city"],d3[index2].sell_price_min]);
+                                  bg3_citytrader = d3[index2].sell_price_min;
+                                  break;
+                                case "Caerleon":
+                                  array3.push([val2["city"],d3[index2].sell_price_min]);
+                                  ca3_citytrader = d3[index2].sell_price_min;
+                                  break;
+                                case "Fort Sterling":
+                                  array3.push([val2["city"],d3[index2].sell_price_min]);
+                                  fs3_citytrader = d3[index2].sell_price_min;
+                                  break;
+                                case "Lymhurst":
+                                  array3.push([val2["city"],d3[index2].sell_price_min]);
+                                  ly3_citytrader = d3[index2].sell_price_min;
+                                  break;
+                                case "Martlock":
+                                  array3.push([val2["city"],d3[index2].sell_price_min]);
+                                  ma3_citytrader = d3[index2].sell_price_min;
+                                  break;
+                                case "Thetford":
+                                  array3.push([val2["city"],d3[index2].sell_price_min]);
+                                  th3_citytrader = d3[index2].sell_price_min;
+                                  break;
+                                default:
+                                  //console.log('default');
+
+                              }
+                            });
+                            $("#bg3citytrader").append(bg3_citytrader);
+                            $("#ca3citytrader").append(ca3_citytrader);
+                            $("#fs3citytrader").append(fs3_citytrader);
+                            $("#l23citytrader").append(ly3_citytrader);
+                            $("#ma3citytrader").append(ma3_citytrader);
+                            $("#th3citytrader").append(th3_citytrader);
+                          });
+
+                        // $("#bg3citytrader").append(bg3citytrader);
+                        // $("#ca3citytrader").append(ca3citytrader);
+                        // $("#fs3citytrader").append(fs3citytrader);
+                        // $("#ly3citytrader").append(ly3citytrader);
+                        // $("#ma3citytrader").append(ma3citytrader);
+                        // $("#th3citytrader").append(th3citytrader);
                     });
                 });
+
                 let citySelected = "";
                 $("#select_city").change(function(event) {
                     console.clear();
