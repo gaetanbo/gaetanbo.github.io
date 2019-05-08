@@ -5,12 +5,13 @@
 <html lang="fr">
     <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Albion Tavern</title>
     <style type="text/css">
-        *{padding:0;margin:0;}
-        .header{height: 40px;background-color: beige}
-        .content{height: 800px;background-color: chocolate}
-        .footer{height: 60px;background-color: lawngreen}
+        *{padding:0;margin:0;font-size: 1.08em;}
+        .header{height: 10vh;width: 100vw;}
+        .wrapper{height: 10vh;width: 100vw;}
+        .content{height: 20vh;width: 100vw;font-size: 1em;}
         .red{background-color: red; }
         .green{background-color: green; }
         table td,th{padding: 8px;}
@@ -20,27 +21,26 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script type="text/javascript"></script>
     -->
     </head>
     <body>
-    <h1>AlbionTavern</h1>
-    <div class="jumbotron">
-        
+    <div class="header" style="margin-bottom : 20px;">
+      <h1>AlbionTavern</h1>
         <nav>
-            <button id="Lootbtn"><p>Loot</p></button> 
+            <button id="Lootbtn"><p>Loot</p></button>
             <button id="Focabtn"><p>Foca</p></button>
             <button id="Buildsbtn"><p>Builds</p></button>
             <button id="Craftsbtn"><p>Crafts</p></button>
             <!-- <button id="Marketbtn"> <p>Market</p></button>  -->
             <button id="City_Traderbtn"> <p>City_Trader</p></button>
         </nav>
-        
+
     </div>
-    <div class="header">
-        
-    </div>
+      <!--<div class="header">    </div>-->
+
     <div class="wrapper" style="margin-bottom : 20px;">
             <div id="profile">
                 <select id="select_ressource">
@@ -70,11 +70,11 @@
                 </div>
             </div>
         </div>
-    <div class="content-loot" style="margin-bottom : 20px;display:none;">
+    <div class="content content-loot" style="margin-bottom : 20px;display:none;">
         <fieldset>
         <!--
-        *   Make Date&Loot&Price fillable 
-        *   Allow filler to check how get a cut of profit 
+        *   Make Date&Loot&Price fillable
+        *   Allow filler to check how get a cut of profit
                 ->Darken unpresent ppl
                 ->Calcultate cuts for others
         *   Allow to indicate is money got banked/put on guild account
@@ -100,7 +100,7 @@
         </table>
         </fieldset>
     </div>
-    <div class="content-cityTrader" style="margin-bottom : 20px;display: none;">
+    <div class="content content-cityTrader" style="margin-bottom : 20px;">
         <p> City Trader will show you prices gap between Caerleon and outter cities</p>
         <fieldset>
             <table>
@@ -144,21 +144,21 @@
             <!--Selectionner une ressource (et un item ?) et afficher le prix de chaque tiers pour chaque ville-->
         </fieldset>
     </div>
-    <div class="content-foca" style="margin-bottom : 20px;display:none;">
+    <div class="content content-foca" style="margin-bottom : 20px;display:none;">
         <fieldset>
         <!--
-            Either be : 
+            Either be :
                 - a roadmap, eg Perso 1 must do X carrots
                 - an table excel like when you can calculate how much foc you using based on your level
         -->
         <p>In oder to maximise profit while allowing to craft a bit, please follow this scenario where only 50% of your daily focalisation is used.</p>
             </fieldset>
     </div>
-    <div class="content-builds" style="margin-bottom : 20px;display:none;">
+    <div class="content content-builds" style="margin-bottom : 20px;display:none;">
         <fieldset>
         <!--
             Builds  PVP    Builds  PVE
-            Builds  Gank   
+            Builds  Gank
             Builds  Arene
         -->
             <table>
@@ -262,7 +262,7 @@
             </table>
         </fieldset>
     </div>
-    <div class="content-crafts" style="margin-bottom : 20px;display:none;">
+    <div class="content content-crafts" style="margin-bottom : 20px;display:none;">
         <fieldset>
         <table>
         <thead>
@@ -277,7 +277,7 @@
         </table>
         </fieldset>
         </div>
-    <div class="content-Market" style="margin-bottom : 20px;display: none;">
+    <div class="content content-Market" style="margin-bottom : 20px;display: none;">
         <select id="select_locations">
         </select>
         <canvas id="buyers" width="1800" height="800"></canvas>
@@ -289,23 +289,22 @@
                 Or compare prices of everycity at once
         -->
     </div>
-    <!--<div class="footer"><p>SALUT LES CONNARDS</p></div>-->
         <script>
              /*  JSON TEST */
                             //https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE
                             //https://www.albion-online-data.com/api/v1/stats/charts/T4_ORE_LEVEL2@2"
-           $(document).ready(function(){   
+           $(document).ready(function(){
                 $("#select_ressource").change(function(){
                     let ressourceAsked = $("#select_ressource").children("option:selected").val();
                     let jsonDoc = "ressources/"+ressourceAsked+".json";
                     $("#select_ressource_type").empty();
-                    $.getJSON(jsonDoc,function(data) {        
+                    $.getJSON(jsonDoc,function(data) {
                         $.each(data, function(key,val) {
                             var tierRessourceAsked = val.UniqueName;
                             var o = new Option(val.UniqueName,val.UniqueName);
                             $(o).html(val.UniqueName);
                             $("#select_ressource_type").append(o);
-                           //val.LocalizedNames[2].Value +" "+ val.UniqueName.substring(0,2)+"-->"+val.UniqueName    
+                           //val.LocalizedNames[2].Value +" "+ val.UniqueName.substring(0,2)+"-->"+val.UniqueName
                         });
                     });
                 });
@@ -318,12 +317,12 @@
                     let ma_citytrader ="";
                     let th_citytrader ="";
                     console.clear();
-                      
+
                     ressource_typeAsked = $("#select_ressource_type").children("option:selected").val();
                     //console.log(ressource_typeAsked);
                     //
                     $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked,function(d){
-                        console.log(d);  
+                        console.log(d);
                         $("select_city").empty();
                         $("#bgcitytrader").empty();
                         $("#cacitytrader").empty();
@@ -331,7 +330,7 @@
                         $("#lycitytrader").empty();
                         $("#macitytrader").empty();
                         $("#thcitytrader").empty();
-                        
+
                         var array2 = [];
                         $.each(d, function(index, val) {
                             var oo = new Option(val["city"],val["city"]);
@@ -451,7 +450,7 @@
             /*  JSON TEST */
         </script>
         <script>
-            $(document).ready(function(){               
+            $(document).ready(function(){
                  $("#Lootbtn").click(function(){
                     $( ".content-loot" ).toggle();
                  });
@@ -470,7 +469,7 @@
                  $("#City_Traderbtn").click(function(){
                     $( ".content-cityTrader" ).toggle();
                  });
-        
+
                          // TRY NOT TO USE THIS, TRY BE SMART
                 //       var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 // var data = [];
@@ -498,7 +497,7 @@
                 //     		data = d;
                 //     		$("#select_locations").change();
                 //   	});
-               }); 
+               });
         </script>
     </body>
 </html>
