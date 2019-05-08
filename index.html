@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width,height=device-height, user-scalable=yes">
     <title>Albion Tavern</title>
     <style type="text/css">
-        *{padding:0;margin:0;font-size: 1rem;}
+        *{padding:0;margin:0;font-size: 3.3vmin;}
         .header{height: 10vh;width: 100vw;margin-bottom : 20px;}
         .wrapper{height: 10vh;width: 100vw;margin-bottom : 20px;}
         .select1{width: 31vw;}
         .select2{width: 15vw;}
-        .content{height: 20vh;width: 100vw;font-size: 1rem;margin-bottom : 20px;}
+        .content{height: 20vh;width: 80vw;font-size: 1rem;margin-bottom : 20px;}
         .red{background-color: red; }
         .green{background-color: green; }
           /* table td,th{padding: 8px;} */
@@ -23,9 +23,8 @@
           margin: 0;
           padding: 0;
           width: 100vw;
-          height: 50vh;
         }
-        #citytradertable thead th{font-size: xx-small;}
+        #citytradertable thead th{font-size: 2.3vmin;}
     </style>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -39,11 +38,11 @@
     <div class="header">
       <h1>AlbionTavern</h1>
         <nav>
-            <button class="select2" id="Lootbtn"><p>Loot</p></button>
-            <button class="select2" id="Focabtn"><p>Foca</p></button>
-            <button class="select2" id="Buildsbtn"><p>Builds</p></button>
-            <button class="select2" id="Craftsbtn"><p>Crafts</p></button>
-            <button class="select2" id="Marketbtn"> <p>Market</p></button>
+            <button class="select2" disabled id="Lootbtn"><p>Loot</p></button>
+            <button class="select2" disabled id="Focabtn"><p>Foca</p></button>
+            <button class="select2" disabled id="Buildsbtn"><p>Builds</p></button>
+            <button class="select2" disabled id="Craftsbtn"><p>Crafts</p></button>
+            <button class="select2" disabled id="Marketbtn"> <p>Market</p></button>
             <button class="select2" id="City_Traderbtn"> <p>City_Trader</p></button>
         </nav>
 
@@ -61,9 +60,10 @@
                 </select>
                 <select class="select1" id="select_ressource_type">
                 </select>
-                <select class="select1" id="select_city"></select>
+                <select class="select1" disabled id="select_city"></select>
+                  <!--
                     <p>Ignore last select if you in "City Trader" Mode</p>
-                <!--ajoutez un select pour les villes une fois la réponse api reçue-->
+                  -->
                 <div id ="resultats">
                    <!-- <p>Data dump</p>
                     <table>
@@ -124,30 +124,33 @@
                                 <td id="macitytrader"></td>
                                 <td id="thcitytrader"></td>
                             </tr>
-                          <!--   <tr><td>.1</td>
-                                <td id="Bridgewatch.1_citytrader"></td>
-                                <td id="Caerleon.1_citytrader"></td>
-                                <td id="Fort%20Sterling.1_citytrader"></td>
-                                <td id="Lymhurst.1_citytrader"></td>
-                                <td id="Martlock.1_citytrader"></td>
-                                <td id="Thetford.1_citytrader"></td>
+                            <tr id="row1">
+                                <td>1</td>
+                                <td id="bg1citytrader"></td>
+                                <td id="ca1citytrader"></td>
+                                <td id="fs1citytrader"></td>
+                                <td id="ly1citytrader"></td>
+                                <td id="ma1citytrader"></td>
+                                <td id="th1citytrader"></td>
                             </tr>
-                            <tr><td>.2</td>
-                                <td id="Bridgewatch.2_citytrader"></td>
-                                <td id="Caerleon.2_citytrader"></td>
-                                <td id="Fort%20Sterling.2_citytrader"></td>
-                                <td id="Lymhurst.2_citytrader"></td>
-                                <td id="Martlock.2_citytrader"></td>
-                                <td id="Thetford.2_citytrader"></td>
+                            <tr id="row2">
+                                <td>2</td>
+                                <td id="bg2citytrader"></td>
+                                <td id="ca2citytrader"></td>
+                                <td id="fs2citytrader"></td>
+                                <td id="ly2citytrader"></td>
+                                <td id="ma2citytrader"></td>
+                                <td id="th2citytrader"></td>
                             </tr>
-                            <tr><td>.3</td>
-                                <td id="Bridgewatch.3_citytrader"></td>
-                                <td id="Caerleon.3_citytrader"></td>
-                                <td id="Fort%20Sterling.3_citytrader"></td>
-                                <td id="Lymhurst.3_citytrader"></td>
-                                <td id="Martlock.3_citytrader"></td>
-                                <td id="Thetford.3_citytrader"></td>
-                            </tr> -->
+                            <tr id="row3">
+                                <td>3</td>
+                                <td id="bg3citytrader"></td>
+                                <td id="ca3citytrader"></td>
+                                <td id="fs3citytrader"></td>
+                                <td id="ly3citytrader"></td>
+                                <td id="ma3citytrader"></td>
+                                <td id="th3citytrader"></td>
+                            </tr>
                         </tbody>
                     </table>
             <!--Selectionner une ressource (et un item ?) et afficher le prix de chaque tiers pour chaque ville-->
@@ -299,13 +302,17 @@
                 Or compare prices of everycity at once
         -->
     </div>
-        <script>
+
+
+
+
+    <script>
              /*  JSON TEST */
                             //https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE
                             //https://www.albion-online-data.com/api/v1/stats/charts/T4_ORE_LEVEL2@2"
            $(document).ready(function(){
                 //$("#select_ressource").change(function(){
-                $("#select_ressource").select(function(){
+                $("#select_ressource").change(function(){
                     let ressourceAsked = $("#select_ressource").children("option:selected").val();
                     let jsonDoc = "ressources/"+ressourceAsked+".json";
                     $("#select_ressource_type").empty();
@@ -327,6 +334,24 @@
                     let ly_citytrader ="";
                     let ma_citytrader ="";
                     let th_citytrader ="";
+                    let bg1_citytrader ="";
+                    let bg2_citytrader ="";
+                    let bg3_citytrader ="";
+                    let ca1_citytrader ="";
+                    let ca2_citytrader ="";
+                    let ca3_citytrader ="";
+                    let fs1_citytrader ="";
+                    let fs2_citytrader ="";
+                    let fs3_citytrader ="";
+                    let ly1_citytrader ="";
+                    let ly2_citytrader ="";
+                    let ly3_citytrader ="";
+                    let ma1_citytrader ="";
+                    let ma2_citytrader ="";
+                    let ma3_citytrader ="";
+                    let th1_citytrader ="";
+                    let th2_citytrader ="";
+                    let th3_citytrader ="";
                     console.clear();
 
                     ressource_typeAsked = $("#select_ressource_type").children("option:selected").val();
