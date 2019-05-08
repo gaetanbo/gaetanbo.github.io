@@ -1,0 +1,504 @@
+<!DOCTYPE HTML>
+<!--
+    - Figure a way to automatically color Code if  tier is written somewhere
+-->
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8">
+    <title>Albion Tavern</title>
+    <style type="text/css">
+        *{padding:0;margin:0;}
+        .header{height: 40px;background-color: beige}
+        .content{height: 800px;background-color: chocolate}
+        .footer{height: 60px;background-color: lawngreen}
+        .red{background-color: red; }
+        .green{background-color: green; }
+        table td,th{padding: 8px;}
+        table,th,td{border: 1px solid black;}
+        tbody tr{border: 1px solid black;}
+    </style>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript"></script>
+    -->
+    </head>
+    <body>
+    <h1>AlbionTavern</h1>
+    <div class="jumbotron">
+        
+        <nav>
+            <button id="Lootbtn"><p>Loot</p></button> 
+            <button id="Focabtn"><p>Foca</p></button>
+            <button id="Buildsbtn"><p>Builds</p></button>
+            <button id="Craftsbtn"><p>Crafts</p></button>
+            <!-- <button id="Marketbtn"> <p>Market</p></button>  -->
+            <button id="City_Traderbtn"> <p>City_Trader</p></button>
+        </nav>
+        
+    </div>
+    <div class="header">
+        
+    </div>
+    <div class="wrapper" style="margin-bottom : 20px;">
+            <div id="profile">
+                <select id="select_ressource">
+                    <option label="cuir" value="cuir">Cuir</option>
+                    <option label="tissu" value="tissu">Tissu</option>
+                    <option label="bois" value="bois">Bois</option>
+                    <option label="minerai" value="minerai">Minerai</option>
+                    <option label="pierre" value="pierre">Pierre</option>
+                </select>
+                <select id="select_ressource_type">
+                </select>
+                <select id="select_city"></select>
+                    <p>Ignore last select if you in "City Trader" Mode</p>
+                <!--ajoutez un select pour les villes une fois la réponse api reçue-->
+                <div id ="resultats">
+                   <!-- <p>Data dump</p>
+                    <table>
+                        <thead><tr><th></th><th>T4</th><th>T5</th><th>T6</th><th>T7</th><th>T8</th></tr></thead>
+                        <tbody>
+                            <tr><td>0</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>.1</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>.2</td><td></td><td></td><td></td><td></td><td></td></tr>
+                            <tr><td>.3</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        </tbody>
+                    </table>
+                    -->
+                </div>
+            </div>
+        </div>
+    <div class="content-loot" style="margin-bottom : 20px;display:none;">
+        <fieldset>
+        <!--
+        *   Make Date&Loot&Price fillable 
+        *   Allow filler to check how get a cut of profit 
+                ->Darken unpresent ppl
+                ->Calcultate cuts for others
+        *   Allow to indicate is money got banked/put on guild account
+        -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Loot</th>
+                    <th>Prix Vendu</th>
+                    <th>Cyrch</th>
+                    <th>Breklo</th>
+                    <th>Guybourg</th>
+                    <th>Peknow</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>20/04</td><td>Carottes</td><td>200K</td><td>50K</td><td>50K</td><td>50K</td><td>50K</td></tr>
+                <tr><td>20/04</td><td>Carottes</td><td>200K</td><td>50K</td><td>50K</td><td>50K</td><td>50K</td></tr>
+                <tr><td>20/04</td><td>Carottes</td><td>200K</td><td>50K</td><td>50K</td><td>50K</td><td>50K</td></tr>
+                <tr><td>20/04</td><td>Carottes</td><td>200K</td><td>50K</td><td>50K</td><td>50K</td><td>50K</td></tr>
+            </tbody>
+        </table>
+        </fieldset>
+    </div>
+    <div class="content-cityTrader" style="margin-bottom : 20px;display: none;">
+        <p> City Trader will show you prices gap between Caerleon and outter cities</p>
+        <fieldset>
+            <table>
+                        <thead><tr><th></th><th>Bridgewatch</th><th>Caerleon</th><th>Fort Sterling</th><th>Lymhurst</th><th>Martlock</th><th>Thetford</th></tr></thead>
+                        <tbody>
+                            <tr id="row0">
+                                <td>0</td>
+                                <td id="bgcitytrader"></td>
+                                <td id="cacitytrader"></td>
+                                <td id="fscitytrader"></td>
+                                <td id="lycitytrader"></td>
+                                <td id="macitytrader"></td>
+                                <td id="thcitytrader"></td>
+                            </tr>
+                          <!--   <tr><td>.1</td>
+                                <td id="Bridgewatch.1_citytrader"></td>
+                                <td id="Caerleon.1_citytrader"></td>
+                                <td id="Fort%20Sterling.1_citytrader"></td>
+                                <td id="Lymhurst.1_citytrader"></td>
+                                <td id="Martlock.1_citytrader"></td>
+                                <td id="Thetford.1_citytrader"></td>
+                            </tr>
+                            <tr><td>.2</td>
+                                <td id="Bridgewatch.2_citytrader"></td>
+                                <td id="Caerleon.2_citytrader"></td>
+                                <td id="Fort%20Sterling.2_citytrader"></td>
+                                <td id="Lymhurst.2_citytrader"></td>
+                                <td id="Martlock.2_citytrader"></td>
+                                <td id="Thetford.2_citytrader"></td>
+                            </tr>
+                            <tr><td>.3</td>
+                                <td id="Bridgewatch.3_citytrader"></td>
+                                <td id="Caerleon.3_citytrader"></td>
+                                <td id="Fort%20Sterling.3_citytrader"></td>
+                                <td id="Lymhurst.3_citytrader"></td>
+                                <td id="Martlock.3_citytrader"></td>
+                                <td id="Thetford.3_citytrader"></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+            <!--Selectionner une ressource (et un item ?) et afficher le prix de chaque tiers pour chaque ville-->
+        </fieldset>
+    </div>
+    <div class="content-foca" style="margin-bottom : 20px;display:none;">
+        <fieldset>
+        <!--
+            Either be : 
+                - a roadmap, eg Perso 1 must do X carrots
+                - an table excel like when you can calculate how much foc you using based on your level
+        -->
+        <p>In oder to maximise profit while allowing to craft a bit, please follow this scenario where only 50% of your daily focalisation is used.</p>
+            </fieldset>
+    </div>
+    <div class="content-builds" style="margin-bottom : 20px;display:none;">
+        <fieldset>
+        <!--
+            Builds  PVP    Builds  PVE
+            Builds  Gank   
+            Builds  Arene
+        -->
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="7">Builds PVE</th>
+                        <th colspan="7">Builds Gank</th>
+            <!--  <th colspan="7">Builds HCE</th>-->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joueurs</td>
+                        <td>Torse</td>
+                        <td>Tête</td>
+                        <td>Bottes</td>
+                        <td>Arme Principale</td>
+                        <td>Arme Secondaire</td>
+                        <td>Cape</td>
+                        <td>Joueurs</td>
+                        <td>Torse</td>
+                        <td>Tête</td>
+                        <td>Bottes</td>
+                        <td>Arme Principale</td>
+                        <td>Arme Secondaire</td>
+                        <td>Cape</td>
+                       <!-- <td>Joueurs</td>
+                        <td>Torse</td>
+                        <td>Tête</td>
+                        <td>Bottes</td>
+                        <td>Arme Principale</td>
+                        <td>Arme Secondaire</td>
+                        <td>Cape</td>
+                        -->
+                    </tr>
+                    <tr>
+                        <td>Cyrch</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Cyrch</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                    </tr>
+                    <tr>
+                        <td>Breklo</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Breklo</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                    </tr>
+                    <tr>
+                        <td>Guybourg</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Guybourg</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                    </tr>
+                    <tr>
+                        <td>Peknow</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Peknow</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                        <td>Mercenaire</td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+    <div class="content-crafts" style="margin-bottom : 20px;display:none;">
+        <fieldset>
+        <table>
+        <thead>
+            <tr><th></th><th>Torses</th><th>Bottes</th><th>Chapeaux</th><th>Armes Tank</th><th>Armes Chasseur</th><th>Armes Mages</th><th>Outils</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Cyrch</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+            <tr><td>Breklo</td><td>Tissu t5</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+            <tr><td>Peknow</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+            <tr><td>Guybourg</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+        </tbody>
+        </table>
+        </fieldset>
+        </div>
+    <div class="content-Market" style="margin-bottom : 20px;display: none;">
+        <select id="select_locations">
+        </select>
+        <canvas id="buyers" width="1800" height="800"></canvas>
+        <button id="test">Click me</button>
+        <p id="result">Resultats</p>
+        <!--
+            A list of Items selectable
+                Can see charts for each city
+                Or compare prices of everycity at once
+        -->
+    </div>
+    <!--<div class="footer"><p>SALUT LES CONNARDS</p></div>-->
+        <script>
+             /*  JSON TEST */
+                            //https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE
+                            //https://www.albion-online-data.com/api/v1/stats/charts/T4_ORE_LEVEL2@2"
+           $(document).ready(function(){   
+                $("#select_ressource").change(function(){
+                    let ressourceAsked = $("#select_ressource").children("option:selected").val();
+                    let jsonDoc = "ressources/"+ressourceAsked+".json";
+                    $("#select_ressource_type").empty();
+                    $.getJSON(jsonDoc,function(data) {        
+                        $.each(data, function(key,val) {
+                            var tierRessourceAsked = val.UniqueName;
+                            var o = new Option(val.UniqueName,val.UniqueName);
+                            $(o).html(val.UniqueName);
+                            $("#select_ressource_type").append(o);
+                           //val.LocalizedNames[2].Value +" "+ val.UniqueName.substring(0,2)+"-->"+val.UniqueName    
+                        });
+                    });
+                });
+                let ressource_typeAsked = "";
+                $("#select_ressource_type").change(function(event) {
+                    let bg_citytrader ="";
+                    let ca_citytrader ="";
+                    let fs_citytrader ="";
+                    let ly_citytrader ="";
+                    let ma_citytrader ="";
+                    let th_citytrader ="";
+                    console.clear();
+                      
+                    ressource_typeAsked = $("#select_ressource_type").children("option:selected").val();
+                    //console.log(ressource_typeAsked);
+                    //
+                    $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked,function(d){
+                        console.log(d);  
+                        $("select_city").empty();
+                        $("#bgcitytrader").empty();
+                        $("#cacitytrader").empty();
+                        $("#fscitytrader").empty();
+                        $("#lycitytrader").empty();
+                        $("#macitytrader").empty();
+                        $("#thcitytrader").empty();
+                        
+                        var array2 = [];
+                        $.each(d, function(index, val) {
+                            var oo = new Option(val["city"],val["city"]);
+                            $(oo).html(val["city"]);
+                            $("#select_city").append(oo);
+                            // array2.push([val["city"],d[index].sell_price_min]);
+                            //  console.log(array2[0][index]);
+                            switch(val["city"]){
+                                case "Bridgewatch":
+                                    array2.push([val["city"],d[index].sell_price_min]);
+                                    bg_citytrader = d[index].sell_price_min;
+                                    break;
+                                case "Caerleon":
+                                    array2.push([val["city"],d[index].sell_price_min]);
+                                    if (array2[1][1] > array2[0][1]) {
+                                        $('#bgcitytrader').removeClass('red');
+                                        $('#bgcitytrader').addClass('green');
+                                    } else {
+                                        $('#bgcitytrader').removeClass('green');
+                                        $('#bgcitytrader').addClass('red');
+                                    }
+                                    ca_citytrader = d[index].sell_price_min;
+                                    break;
+                                case "Fort Sterling":
+                                    array2.push([val["city"],d[index].sell_price_min]);
+                                    try{
+                                        if (array2[2][1] >= array2[1][1]) {
+                                            $('#fscitytrader').removeClass('green');
+                                            $('#fscitytrader').addClass('red');
+                                        } else {
+                                            $('#fscitytrader').removeClass('red');
+                                            $('#fscitytrader').addClass('green');
+                                        }
+                                    }
+                                    catch(e) {
+                                        //console.log(e);
+                                    }
+                                    fs_citytrader = d[index].sell_price_min;
+                                    break;
+                                case "Lymhurst":
+                                    array2.push([val["city"],d[index].sell_price_min]);
+                                    try{
+                                        if (array2[3][1] >= array2[1][1]) {
+                                            $('#lycitytrader').removeClass('green');
+                                            $('#lycitytrader').addClass('red');
+                                        } else {
+                                            $('#lycitytrader').removeClass('red');
+                                            $('#lycitytrader').addClass('green');
+                                        }
+                                    }
+                                    catch(e) {
+                                        //console.log(e);
+                                    }
+                                    ly_citytrader = d[index].sell_price_min;
+                                    break;
+                                case "Martlock":
+                                    array2.push([val["city"],d[index].sell_price_min]);
+                                    try{
+                                        if (array2[4][1] >= array2[1][1]) {
+                                            $('#macitytrader').removeClass('green');
+                                            $('#macitytrader').addClass('red');
+                                        } else {
+                                            $('#macitytrader').removeClass('red');
+                                            $('#macitytrader').addClass('green');
+                                        }
+                                    }
+                                    catch(e) {
+                                        //console.log(e);
+                                    }
+                                    ma_citytrader = d[index].sell_price_min;
+                                    break;
+                                case "Thetford":
+                                    array2.push([val["city"],d[index].sell_price_min]);
+                                    try{
+                                        if (array2[5][1] >= array2[1][1]) {
+                                            $('#thcitytrader').removeClass('green');
+                                            $('#thcitytrader').addClass('red');
+                                        } else {
+                                            $('#thcitytrader').removeClass('red');
+                                            $('#thcitytrader').addClass('green');
+                                        }
+                                    }
+                                    catch(e) {
+                                        //console.log(e);
+                                    }
+                                    th_citytrader = d[index].sell_price_min;
+                                    break;
+                                default:
+                                    console.log("Unable to proceed");
+                            }
+                             /* DEFAULT CITY SHOULD BE CAERLEON  */
+                             /* Black Market and Cross things should be ignored for materials at least */
+                        });
+                        $("#bgcitytrader").append(bg_citytrader);
+                        $("#cacitytrader").append(ca_citytrader);
+                        $("#fscitytrader").append(fs_citytrader);
+                        $("#lycitytrader").append(ly_citytrader);
+                        $("#macitytrader").append(ma_citytrader);
+                        $("#thcitytrader").append(th_citytrader);
+                        console.log('apiwascalled_1');
+                    });
+                });
+                let citySelected = "";
+                $("#select_city").change(function(event) {
+                    console.clear();
+                    /* DEFAULT CITY SHOULD BE CAERLEON  */
+                    var cities = {"1" : "Bridgewatch","2" : "Caerleon","3" : "Fort Sterling","5" : "Lymhurst","6" : "Martlock","10" : "Thetford"};
+                    citySelected = $("#select_city").children("option:selected").val();
+                    console.log(citySelected);
+                    $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"?locations="+citySelected,function(dataThatMatters){
+                        console.log(dataThatMatters);
+                        console.log("sell min : "+dataThatMatters[0].sell_price_min);
+                        console.log('apiwascalled_2');
+                    });
+                });
+            });
+            /*  JSON TEST */
+        </script>
+        <script>
+            $(document).ready(function(){               
+                 $("#Lootbtn").click(function(){
+                    $( ".content-loot" ).toggle();
+                 });
+                 $("#Focabtn").click(function(){
+                    $( ".content-foca" ).toggle();
+                 });
+                 $("#Buildsbtn").click(function(){
+                    $( ".content-builds" ).toggle();
+                 });
+                 $("#Craftsbtn").click(function(){
+                    $( ".content-crafts" ).toggle();
+                 });
+                 $("#Marketbtn").click(function(){
+                    $( ".content-Market" ).toggle();
+                 });
+                 $("#City_Traderbtn").click(function(){
+                    $( ".content-cityTrader" ).toggle();
+                 });
+        
+                         // TRY NOT TO USE THIS, TRY BE SMART
+                //       var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                // var data = [];
+                // $("#select_locations").change( _ => {
+                // 		let selectId = $("#select_locations").children("option:selected").val()
+                // 		var buyerData = {
+                //        labels : data[selectId].data.timestamps.map(x => new Date(x).toLocaleDateString('fr-FR', options)),
+                //       	datasets : [
+                //         		{
+                //           		fillColor : "rgba(255,0,0,0.4)",
+                //           		strokeColor : "#ACC26D",
+                //           		pointColor : "red",
+            	//            	pointStrokeColor : "#9DB86D",
+                //           		data : data[selectId].data.prices_max
+                //         		}
+                //       	]
+                //     	}
+                //     	$('#buyers').empty();
+                //     	var buyers = document.getElementById('buyers').getContext('2d');
+                //     	// draw line chart
+                //     	new Chart(buyers).Line(buyerData);
+         		// })
+               	// $.get("https://www.albion-online-data.com/api/v1/stats/charts/T4_ORE_LEVEL2@2", function(d) {
+                //     		d.forEach((x,i) => {$("#select_locations").append("<option value=" + i + ">" + x.location + "</option>")});
+                //     		data = d;
+                //     		$("#select_locations").change();
+                //   	});
+               }); 
+        </script>
+    </body>
+</html>

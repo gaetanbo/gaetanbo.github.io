@@ -1,0 +1,992 @@
+[
+{
+    "LocalizationNameVariable": "@ITEMS_T1_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T1_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Rough Stone"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Rohstein"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre brute"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Грубый камень"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Nieociosany Kamień"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedra tosca"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra Bruta"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Common low-quality stone used for crafting. It is too weak to be refined."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Grober Stein zum Fertigen. Zu schwach zum Verfeinern."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre brute de qualité, pour la fabrication. Trop faible pour le raffinement."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Низкокачественный камень, используется для крафтинга. Нельзя улучшить."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień niskiej jakości, używany w rzemiośle. Jest zbyt słaby do transmutacji."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedra de baja calidad, usada en artesanía. Demasiado débil para refinar."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra de baixa qualidade usada em produção. Fraca demais para refinar."
+        }
+    ],
+    "Index": "603",
+    "UniqueName": "T1_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T2_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T2_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Limestone"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Kalkstein"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Calcaire"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Известняк"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Wapień"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Caliza"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Calcário"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Stone used for crafting. Can be refined into stone blocks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Stein für handwerkliche Zwecke. Kann zu Steinquadern weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre utilisée pour la fabrication. Peut être raffiné en bloc de pierre ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Камень используется для крафта. Может быть переработан в блоки или улучшен до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień używany w rzemiośle. Może zostać przerobiony na kamienne bloki lub przetransmutowany w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedras usadas para fabricación. Pueden ser refinadas en bloques o transmutadas en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra usada para fabricação. Pode ser transaformada em blocos de pedra ou transmutada para um material de nível superior."
+        }
+    ],
+    "Index": "604",
+    "UniqueName": "T2_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T3_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T3_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Sandstone"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Sandstein"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Grès"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Песчаник"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Piaskowiec"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Arenisca"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Arenito"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Stone used for crafting. Can be refined into stone blocks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Stein für handwerkliche Zwecke. Kann zu Steinquadern weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre utilisée pour la fabrication. Peut être raffiné en bloc de pierre ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Камень используется для крафта. Может быть переработан в блоки или улучшен до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień używany w rzemiośle. Może zostać przerobiony na kamienne bloki lub przetransmutowany w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedras usadas para fabricación. Pueden ser refinadas en bloques o transmutadas en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra usada para fabricação. Pode ser transaformada em blocos de pedra ou transmutada para um material de nível superior."
+        }
+    ],
+    "Index": "605",
+    "UniqueName": "T3_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T4_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T4_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Travertine"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Travertin"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Travertin"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Травертин"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Trawertyn"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Travertino"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Travertino"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Stone used for crafting. Can be refined into stone blocks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Stein für handwerkliche Zwecke. Kann zu Steinquadern weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre utilisée pour la fabrication. Peut être raffiné en bloc de pierre ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Камень используется для крафта. Может быть переработан в блоки или улучшен до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień używany w rzemiośle. Może zostać przerobiony na kamienne bloki lub przetransmutowany w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedras usadas para fabricación. Pueden ser refinadas en bloques o transmutadas en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra usada para fabricação. Pode ser transaformada em blocos de pedra ou transmutada para um material de nível superior."
+        }
+    ],
+    "Index": "606",
+    "UniqueName": "T4_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T5_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T5_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Granite"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Granit"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Granite"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Гранит"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Granit"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Granito"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Granito"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Stone used for crafting. Can be refined into stone blocks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Stein für handwerkliche Zwecke. Kann zu Steinquadern weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre utilisée pour la fabrication. Peut être raffiné en bloc de pierre ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Камень используется для крафта. Может быть переработан в блоки или улучшен до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień używany w rzemiośle. Może zostać przerobiony na kamienne bloki lub przetransmutowany w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedras usadas para fabricación. Pueden ser refinadas en bloques o transmutadas en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra usada para fabricação. Pode ser transaformada em blocos de pedra ou transmutada para um material de nível superior."
+        }
+    ],
+    "Index": "607",
+    "UniqueName": "T5_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T6_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T6_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Slate"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Schiefer"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Ardoise"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Лунный камень"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Łupek"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Pizarra"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Ardósia"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Stone used for crafting. Can be refined into stone blocks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Stein für handwerkliche Zwecke. Kann zu Steinquadern weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre utilisée pour la fabrication. Peut être raffiné en bloc de pierre ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Камень используется для крафта. Может быть переработан в блоки или улучшен до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień używany w rzemiośle. Może zostać przerobiony na kamienne bloki lub przetransmutowany w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedras usadas para fabricación. Pueden ser refinadas en bloques o transmutadas en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra usada para fabricação. Pode ser transaformada em blocos de pedra ou transmutada para um material de nível superior."
+        }
+    ],
+    "Index": "608",
+    "UniqueName": "T6_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T7_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T7_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Basalt"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Basalt"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Basalte"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Базальт"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bazalt"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Basalto"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Basalto"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Stone used for crafting. Can be refined into stone blocks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Stein für handwerkliche Zwecke. Kann zu Steinquadern weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre utilisée pour la fabrication. Peut être raffiné en bloc de pierre ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Камень используется для крафта. Может быть переработан в блоки или улучшен до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień używany w rzemiośle. Może zostać przerobiony na kamienne bloki lub przetransmutowany w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedras usadas para fabricación. Pueden ser refinadas en bloques o transmutadas en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra usada para fabricação. Pode ser transaformada em blocos de pedra ou transmutada para um material de nível superior."
+        }
+    ],
+    "Index": "609",
+    "UniqueName": "T7_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T8_ROCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T8_ROCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Marble"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Marmor"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Marbre"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Мрамор"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Marmur"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Mármol"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Mármore"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Stone used for crafting. Can be refined into stone blocks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Stein für handwerkliche Zwecke. Kann zu Steinquadern weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Pierre utilisée pour la fabrication. Peut être raffiné en bloc de pierre ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Камень используется для крафта. Может быть переработан в блоки или улучшен до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Kamień używany w rzemiośle. Może zostać przerobiony na kamienne bloki lub przetransmutowany w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Piedras usadas para fabricación. Pueden ser refinadas en bloques o transmutadas en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Pedra usada para fabricação. Pode ser transaformada em blocos de pedra ou transmutada para um material de nível superior."
+        }
+    ],
+    "Index": "610",
+    "UniqueName": "T8_ROCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T2_STONEBLOCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T2_STONEBLOCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Limestone Block"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Kalksteinblock"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bloc de calcaire"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Блок известняка"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Blok wapienia"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Bloque de caliza"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Bloco de Calcário"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining stone."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Stein."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de pierre raffinée."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке камня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki kamienia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar piedras"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pedra."
+        }
+    ],
+    "Index": "700",
+    "UniqueName": "T2_STONEBLOCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T3_STONEBLOCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T3_STONEBLOCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Sandstone Block"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Sandsteinblock"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bloc de grès"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Блок песчаника"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Blok Piaskowca"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Bloque de arenisca"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Bloco de Arenito"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining stone."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Stein."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de pierre raffinée."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке камня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki kamienia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar piedras"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pedra."
+        }
+    ],
+    "Index": "701",
+    "UniqueName": "T3_STONEBLOCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T4_STONEBLOCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T4_STONEBLOCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Travertine Block"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Travertinblock"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bloc de travertin"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Блок травертина"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Blok Trawertynu"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Bloque de travertino"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Bloco de Travertino"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining stone."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Stein."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de pierre raffinée."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке камня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki kamienia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar piedras"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pedra."
+        }
+    ],
+    "Index": "702",
+    "UniqueName": "T4_STONEBLOCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T5_STONEBLOCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T5_STONEBLOCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Granite Block"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Granitblock"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bloc de granite"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Блок гранита"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Blok Granitu"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Bloque de granito"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Bloco de Granito"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining stone."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Stein."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de pierre raffinée."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке камня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki kamienia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar piedras"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pedra."
+        }
+    ],
+    "Index": "703",
+    "UniqueName": "T5_STONEBLOCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T6_STONEBLOCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T6_STONEBLOCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Slate Block"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Schieferblock"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bloc d\u0027ardoise"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Блок лунного камня"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Blok Łupkowy"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Bloque de pizarra"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Bloco de Ardósia"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining stone."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Stein."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de pierre raffinée."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке камня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki kamienia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar piedras"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pedra."
+        }
+    ],
+    "Index": "704",
+    "UniqueName": "T6_STONEBLOCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T7_STONEBLOCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T7_STONEBLOCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Basalt Block"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Basaltblock"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bloc de basalte"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Блок базальта"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Blok Bazaltu"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Bloque de basalto"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Bloco de Basalto"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining stone."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Stein."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de pierre raffinée."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке камня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki kamienia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar piedras"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pedra."
+        }
+    ],
+    "Index": "705",
+    "UniqueName": "T7_STONEBLOCK"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T8_STONEBLOCK",
+    "LocalizationDescriptionVariable": "@ITEMS_T8_STONEBLOCK_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Marble Block"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Marmorblock"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bloc de marbre"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Блок мрамора"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Blok Marmuru"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Bloque de mármol"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Bloco de Mármore"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining stone."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Stein."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de pierre raffinée."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке камня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki kamienia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar piedras"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pedra."
+        }
+    ],
+    "Index": "706",
+    "UniqueName": "T8_STONEBLOCK"
+}
+]
