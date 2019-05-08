@@ -9,8 +9,8 @@
     <title>Albion Tavern</title>
     <style type="text/css">
         *{padding:0;margin:0;font-size: 1em;}
-        .header{height: 10vh;width: 100vw;}
-        .wrapper{height: 10vh;width: 100vw;}
+        .header{height: 10vh;width: 100vw;margin-bottom : 20px;}
+        .wrapper{height: 10vh;width: 100vw;margin-bottom : 20px;}
         .content{height: 20vh;width: 100vw;font-size: 1em;margin-bottom : 20px;}
         .red{background-color: red; }
         .green{background-color: green; }
@@ -27,7 +27,7 @@
     -->
     </head>
     <body>
-    <div class="header" style="margin-bottom : 20px;">
+    <div class="header">
       <h1>AlbionTavern</h1>
         <nav>
             <button id="Lootbtn"><p>Loot</p></button>
@@ -41,7 +41,7 @@
     </div>
       <!--<div class="header">    </div>-->
 
-    <div class="wrapper" style="margin-bottom : 20px;">
+    <div class="wrapper">
             <div id="profile">
                 <select id="select_ressource">
                     <option label="cuir" value="cuir">Cuir</option>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </div>
-    <div class="content content-loot" style="margin-bottom : 20px;display:none;">
+    <div class="content content-loot" style="display:none;">
         <fieldset>
         <!--
         *   Make Date&Loot&Price fillable
@@ -100,7 +100,7 @@
         </table>
         </fieldset>
     </div>
-    <div class="content content-cityTrader" style="margin-bottom : 20px;">
+    <div class="content content-cityTrader" style="">
         <p> City Trader will show you prices gap between Caerleon and outter cities</p>
         <fieldset>
             <table>
@@ -144,7 +144,7 @@
             <!--Selectionner une ressource (et un item ?) et afficher le prix de chaque tiers pour chaque ville-->
         </fieldset>
     </div>
-    <div class="content content-foca" style="margin-bottom : 20px;display:none;">
+    <div class="content content-foca" style="display:none;">
         <fieldset>
         <!--
             Either be :
@@ -154,7 +154,7 @@
         <p>In oder to maximise profit while allowing to craft a bit, please follow this scenario where only 50% of your daily focalisation is used.</p>
             </fieldset>
     </div>
-    <div class="content content-builds" style="margin-bottom : 20px;display:none;">
+    <div class="content content-builds" style="display:none;">
         <fieldset>
         <!--
             Builds  PVP    Builds  PVE
@@ -262,7 +262,7 @@
             </table>
         </fieldset>
     </div>
-    <div class="content content-crafts" style="margin-bottom : 20px;display:none;">
+    <div class="content content-crafts" style="display:none;">
         <fieldset>
         <table>
         <thead>
@@ -277,7 +277,7 @@
         </table>
         </fieldset>
         </div>
-    <div class="content content-Market" style="margin-bottom : 20px;display: none;">
+    <div class="content content-Market" style="display: none;">
         <select id="select_locations">
         </select>
         <canvas id="buyers" width="1800" height="800"></canvas>
