@@ -5,18 +5,27 @@
 <html lang="fr">
     <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=yes">
     <title>Albion Tavern</title>
     <style type="text/css">
-        *{padding:0;margin:0;font-size: 1em;}
+        *{padding:0;margin:0;font-size: 1rem;}
         .header{height: 10vh;width: 100vw;margin-bottom : 20px;}
         .wrapper{height: 10vh;width: 100vw;margin-bottom : 20px;}
-        .content{height: 20vh;width: 100vw;font-size: 1em;margin-bottom : 20px;}
+        .select1{width: 31vw;}
+        .select2{width: 15vw;}
+        .content{height: 20vh;width: 100vw;font-size: 1rem;margin-bottom : 20px;}
         .red{background-color: red; }
         .green{background-color: green; }
-        table td,th{padding: 8px;}
-        table,th,td{border: 1px solid black;}
-        tbody tr{border: 1px solid black;}
+          /* table td,th{padding: 8px;} */
+          table,th,td{border: 1px solid black;}
+          tbody tr{border: 1px solid black;}
+        #citytradertable{
+          margin: 0;
+          padding: 0;
+          width: 100vw;
+          height: 50vh;
+        }
+        #citytradertable thead th{font-size: xx-small;}
     </style>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -30,12 +39,12 @@
     <div class="header">
       <h1>AlbionTavern</h1>
         <nav>
-            <button id="Lootbtn"><p>Loot</p></button>
-            <button id="Focabtn"><p>Foca</p></button>
-            <button id="Buildsbtn"><p>Builds</p></button>
-            <button id="Craftsbtn"><p>Crafts</p></button>
-            <!-- <button id="Marketbtn"> <p>Market</p></button>  -->
-            <button id="City_Traderbtn"> <p>City_Trader</p></button>
+            <button class="select2" id="Lootbtn"><p>Loot</p></button>
+            <button class="select2" id="Focabtn"><p>Foca</p></button>
+            <button class="select2" id="Buildsbtn"><p>Builds</p></button>
+            <button class="select2" id="Craftsbtn"><p>Crafts</p></button>
+            <button class="select2" id="Marketbtn"> <p>Market</p></button>
+            <button class="select2" id="City_Traderbtn"> <p>City_Trader</p></button>
         </nav>
 
     </div>
@@ -43,16 +52,16 @@
 
     <div class="wrapper">
             <div id="profile">
-                <select id="select_ressource">
+                <select class="select1" id="select_ressource">
                     <option label="cuir" value="cuir">Cuir</option>
                     <option label="tissu" value="tissu">Tissu</option>
                     <option label="bois" value="bois">Bois</option>
                     <option label="minerai" value="minerai">Minerai</option>
                     <option label="pierre" value="pierre">Pierre</option>
                 </select>
-                <select id="select_ressource_type">
+                <select class="select1" id="select_ressource_type">
                 </select>
-                <select id="select_city"></select>
+                <select class="select1" id="select_city"></select>
                     <p>Ignore last select if you in "City Trader" Mode</p>
                 <!--ajoutez un select pour les villes une fois la réponse api reçue-->
                 <div id ="resultats">
@@ -103,7 +112,7 @@
     <div class="content content-cityTrader" style="">
         <p> City Trader will show you prices gap between Caerleon and outter cities</p>
         <fieldset>
-            <table>
+            <table id="citytradertable">
                         <thead><tr><th></th><th>Bridgewatch</th><th>Caerleon</th><th>Fort Sterling</th><th>Lymhurst</th><th>Martlock</th><th>Thetford</th></tr></thead>
                         <tbody>
                             <tr id="row0">
@@ -145,14 +154,14 @@
         </fieldset>
     </div>
     <div class="content content-foca" style="display:none;">
-        <fieldset>
         <!--
+        <fieldset>
             Either be :
                 - a roadmap, eg Perso 1 must do X carrots
                 - an table excel like when you can calculate how much foc you using based on your level
+          <p>In oder to maximise profit while allowing to craft a bit, please follow this scenario where only 50% of your daily focalisation is used.</p>
+        </fieldset>
         -->
-        <p>In oder to maximise profit while allowing to craft a bit, please follow this scenario where only 50% of your daily focalisation is used.</p>
-            </fieldset>
     </div>
     <div class="content content-builds" style="display:none;">
         <fieldset>
@@ -264,25 +273,26 @@
     </div>
     <div class="content content-crafts" style="display:none;">
         <fieldset>
-        <table>
-        <thead>
-            <tr><th></th><th>Torses</th><th>Bottes</th><th>Chapeaux</th><th>Armes Tank</th><th>Armes Chasseur</th><th>Armes Mages</th><th>Outils</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>Cyrch</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
-            <tr><td>Breklo</td><td>Tissu t5</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
-            <tr><td>Peknow</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
-            <tr><td>Guybourg</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
-        </tbody>
-        </table>
+          <table>
+            <thead>
+                <tr><th></th><th>Torses</th><th>Bottes</th><th>Chapeaux</th><th>Armes Tank</th><th>Armes Chasseur</th><th>Armes Mages</th><th>Outils</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Cyrch</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+                <tr><td>Breklo</td><td>Tissu t5</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+                <tr><td>Peknow</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+                <tr><td>Guybourg</td><td>Plaque t6</td><td>Plaque T5</td><td>Plaque T5</td><td>Hache de guerre t5 + Arba T5</td><td></td><td></td><td>Mineur T5 Bucheron T4</td></tr>
+            </tbody>
+          </table>
         </fieldset>
-        </div>
+    </div>
     <div class="content content-Market" style="display: none;">
-        <select id="select_locations">
+      <!--  <select id="select_locations">
         </select>
         <canvas id="buyers" width="1800" height="800"></canvas>
         <button id="test">Click me</button>
         <p id="result">Resultats</p>
+      -->
         <!--
             A list of Items selectable
                 Can see charts for each city
