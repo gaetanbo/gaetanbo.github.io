@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
     <style type="text/css">
       .col-3{background-color: aliceblue;}
+      html {
+        font-size: 1rem;
+      }
+      @include media-breakpoint-up(sm) {
+        html {
+          font-size: 1.2rem;
+        }
+      }
+
     </style>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -65,30 +74,30 @@
         <div class="container">
           <div class="row">
             <div class="col-3 border"><p>Enchant</p></div>
-            <div class="col-3 border"><p>Le moins cher</p></div>
-            <div class="col-3 border"><p>Le plus cher</p></div>
+            <div class="col-3 border"><p>Le - cher</p></div>
+            <div class="col-3 border"><p>Le + cher</p></div>
             <div class="col-3 border"><p>Benef / unit</p></div>
           </div>
           <div class="row">
-            <div class="col-3 border pr-5 py-2"> 0 </div>
+            <div class="col-3 border"> 0 </div>
             <div class="col-3 border" id="sortedPrices0"></div>
             <div class="col-3 border" id="sortedPricesmax0"></div>
             <div class="col-3 border" id="sortedPricesmax0benef"></div>
           </div>
           <div class="row">
-            <div class="col-3 border pr-5 py-2"> .1 </div>
+            <div class="col-3 border"> .1 </div>
             <div class="col-3 border" id="sortedPrices"></div>
             <div class="col-3 border" id="sortedPricesmax"></div>
             <div class="col-3 border" id="sortedPricesmaxbenef"></div>
           </div>
           <div class="row">
-            <div class="col-3 border pr-5 py-2"> .2 </div>
+            <div class="col-3 border"> .2 </div>
             <div class="col-3 border" id="sortedPrices2"></div>
             <div class="col-3 border" id="sortedPricesmax2"></div>
             <div class="col-3 border" id="sortedPricesmax2benef"></div>
           </div>
           <div class="row">
-            <div class="col-3 border pr-5 py-2"> .3 </div>
+            <div class="col-3 border"> .3 </div>
             <div class="col-3 border" id="sortedPrices3"></div>
             <div class="col-3 border" id="sortedPricesmax3"></div>
             <div class="col-3 border" id="sortedPricesmax3benef"></div>
