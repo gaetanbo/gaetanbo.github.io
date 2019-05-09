@@ -14,55 +14,6 @@ $(document).ready(function(){
      });
      let ressource_typeAsked = "";
      $("#select_ressource_type").change(function(event) {
-         //variable declaration
-         // let bg_citytrader ="";
-         //   let ca_citytrader ="";
-         //   let fs_citytrader ="";
-         //   let ly_citytrader ="";
-         //   let ma_citytrader ="";
-         //   let th_citytrader ="";
-         //   let bg1_citytrader ="";
-         //   let bg2_citytrader ="";
-         //   let bg3_citytrader ="";
-         //   let ca1_citytrader ="";
-         //   let ca2_citytrader ="";
-         //   let ca3_citytrader ="";
-         //   let fs1_citytrader ="";
-         //   let fs2_citytrader ="";
-         //   let fs3_citytrader ="";
-         //   let ly1_citytrader ="";
-         //   let ly2_citytrader ="";
-         //   let ly3_citytrader ="";
-         //   let ma1_citytrader ="";
-         //   let ma2_citytrader ="";
-         //   let ma3_citytrader ="";
-         //   let th1_citytrader ="";
-         //   let th2_citytrader ="";
-         //   let th3_citytrader ="";
-         // $("#bgcitytrader").empty();
-         //   $("#cacitytrader").empty();
-         //   $("#fscitytrader").empty();
-         //   $("#lycitytrader").empty();
-         //   $("#macitytrader").empty();
-         //   $("#thcitytrader").empty();
-         //   $("#bg1citytrader").empty();
-         //   $("#ca1citytrader").empty();
-         //   $("#fs1citytrader").empty();
-         //   $("#ly1citytrader").empty();
-         //   $("#ma1citytrader").empty();
-         //   $("#th1citytrader").empty();
-         //   $("#bg2citytrader").empty();
-         //   $("#ca2citytrader").empty();
-         //   $("#fs2citytrader").empty();
-         //   $("#ly2citytrader").empty();
-         //   $("#ma2citytrader").empty();
-         //   $("#th2citytrader").empty();
-         //   $("#bg3citytrader").empty();
-         //   $("#ca3citytrader").empty();
-         //   $("#fs3citytrader").empty();
-         //   $("#ly3citytrader").empty();
-         //   $("#ma3citytrader").empty();
-         //   $("#th3citytrader").empty();
            $("#sortedPrices0").empty();
            $("#sortedPrices").empty();
            $("#sortedPrices2").empty();
@@ -77,8 +28,7 @@ $(document).ready(function(){
              $("select_city").empty();
              var array2 = [];
 
-
-               cleanCrossCity(d);
+              cleanCrossCity(d);
 
               sortMinAndAppend(d,"#sortedPrices0",ressource_typeAsked);
               sortMaxAndAppend(d,"#sortedPricesmax0",ressource_typeAsked);
@@ -151,14 +101,10 @@ $(document).ready(function(){
                   /* DEFAULT CITY SHOULD BE CAERLEON  */
                   /* Black Market and Cross things should be ignored for materials at least */
              });
-             // $("#bgcitytrader").append(bg_citytrader);
-             // $("#cacitytrader").append(ca_citytrader);
-             // $("#fscitytrader").append(fs_citytrader);
-             // $("#lycitytrader").append(ly_citytrader);
-             // $("#macitytrader").append(ma_citytrader);
-             // $("#thcitytrader").append(th_citytrader);
 
-
+          if (!ressource_typeAsked.includes("T2") && !ressource_typeAsked.includes("T3") && !ressource_typeAsked.includes("ROCK") && !ressource_typeAsked.includes("STONE")) {
+              // On a pas T2 et on a pas T3
+              // on peut dmander lenchant
               $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(priceArray){
                   //console.log(priceArray); 
 
@@ -168,12 +114,6 @@ $(document).ready(function(){
 
                   sortMinAndAppend(priceArray,"#sortedPrices",tiers);
                   sortMaxAndAppend(priceArray,"#sortedPricesmax",tiers);
-
-                  // const testMap = priceArray.map(function(prices) {
-                  //   // return prices.city;
-                  //   return `${prices.city} [${prices.sell_price_min}]`;
-                  // });
-                  // console.log(testMap);
 
                   $("select_city").empty();
                    $.each(priceArray,function(index1,val1) {
@@ -200,29 +140,14 @@ $(document).ready(function(){
                          default:
                        }
                    });
-                     // $("#bg1citytrader").append(bg1_citytrader);
-                     // $("#ca1citytrader").append(ca1_citytrader);
-                     // $("#fs1citytrader").append(fs1_citytrader);
-                     // $("#ly1citytrader").append(ly1_citytrader);
-                     // $("#ma1citytrader").append(ma1_citytrader);
-                     // $("#th1citytrader").append(th1_citytrader);
               });
 
-
-
-               $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d2){
+              $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d2){
                  $("select_city").empty();
                   var tiers = ressource_typeAsked+"LEVEL2@2";
-
                   cleanCrossCity(d2);
-
                   sortMinAndAppend(d2,"#sortedPrices2",tiers);
                   sortMaxAndAppend(d2,"#sortedPricesmax2",tiers);
-                  // const sortedPrices2 = d2.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
-                  // // console.log(sortedPrices2);
-                  // $("#sortedPrices2").append("ENCHANT 5.2 :  min = "+sortedPrices2[0].sell_price_min+" in "+sortedPrices2[0].city+" City !");
-
-
                  var array3 = [];
                  $.each(d2,function(index2,val2) {
                    switch (val2["city"]) {
@@ -245,33 +170,17 @@ $(document).ready(function(){
                        th2_citytrader = d2[index2].sell_price_min;
                        break;
                      default:
-                       //console.log('default');
-
                    }
                  });
-                 // $("#bg2citytrader").append(bg2_citytrader);
-                 // $("#ca2citytrader").append(ca2_citytrader);
-                 // $("#fs2citytrader").append(fs2_citytrader);
-                 // $("#l2ycitytrader").append(ly2_citytrader);
-                 // $("#ma2citytrader").append(ma2_citytrader);
-                 // $("#th2citytrader").append(th2_citytrader);
-               });
+              });
 
-               $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL3@3",function(d3){
+              $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL3@3",function(d3){
                  $("select_city").empty();
-                 // $("#bg3_citytrader").empty();
-                 // $("#ca3_citytrader").empty();
-                 // $("#fs3_citytrader").empty();
-                 // $("#ly3_citytrader").empty();
-                 // $("#ma3_citytrader").empty();
-                 // $("#th3_citytrader").empty();
+
                 var tiers = ressource_typeAsked+"LEVEL3@3";    
                 cleanCrossCity(d3);            
                 sortMinAndAppend(d3,"#sortedPrices3",tiers);
                 sortMaxAndAppend(d3,"#sortedPricesmax3",tiers);
-                //  const sortedPrices3 = d3.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
-                //  // console.log(sortedPrices3);
-                // $("#sortedPrices3").append("ENCHANT 5.3 :  min = "+sortedPrices3[0].sell_price_min+" in "+sortedPrices3[0].city+" City !");
 
                  var array3 = [];
                  $.each(d3,function(index2,val2) {
@@ -295,31 +204,21 @@ $(document).ready(function(){
                        th3_citytrader = d3[index2].sell_price_min;
                        break;
                      default:
-                       //console.log('default');
-
                    }
                  });
-                 // $("#bg3citytrader").append(bg3_citytrader);
-                 // $("#ca3citytrader").append(ca3_citytrader);
-                 // $("#fs3citytrader").append(fs3_citytrader);
-                 // $("#l23citytrader").append(ly3_citytrader);
-                 // $("#ma3citytrader").append(ma3_citytrader);
-                 // $("#th3citytrader").append(th3_citytrader);
                });
+          } else {
+            console.log('else');
+          }
          });
      });
 
      let citySelected = "";
      $("#select_city").change(function(event) {
-        // console.clear();
          /* DEFAULT CITY SHOULD BE CAERLEON  */
          var cities = {"1" : "Bridgewatch","2" : "Caerleon","3" : "Fort Sterling","5" : "Lymhurst","6" : "Martlock","10" : "Thetford"};
          citySelected = $("#select_city").children("option:selected").val();
-        // console.log(citySelected);
          $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"?locations="+citySelected,function(dataThatMatters){
-          //   console.log(dataThatMatters);
-          //   console.log("sell min : "+dataThatMatters[0].sell_price_min);
-          //   console.log('apiwascalled_2');
          });
      });
  });
@@ -408,8 +307,8 @@ $(document).ready(function(){
   function cleanCrossCity(array) {
     for(var i = 0; i < array.length; i++) {
       if( array[i].city.includes("Cross") || array[i].city.includes("Steppe") || array[i].city.includes("Black") || array[i].city.includes("2000")) {
-        console.log(i);
-        console.log(array[i].city);
+        // console.log(i);
+        // console.log(array[i].city);
         array.splice(i,1);
         i--;
       }
