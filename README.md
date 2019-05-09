@@ -17,7 +17,7 @@ TODO :
 
  https://gameinfo.albiononline.com/api/gameinfo/events/33204877
  
-	Item Data:			https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data/
+	Item Data:		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data/
 	item category : 	https://gameinfo.albiononline.com/api/gameinfo/items/_itemCategoryTree
 	item icon : 		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data/
 
