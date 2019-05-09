@@ -12,6 +12,7 @@ TODO :
 - [ ] and then append all values at one
 - [ ] function cleanCrossCity doesnt properly sort out all cities coming
 - [ ] Work on Items Price comparaison between Black Market and Caerleon
+- [ ] Figure a way to automatically color Code if  tier is written somewhere
 
 	https://gameinfo.albiononline.com/api/gameinfo/events/33204877
 	Item Data:		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data
