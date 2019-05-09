@@ -4,75 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,height=device-height, user-scalable=yes">
     <title>Albion Tavern</title>
+    <link rel="icon" type="image.jpg" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9178573.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
     <style type="text/css">
-        /* *{padding:0;margin:0;font-size: 3.3vmin;}  */
-        *{font-size: 3.3vmin;}
-        .header{height: 5vh;width: 100vw;margin-bottom : 7px;}
-        .wrapper{height: 5vh;width: 100vw;margin-bottom : 14px;}
-        .select1{width: 48vw;}
-        .select2{width: 15vw;}
-        .content{height: 10vh;width: 80vw;font-size: 1rem;margin-bottom : 10px;}
-        .red{background-color: red; }
-        .green{background-color: green; }
-         th,td{border: 1px solid black;}
-        #citytradertable{margin: 0;padding: 0;width: 100vw;margin-bottom : 14px;}
-        #citytradertable thead th{font-size: 2.9vmin;}
-		    .td_enchant{padding-left:25px;}
+      .col-3{background-color: aliceblue;}
     </style>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-    <!--
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-    <div class="header">
-      <h1>AlbionTavern</h1>
+    <div class="jumbotron">
+      <h1 class="display-4">Albion Tavern</h1>
+      <p>This is a simple project hosted on Github using <a href="https://www.albion-online-data.com/">albion-online-data.com</a> Api</p>
+    </div>
+    <!-- <ul class="nav">
+      <li class="nav-item">
+        <p>
+          <a class="nav-link active btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Le Tradeur marathonien
+          </a>
+        </p>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"></a>
+      </li>
+    </ul> -->
+    <div class="container collapse" id="collapseExample">
+
     </div>
 
-    <div class="wrapper" style="">
-            <div id="profile">
-                <select class="select1" id="select_ressource">
-                    <option label="cuir" value="cuir">Cuir</option>
-                    <option label="tissu" value="tissu">Tissu</option>
-                    <option label="bois" value="bois">Bois</option>
-                    <option label="minerai" value="minerai">Minerai</option>
-                    <option label="pierre" value="pierre">Pierre</option>
-                </select>
-                <select class="select1" id="select_ressource_type">
-                </select>
-              <!--  <select class="select1" disabled id="select_city"></select>  -->
-                <div id ="resultats">
-                </div>
+    <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Le Tradeur marathonien
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <select class="form-control" id="select_ressource">
+                  <option label="cuir" value="cuir">Cuir</option>
+                  <option label="tissu" value="tissu">Tissu</option>
+                  <option label="bois" value="bois">Bois</option>
+                  <option label="minerai" value="minerai">Minerai</option>
+                  <option label="pierre" value="pierre">Pierre</option>
+              </select>
             </div>
+            <div class="col-6">
+              <select class="form-control" id="select_ressource_type">
+              </select>
+            </div>
+          </div>
         </div>
-
-    <div>
-        <table id="citytradertable">
-            <thead>
-                <tr>
-                    <th style="min-width: 10vw;">Enchantement</th>
-                    <th>Min</th>
-                    <th>Max</th>
-                    <th>Benef par unit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td class="td_enchant">.0</td><td id="sortedPrices0"></td><td id="sortedPricesmax0"></td><td id="sortedPricesmax0benef"></td></tr>
-                <tr><td class="td_enchant">.1</td><td id="sortedPrices"></td><td id="sortedPricesmax"></td><td id="sortedPricesmaxbenef"></td></tr>
-                <tr><td class="td_enchant">.2</td><td id="sortedPrices2"></td><td id="sortedPricesmax2"></td><td id="sortedPricesmax2benef"></td></tr>
-                <tr><td class="td_enchant">.3</td><td id="sortedPrices3"></td><td id="sortedPricesmax3"></td><td id="sortedPricesmax3benef"></td></tr>
-            </tbody>
-        </table>
+        <hr class="my-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-3 border pr-5 "><p>Enchant</p></div>
+            <div class="col-3 border"><p>Le moins cher</p></div>
+            <div class="col-3 border"><p>Le plus cher</p></div>
+            <div class="col-3 border"><p>Benef / unit</p></div>
+          </div>
+          <div class="row">
+            <div class="col-3 border pr-5 py-2"> 0 </div>
+            <div class="col-3 border" id="sortedPrices0"></div>
+            <div class="col-3 border" id="sortedPricesmax0"></div>
+            <div class="col-3 border" id="sortedPricesmax0benef"></div>
+          </div>
+          <div class="row">
+            <div class="col-3 border pr-5 py-2"> .1 </div>
+            <div class="col-3 border" id="sortedPrices"></div>
+            <div class="col-3 border" id="sortedPricesmax"></div>
+            <div class="col-3 border" id="sortedPricesmaxbenef"></div>
+          </div>
+          <div class="row">
+            <div class="col-3 border pr-5 py-2"> .2 </div>
+            <div class="col-3 border" id="sortedPrices2"></div>
+            <div class="col-3 border" id="sortedPricesmax2"></div>
+            <div class="col-3 border" id="sortedPricesmax2benef"></div>
+          </div>
+          <div class="row">
+            <div class="col-3 border pr-5 py-2"> .3 </div>
+            <div class="col-3 border" id="sortedPrices3"></div>
+            <div class="col-3 border" id="sortedPricesmax3"></div>
+            <div class="col-3 border" id="sortedPricesmax3benef"></div>
+          </div>
+        </div>
+      </div>
     </div>
-	<!--
-	<div>
-		<p>Armure</p>
-		<p id="itemCategory"></p>
-		<select class="select1"></select>
-	</div>
-	-->
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <!-- <h5 class="mb-0"> -->
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      <!-- </h5> -->
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="main.js"></script>
     </body>
 </html>
