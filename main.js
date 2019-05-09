@@ -109,7 +109,6 @@ $(document).ready(function(){
                   //console.log(priceArray); 
 
                   var tiers = ressource_typeAsked+"LEVEL1@1";
-                  
                   cleanCrossCity(priceArray);
 
                   sortMinAndAppend(priceArray,"#sortedPrices",tiers);
@@ -177,8 +176,8 @@ $(document).ready(function(){
               $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL3@3",function(d3){
                  $("select_city").empty();
 
-                var tiers = ressource_typeAsked+"LEVEL3@3";    
-                cleanCrossCity(d3);            
+                var tiers = ressource_typeAsked+"LEVEL3@3";
+                cleanCrossCity(d3);
                 sortMinAndAppend(d3,"#sortedPrices3",tiers);
                 sortMaxAndAppend(d3,"#sortedPricesmax3",tiers);
 
@@ -244,12 +243,12 @@ $(document).ready(function(){
     // });
 });
 
-  
 
-  // STARTED FROM THE BOTTOM NOW WE HERE 
+
+  // STARTED FROM THE BOTTOM NOW WE HERE
   // https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE_LEVEL2@2?location=Bridgewatch,Caerleon
   // https://albiononline2d.ams3.cdn.digitaloceanspaces.com/thumbnails/128/T5_METALBAR_LEVEL3
-  
+
   let price_min;
   let dataprice;
   function fetchData (item, enchantLevel = 0,location = 0,quality = 0){
@@ -262,7 +261,7 @@ $(document).ready(function(){
       }
       if (location) {
         request +="?locations=" +location;
-      } else {  
+      } else {
         // console.log('no locationAsked');
       }
       $.get(request, function(dataprice){
@@ -294,7 +293,7 @@ $(document).ready(function(){
     $(destinataire).append(sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city);
     // $(destinataire).append(tiers+" : max = "+sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city+" City !");
   };
-
+  
   function cleanEmptyPrices(array) {
     for(var i = 0; i < array.length; i++) {
       if(array[i].sell_price_min === 0 ) {
