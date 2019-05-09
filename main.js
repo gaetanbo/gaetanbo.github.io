@@ -290,7 +290,7 @@ $(document).ready(function(){
 
   function cleanCrossCity(array) {
     for(var i = 0; i < array.length; i++) {
-      if( (typeof array[i].city == 'number') || array[i].city.includes("Cross") ||array[i].city.includes("Black") || array[i].city.includes("2000")|| array[i].city.includes("200") ) {
+      if( (typeof array[i].city == 'number') || array[i].city.includes("Cross") ||array[i].city.includes("Black") || array[i].city.includes("2000") || array[i].city.includes("200") || array[i].city.includes("3234") || array[i].city.includes("229")) {
            // console.log(array[i].city);
         array.splice(i,1);
         i--;
