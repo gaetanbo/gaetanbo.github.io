@@ -11,9 +11,9 @@ TODO :
 - [ ] create two separate function to sort 
 - [ ] and then append all values at one
 
--[ ] calculate benefice by doing (lower*100)/higher
+- [ ] calculate benefice by doing (lower*100)/higher
 
-
+- [ ] Work on Items Price comparaison between Black Market and Caerleon
 
  https://gameinfo.albiononline.com/api/gameinfo/events/33204877
  
