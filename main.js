@@ -337,23 +337,35 @@ $(document).ready(function(){
       $("#City_Traderbtn").click(function(){
          $( ".content-cityTrader" ).toggle();
       });
+
     });
 
-
-  // STARTED FROM THE BOTTOM NOW WE HERE 
-  // https://www.albion-online-data.com/api/v1/stats/charts/T4_ORE_LEVEL2@2
   
-  function fetchData (item, enchantLevel,location,quality){
+  // STARTED FROM THE BOTTOM NOW WE HERE 
+  // https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE_LEVEL2@2?location=Bridgewatch,Caerleon
+  // https://albiononline2d.ams3.cdn.digitaloceanspaces.com/thumbnails/128/T5_METALBAR_LEVEL3
+
+  fetchData("T2_ORE","","");
+  fetchData("T4_ORE","_LEVEL3@3","Bridgewatch,Caerleon");
+
+  let dataprice;
+  function fetchData (item, enchantLevel = 0,location = 0,quality = 0){
     // location, enchantLevel et quality peuvent etre nul
-    var request = ""+item;
-    // if (enchantLevel isDefined) {
-    //   request += enchantLevel;
-    //   //break?
-    // } else {
-    //   console.log('no enchantLevel');
-    //   // break?
-    // }
+    var request = "https://www.albion-online-data.com/api/v2/stats/prices/"+item;
+      if (enchantLevel) {
+        request += enchantLevel;
+      } else {
+        console.log('no enchantLevelAsked');
+      }
+      if (location) {
+        request +="?locations=" +location;
+      } else {
+        console.log('no locationAsked');
+      }
+
+    console.log(request);
     $.get(request, function(dataprice){
       console.log(dataprice);
+      //console.log(dataprice[0].sell_price_min);
     });
   }
