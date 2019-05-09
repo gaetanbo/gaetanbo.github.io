@@ -10,9 +10,11 @@ TODO :
 - [ ] use map to work between object
 - [ ] create two separate function to sort
 - [ ] and then append all values at one
-- [ ] function cleanCrossCity doesnt properly sort out all cities coming
 - [ ] Work on Items Price comparaison between Black Market and Caerleon
 - [ ] Figure a way to automatically color Code if  tier is written somewhere
+
+- [ ] function cleanCrossCity doesnt properly sort out all cities coming !!!!
+- [ ] Display prices using $12,450 instead of 12450 !!!
 
 	https://gameinfo.albiononline.com/api/gameinfo/events/33204877
 	Item Data:		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data
