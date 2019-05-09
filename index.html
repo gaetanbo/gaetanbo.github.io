@@ -31,7 +31,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
     <!--
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript"></script>
     -->
     </head>
     <body>
@@ -81,10 +80,8 @@
             </div>
         </div>
     <div class="content content-loot" id="content_loot_div" style="">
-        <div id ="sortedPrices0"></div>
-        <div id ="sortedPrices"></div>
-        <div id ="sortedPrices2"></div>
-        <div id ="sortedPrices3"></div>
+
+
         <!--
         *   Make Date&Loot&Price fillable
         *   Allow filler to check how get a cut of profit
@@ -114,8 +111,25 @@
             </table>
         -->
     </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Min</th>
+                    <th>Max</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>.0</td><td id="sortedPrices0"></td><td id="sortedPricesmax0"></td></tr>
+                <tr><td>.1</td><td id="sortedPrices"></td><td id="sortedPricesmax"></td></tr>
+                <tr><td>.2</td><td id="sortedPrices2"></td><td id="sortedPricesmax2"></td></tr>
+                <tr><td>.3</td><td id="sortedPrices3"></td><td id="sortedPricesmax3"></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <!--
     <div class="content content-cityTrader" style="">
-        <p> City Trader will show you prices gap between Caerleon and outter cities</p>
         <fieldset>
             <table id="citytradertable">
                         <thead><tr><th></th><th>Bridgewatch</th><th>Caerleon</th><th>Fort Sterling</th><th>Lymhurst</th><th>Martlock</th><th>Thetford</th></tr></thead>
@@ -159,8 +173,10 @@
                         </tbody>
                     </table>
             <!--Selectionner une ressource (et un item ?) et afficher le prix de chaque tiers pour chaque ville-->
+            <!--
         </fieldset>
     </div>
+    -->
     <div class="content content-foca" style="display:none;">
         <!--
         <fieldset>
