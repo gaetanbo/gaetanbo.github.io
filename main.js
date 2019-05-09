@@ -64,11 +64,24 @@ $(document).ready(function(){
            $("#ly3citytrader").empty();
            $("#ma3citytrader").empty();
            $("#th3citytrader").empty();
+           $("#sortedPrices0").empty();
+           $("#sortedPrices").empty();
+           $("#sortedPrices2").empty();
+           $("#sortedPrices3").empty();
 
          ressource_typeAsked = $("#select_ressource_type").children("option:selected").val();
          $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked,function(d){
              $("select_city").empty();
              var array2 = [];
+
+              function sortAndAppend(donnee,destinataire,tiers) {
+                const sortdonnee = donnee.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
+                $(destinataire).append('ENCHANT'+tiers+" : min = "+sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city+" City !");
+              };
+
+              sortAndAppend(d,"#sortedPrices0","5.0");
+
+
              $.each(d, function(index, val) {
                  var oo = new Option(val["city"],val["city"]);
                  $(oo).html(val["city"]);
@@ -169,54 +182,69 @@ $(document).ready(function(){
              //console.log('apiwascalled_1');
 
 
-               $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(d1){
-                 $("select_city").empty();
-                 var array3 = [];
-                 $.each(d1,function(index1,val1) {
-                  console.log(d1[index1].city);
+              $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(priceArray){
+                  // console.log(priceArray); 
 
+                  // const sortedPrices = priceArray.sort(function(a, b){
+                  //   if (a.sell_price_min > b.sell_price_min) {
+                  //     return 1;
+                  //   } else {
+                  //     return -1;
+                  //   }
+                  // });
 
-                   switch (val1["city"]) {
-                     case "Bridgewatch":
-                       array3.push([val1["city"],d1[index1].sell_price_min]);
-                       bg1_citytrader = d1[index1].sell_price_min;
-                       break;
-                     case "Caerleon":
-                       array3.push([val1["city"],d1[index1].sell_price_min]);
-                       ca1_citytrader = d1[index1].sell_price_min;
-                       break;
-                     case "Fort Sterling":
-                       array3.push([val1["city"],d1[index1].sell_price_min]);
-                       fs1_citytrader = d1[index1].sell_price_min;
-                       break;
-                     case "Lymhurst":
-                       array3.push([val1["city"],d1[index1].sell_price_min]);
-                       ly1_citytrader = d1[index1].sell_price_min;
-                       break;
-                     case "Martlock":
-                       array3.push([val1["city"],d1[index1].sell_price_min]);
-                       ma1_citytrader = d1[index1].sell_price_min;
-                       break;
-                     case "Thetford":
-                       array3.push([val1["city"],d1[index1].sell_price_min]);
-                       th1_citytrader = d1[index1].sell_price_min;
-                       break;
-                     default:
-                   }
-                 console.log(array3);
-                 });
-                   $("#bg1citytrader").append(bg1_citytrader);
-                   $("#ca1citytrader").append(ca1_citytrader);
-                   $("#fs1citytrader").append(fs1_citytrader);
-                   $("#ly1citytrader").append(ly1_citytrader);
-                   $("#ma1citytrader").append(ma1_citytrader);
-                   $("#th1citytrader").append(th1_citytrader);
-               });
+                  const sortedPrices = priceArray.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
+                  // console.log(sortedPrices);
+                  $("#sortedPrices").append("ENCHANT 5.1 :  min = "+sortedPrices[0].sell_price_min+" in "+sortedPrices[0].city+" City !");
+
+                  // const testMap = priceArray.map(function(prices) {
+                  //   // return prices.city;
+                  //   return `${prices.city} [${prices.sell_price_min}]`;
+                  // });
+                  // console.log(testMap);
+
+                  $("select_city").empty();
+                   $.each(priceArray,function(index1,val1) {
+                      //console.log(d1[index1].city);
+                       switch (val1["city"]) {
+                         case "Bridgewatch":
+                           bg1_citytrader = priceArray[index1].sell_price_min;
+                           break;
+                         case "Caerleon":
+                           ca1_citytrader = priceArray[index1].sell_price_min;
+                           break;
+                         case "Fort Sterling":
+                           fs1_citytrader = priceArray[index1].sell_price_min;
+                           break;
+                         case "Lymhurst":
+                           ly1_citytrader = priceArray[index1].sell_price_min;
+                           break;
+                         case "Martlock":
+                           ma1_citytrader = priceArray[index1].sell_price_min;
+                           break;
+                         case "Thetford":
+                           th1_citytrader = priceArray[index1].sell_price_min;
+                           break;
+                         default:
+                       }
+                   });
+                     $("#bg1citytrader").append(bg1_citytrader);
+                     $("#ca1citytrader").append(ca1_citytrader);
+                     $("#fs1citytrader").append(fs1_citytrader);
+                     $("#ly1citytrader").append(ly1_citytrader);
+                     $("#ma1citytrader").append(ma1_citytrader);
+                     $("#th1citytrader").append(th1_citytrader);
+              });
 
 
 
                $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d2){
                  $("select_city").empty();
+
+                  const sortedPrices2 = d2.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
+                  // console.log(sortedPrices2);
+                  $("#sortedPrices2").append("ENCHANT 5.2 :  min = "+sortedPrices2[0].sell_price_min+" in "+sortedPrices2[0].city+" City !");
+
 
                  var array3 = [];
                  $.each(d2,function(index2,val2) {
@@ -266,6 +294,11 @@ $(document).ready(function(){
                  $("#ly3_citytrader").empty();
                  $("#ma3_citytrader").empty();
                  $("#th3_citytrader").empty();
+
+                 const sortedPrices3 = d3.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
+                 // console.log(sortedPrices3);
+                $("#sortedPrices3").append("ENCHANT 5.3 :  min = "+sortedPrices3[0].sell_price_min+" in "+sortedPrices3[0].city+" City !");
+
                  var array3 = [];
                  $.each(d3,function(index2,val2) {
                    switch (val2["city"]) {
@@ -379,4 +412,3 @@ $(document).ready(function(){
 
   // fetchData("T2_ORE","","");
   // fetchData("T4_ORE","_LEVEL3@3","Bridgewatch,Caerleon");
-
