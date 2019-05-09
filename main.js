@@ -171,9 +171,11 @@ $(document).ready(function(){
 
                $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(d1){
                  $("select_city").empty();
-
                  var array3 = [];
                  $.each(d1,function(index1,val1) {
+                  console.log(d1[index1].city);
+
+
                    switch (val1["city"]) {
                      case "Bridgewatch":
                        array3.push([val1["city"],d1[index1].sell_price_min]);
@@ -201,6 +203,7 @@ $(document).ready(function(){
                        break;
                      default:
                    }
+                 console.log(array3);
                  });
                    $("#bg1citytrader").append(bg1_citytrader);
                    $("#ca1citytrader").append(ca1_citytrader);
@@ -209,6 +212,8 @@ $(document).ready(function(){
                    $("#ma1citytrader").append(ma1_citytrader);
                    $("#th1citytrader").append(th1_citytrader);
                });
+
+
 
                $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d2){
                  $("select_city").empty();
@@ -318,7 +323,7 @@ $(document).ready(function(){
      });
  });
 
- $(document).ready(function(){
+$(document).ready(function(){
       $("#Lootbtn").click(function(){
          $( ".content-loot" ).toggle();
       });
@@ -338,16 +343,17 @@ $(document).ready(function(){
          $( ".content-cityTrader" ).toggle();
       });
 
+
+
     });
 
   
+
   // STARTED FROM THE BOTTOM NOW WE HERE 
   // https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE_LEVEL2@2?location=Bridgewatch,Caerleon
   // https://albiononline2d.ams3.cdn.digitaloceanspaces.com/thumbnails/128/T5_METALBAR_LEVEL3
-
-  fetchData("T2_ORE","","");
-  fetchData("T4_ORE","_LEVEL3@3","Bridgewatch,Caerleon");
-
+  
+  let price_min;
   let dataprice;
   function fetchData (item, enchantLevel = 0,location = 0,quality = 0){
     // location, enchantLevel et quality peuvent etre nul
@@ -355,17 +361,22 @@ $(document).ready(function(){
       if (enchantLevel) {
         request += enchantLevel;
       } else {
-        console.log('no enchantLevelAsked');
+       // console.log('no enchantLevelAsked');
       }
       if (location) {
         request +="?locations=" +location;
-      } else {
-        console.log('no locationAsked');
+      } else {  
+        // console.log('no locationAsked');
       }
+      $.get(request, function(dataprice){
+        // price_min = dataprice[0].sell_price_min;
+        //        This only return the first city in the array, rarely the same city
+        // console.log("price min for "+item+"= "+price_min);
+        console.log(dataprice);
+        return dataprice;
+      });
+  };
 
-    console.log(request);
-    $.get(request, function(dataprice){
-      console.log(dataprice);
-      //console.log(dataprice[0].sell_price_min);
-    });
-  }
+  // fetchData("T2_ORE","","");
+  // fetchData("T4_ORE","_LEVEL3@3","Bridgewatch,Caerleon");
+
