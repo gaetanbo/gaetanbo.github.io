@@ -1,5 +1,4 @@
 $(document).ready(function(){
-     //$("#select_ressource").change(function(){
      $("#select_ressource").change(function(){
          let ressourceAsked = $("#select_ressource").children("option:selected").val();
          let jsonDoc = "ressources/"+ressourceAsked+".json";
@@ -10,7 +9,6 @@ $(document).ready(function(){
                  var o = new Option(val.UniqueName,val.UniqueName);
                  $(o).html(val.UniqueName);
                  $("#select_ressource_type").append(o);
-                //val.LocalizedNames[2].Value +" "+ val.UniqueName.substring(0,2)+"-->"+val.UniqueName
              });
          });
      });
@@ -43,43 +41,38 @@ $(document).ready(function(){
            let th3_citytrader ="";
          //console.clear();
          $("#bgcitytrader").empty();
-         $("#cacitytrader").empty();
-         $("#fscitytrader").empty();
-         $("#lycitytrader").empty();
-         $("#macitytrader").empty();
-         $("#thcitytrader").empty();
-         $("#bg1citytrader").empty();
-         $("#ca1citytrader").empty();
-         $("#fs1citytrader").empty();
-         $("#ly1citytrader").empty();
-         $("#ma1citytrader").empty();
-         $("#th1citytrader").empty();
-         $("#bg2citytrader").empty();
-         $("#ca2citytrader").empty();
-         $("#fs2citytrader").empty();
-         $("#ly2citytrader").empty();
-         $("#ma2citytrader").empty();
-         $("#th2citytrader").empty();
-         $("#bg3citytrader").empty();
-         $("#ca3citytrader").empty();
-         $("#fs3citytrader").empty();
-         $("#ly3citytrader").empty();
-         $("#ma3citytrader").empty();
-         $("#th3citytrader").empty();
+           $("#cacitytrader").empty();
+           $("#fscitytrader").empty();
+           $("#lycitytrader").empty();
+           $("#macitytrader").empty();
+           $("#thcitytrader").empty();
+           $("#bg1citytrader").empty();
+           $("#ca1citytrader").empty();
+           $("#fs1citytrader").empty();
+           $("#ly1citytrader").empty();
+           $("#ma1citytrader").empty();
+           $("#th1citytrader").empty();
+           $("#bg2citytrader").empty();
+           $("#ca2citytrader").empty();
+           $("#fs2citytrader").empty();
+           $("#ly2citytrader").empty();
+           $("#ma2citytrader").empty();
+           $("#th2citytrader").empty();
+           $("#bg3citytrader").empty();
+           $("#ca3citytrader").empty();
+           $("#fs3citytrader").empty();
+           $("#ly3citytrader").empty();
+           $("#ma3citytrader").empty();
+           $("#th3citytrader").empty();
 
          ressource_typeAsked = $("#select_ressource_type").children("option:selected").val();
-         //console.log(ressource_typeAsked);
-         //
          $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked,function(d){
-             //  console.log(d);
              $("select_city").empty();
              var array2 = [];
              $.each(d, function(index, val) {
                  var oo = new Option(val["city"],val["city"]);
                  $(oo).html(val["city"]);
                  $("#select_city").append(oo);
-                 // array2.push([val["city"],d[index].sell_price_min]);
-                 //  console.log(array2[0][index]);
                  switch(val["city"]){
                      case "Bridgewatch":
                          array2.push([val["city"],d[index].sell_price_min]);
@@ -162,7 +155,7 @@ $(document).ready(function(){
                          th_citytrader = d[index].sell_price_min;
                          break;
                      default:
-                         console.log("Unable to proceed");
+                        // console.log("Unable to proceed");
                  }
                   /* DEFAULT CITY SHOULD BE CAERLEON  */
                   /* Black Market and Cross things should be ignored for materials at least */
@@ -177,7 +170,6 @@ $(document).ready(function(){
 
 
                $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(d1){
-                 //console.log(d1);
                  $("select_city").empty();
 
                  var array3 = [];
@@ -208,8 +200,6 @@ $(document).ready(function(){
                        th1_citytrader = d1[index1].sell_price_min;
                        break;
                      default:
-                       // /console.log('default');
-
                    }
                  });
                    $("#bg1citytrader").append(bg1_citytrader);
@@ -221,8 +211,6 @@ $(document).ready(function(){
                });
 
                $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d2){
-                 console.log('d2');
-                 console.log(d2);
                  $("select_city").empty();
 
                  var array3 = [];
@@ -266,9 +254,6 @@ $(document).ready(function(){
                });
 
                $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL3@3",function(d3){
-                 //console.log(ressource_typeAsked);
-                 console.log("d3");
-                 console.log(d3);
                  $("select_city").empty();
                  $("#bg3_citytrader").empty();
                  $("#ca3_citytrader").empty();
@@ -315,27 +300,20 @@ $(document).ready(function(){
                  $("#ma3citytrader").append(ma3_citytrader);
                  $("#th3citytrader").append(th3_citytrader);
                });
-
-             // $("#bg3citytrader").append(bg3citytrader);
-             // $("#ca3citytrader").append(ca3citytrader);
-             // $("#fs3citytrader").append(fs3citytrader);
-             // $("#ly3citytrader").append(ly3citytrader);
-             // $("#ma3citytrader").append(ma3citytrader);
-             // $("#th3citytrader").append(th3citytrader);
          });
      });
 
      let citySelected = "";
      $("#select_city").change(function(event) {
-         console.clear();
+        // console.clear();
          /* DEFAULT CITY SHOULD BE CAERLEON  */
          var cities = {"1" : "Bridgewatch","2" : "Caerleon","3" : "Fort Sterling","5" : "Lymhurst","6" : "Martlock","10" : "Thetford"};
          citySelected = $("#select_city").children("option:selected").val();
-         console.log(citySelected);
+        // console.log(citySelected);
          $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"?locations="+citySelected,function(dataThatMatters){
-             console.log(dataThatMatters);
-             console.log("sell min : "+dataThatMatters[0].sell_price_min);
-             console.log('apiwascalled_2');
+          //   console.log(dataThatMatters);
+          //   console.log("sell min : "+dataThatMatters[0].sell_price_min);
+          //   console.log('apiwascalled_2');
          });
      });
  });
@@ -359,32 +337,23 @@ $(document).ready(function(){
       $("#City_Traderbtn").click(function(){
          $( ".content-cityTrader" ).toggle();
       });
-
-              // TRY NOT TO USE THIS, TRY BE SMART
-     //       var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-     // var data = [];
-     // $("#select_locations").change( _ => {
-     // 		let selectId = $("#select_locations").children("option:selected").val()
-     // 		var buyerData = {
-     //        labels : data[selectId].data.timestamps.map(x => new Date(x).toLocaleDateString('fr-FR', options)),
-     //       	datasets : [
-     //         		{
-     //           		fillColor : "rgba(255,0,0,0.4)",
-     //           		strokeColor : "#ACC26D",
-     //           		pointColor : "red",
-   //            	pointStrokeColor : "#9DB86D",
-     //           		data : data[selectId].data.prices_max
-     //         		}
-     //       	]
-     //     	}
-     //     	$('#buyers').empty();
-     //     	var buyers = document.getElementById('buyers').getContext('2d');
-     //     	// draw line chart
-     //     	new Chart(buyers).Line(buyerData);
- // })
-     // $.get("https://www.albion-online-data.com/api/v1/stats/charts/T4_ORE_LEVEL2@2", function(d) {
-     //     		d.forEach((x,i) => {$("#select_locations").append("<option value=" + i + ">" + x.location + "</option>")});
-     //     		data = d;
-     //     		$("#select_locations").change();
-     //   	});
     });
+
+
+  // STARTED FROM THE BOTTOM NOW WE HERE 
+  // https://www.albion-online-data.com/api/v1/stats/charts/T4_ORE_LEVEL2@2
+  
+  function fetchData (item, enchantLevel,location,quality){
+    // location, enchantLevel et quality peuvent etre nul
+    var request = ""+item;
+    // if (enchantLevel isDefined) {
+    //   request += enchantLevel;
+    //   //break?
+    // } else {
+    //   console.log('no enchantLevel');
+    //   // break?
+    // }
+    $.get(request, function(dataprice){
+      console.log(dataprice);
+    });
+  }
