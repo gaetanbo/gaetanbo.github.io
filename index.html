@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width,height=device-height, user-scalable=yes">
     <title>Albion Tavern</title>
     <style type="text/css">
-        *{padding:0;margin:0;font-size: 3.3vmin;}
+        /* *{padding:0;margin:0;font-size: 3.3vmin;}  */
+        *{font-size: 3.3vmin;}
         .header{height: 5vh;width: 100vw;margin-bottom : 7px;}
         .wrapper{height: 5vh;width: 100vw;margin-bottom : 14px;}
         .select1{width: 31vw;}
@@ -16,10 +17,10 @@
         .content{height: 10vh;width: 80vw;font-size: 1rem;margin-bottom : 10px;}
         .red{background-color: red; }
         .green{background-color: green; }
-         th,td{border: 1px solid black;} 
+         th,td{border: 1px solid black;}
         #citytradertable{margin: 0;padding: 0;width: 100vw;margin-bottom : 14px;}
         #citytradertable thead th{font-size: 2.9vmin;}
-		.td_enchant{padding-left:25px;}
+		    .td_enchant{padding-left:25px;}
     </style>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -32,7 +33,7 @@
     <div class="header">
       <h1>AlbionTavern</h1>
     </div>
-	
+
     <div class="wrapper" style="">
             <div id="profile">
                 <select class="select1" id="select_ressource">
@@ -57,14 +58,14 @@
                     <th style="min-width: 10vw;">Enchantement</th>
                     <th>Min</th>
                     <th>Max</th>
-                    <th>Benef</th>
+                    <th>Benef par unit</th>
                 </tr>
             </thead>
             <tbody>
-                <tr><td class="td_enchant">.0</td><td id="sortedPrices0"></td><td id="sortedPricesmax0"></td><td></td></tr>
-                <tr><td class="td_enchant">.1</td><td id="sortedPrices"></td><td id="sortedPricesmax"></td><td></td></tr>
-                <tr><td class="td_enchant">.2</td><td id="sortedPrices2"></td><td id="sortedPricesmax2"></td><td></td></tr>
-                <tr><td class="td_enchant">.3</td><td id="sortedPrices3"></td><td id="sortedPricesmax3"></td><td></td></tr>
+                <tr><td class="td_enchant">.0</td><td id="sortedPrices0"></td><td id="sortedPricesmax0"></td><td id="sortedPricesmax0benef"></td></tr>
+                <tr><td class="td_enchant">.1</td><td id="sortedPrices"></td><td id="sortedPricesmax"></td><td id="sortedPricesmaxbenef"></td></tr>
+                <tr><td class="td_enchant">.2</td><td id="sortedPrices2"></td><td id="sortedPricesmax2"></td><td id="sortedPricesmax2benef"></td></tr>
+                <tr><td class="td_enchant">.3</td><td id="sortedPrices3"></td><td id="sortedPricesmax3"></td><td id="sortedPricesmax3benef"></td></tr>
             </tbody>
         </table>
     </div>

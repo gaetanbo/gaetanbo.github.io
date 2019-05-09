@@ -30,7 +30,7 @@ $(document).ready(function(){
              var array2 = [];
 
               cleanCrossCity(d);
-
+              cleanEmptyPrices(d);
               sortMinAndAppend(d,"#sortedPrices0",ressource_typeAsked);
               sortMaxAndAppend(d,"#sortedPricesmax0",ressource_typeAsked);
 
@@ -107,11 +107,11 @@ $(document).ready(function(){
               // On a pas T2 et on a pas T3
               // on peut dmander lenchant
               $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL1@1",function(priceArray){
-                  //console.log(priceArray); 
+                  //console.log(priceArray);
 
                   var tiers = ressource_typeAsked+"LEVEL1@1";
                   cleanCrossCity(priceArray);
-
+                  cleanEmptyPrices(priceArray);
                   sortMinAndAppend(priceArray,"#sortedPrices",tiers);
                   sortMaxAndAppend(priceArray,"#sortedPricesmax",tiers);
 
@@ -146,8 +146,10 @@ $(document).ready(function(){
                  $("select_city").empty();
                   var tiers = ressource_typeAsked+"LEVEL2@2";
                   cleanCrossCity(d2);
+                  cleanEmptyPrices(d2);
                   sortMinAndAppend(d2,"#sortedPrices2",tiers);
                   sortMaxAndAppend(d2,"#sortedPricesmax2",tiers);
+
                  var array3 = [];
                  $.each(d2,function(index2,val2) {
                    switch (val2["city"]) {
@@ -179,6 +181,7 @@ $(document).ready(function(){
 
                 var tiers = ressource_typeAsked+"LEVEL3@3";
                 cleanCrossCity(d3);
+                cleanEmptyPrices(d3);
                 sortMinAndAppend(d3,"#sortedPrices3",tiers);
                 sortMaxAndAppend(d3,"#sortedPricesmax3",tiers);
 
@@ -223,30 +226,6 @@ $(document).ready(function(){
      });
  });
 
-$(document).ready(function(){
-	
-    // $("#Lootbtn").click(function(){
-    //    $( ".content-loot" ).toggle();
-    // });
-    // $("#Focabtn").click(function(){
-    //    $( ".content-foca" ).toggle();
-    // });
-    // $("#Buildsbtn").click(function(){
-    //    $( ".content-builds" ).toggle();
-    // });
-    // $("#Craftsbtn").click(function(){
-    //    $( ".content-crafts" ).toggle();
-    // });
-    // $("#Marketbtn").click(function(){
-    //    $( ".content-Market" ).toggle();
-    // });
-    // $("#City_Traderbtn").click(function(){
-    //    $( ".content-cityTrader" ).toggle();
-    // });
-});
-
-
-
   // STARTED FROM THE BOTTOM NOW WE HERE
   // https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE_LEVEL2@2?location=Bridgewatch,Caerleon
   // https://albiononline2d.ams3.cdn.digitaloceanspaces.com/thumbnails/128/T5_METALBAR_LEVEL3
@@ -276,30 +255,34 @@ $(document).ready(function(){
   };
   // fetchData("T2_ORE","","");
   // fetchData("T4_ORE","_LEVEL3@3","Bridgewatch,Caerleon");
-  
 
 
 
+  let benef;
+  let benef2;
   function sortMinAndAppend(donnee,destinataire,tiers) {
     const sortdonnee = donnee.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
-    //console.log('sortdonneemin');
-    // console.log(sortdonnee);
-    // console.log('cleanedEmptyPrices');
-    // cleanEmptyPrices(sortdonnee);
-    //console.log(sortdonnee);
     $(destinataire).append(sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city);
-//    $(destinataire).append(tiers+" : min = "+sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city+" City !");
+    benef = sortdonnee[0].sell_price_min;
   };
   function sortMaxAndAppend(donnee,destinataire,tiers) {
     const sortdonnee = donnee.sort((a,b) => (a.sell_price_min < b.sell_price_min ? 1 : -1));
+    // console.log(sortdonnee[0].sell_price_min);
+    benef2 = sortdonnee[0].sell_price_min - benef;
+    destinataire2 = destinataire+"benef";
+    $(destinataire).empty();
+    $(destinataire2).empty();
     $(destinataire).append(sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city);
-    // $(destinataire).append(tiers+" : max = "+sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city+" City !");
+    $(destinataire2).append(benef2);
+    //return benef;
   };
-  
+
   function cleanEmptyPrices(array) {
     for(var i = 0; i < array.length; i++) {
       if(array[i].sell_price_min === 0 ) {
+        console.log('empty price');
         array.splice(i,1);
+        i--;
       }
     }
     return array;
@@ -307,9 +290,9 @@ $(document).ready(function(){
 
   function cleanCrossCity(array) {
     for(var i = 0; i < array.length; i++) {
-      if( array[i].city.includes("Cross") || array[i].city.includes("Steppe") || array[i].city.includes("Black") || array[i].city.includes("2000")) {
-        // console.log(i);
-        // console.log(array[i].city);
+      // if( array[i].city.includes("Cross") || array[i].city.includes("Steppe") || array[i].city.includes("Black") || array[i].city.includes("2000")) {
+      if( (typeof array[i].city == 'number') || array[i].city.includes("Cross") ||array[i].city.includes("Black") || array[i].city.includes("2000")|| array[i].city.includes("200") ) { 
+           console.log(array[i].city);
         array.splice(i,1);
         i--;
       }
@@ -318,10 +301,9 @@ $(document).ready(function(){
   };
 
 
-	
+
 	//	#itemCategory
 	//			https://gameinfo.albiononline.com/api/gameinfo/events/33204877
 	// Item Data:		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG
 	// item category : 	https://gameinfo.albiononline.com/api/gameinfo/items/_itemCategoryTree
 	// item icon : 		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data/
-  
