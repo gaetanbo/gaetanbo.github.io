@@ -1,5 +1,421 @@
 [
 {
+    "LocalizationNameVariable": "@ITEMS_T2_WOOD",
+    "LocalizationDescriptionVariable": "@ITEMS_T2_WOOD_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Birch Logs"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Birkenholz"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Troncs de bouleau"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Березовые бревна"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale Brzozy"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos de abedul"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Troncos de Bétula"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
+        }
+    ],
+    "Index": "581",
+    "UniqueName": "T2_WOOD"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T3_WOOD",
+    "LocalizationDescriptionVariable": "@ITEMS_T3_WOOD_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Chestnut Logs"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Kastanienholz"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Troncs de châtaignier"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Каштановые бревна"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale Kasztanowca"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos de castaño"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Troncos de Castanheira"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
+        }
+    ],
+    "Index": "582",
+    "UniqueName": "T3_WOOD"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T4_WOOD",
+    "LocalizationDescriptionVariable": "@@ITEMS_T4_WOOD_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Pine Logs"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Kiefernholz"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Troncs de pin"
+        }],
+    "LocalizedDescriptions": [],
+    "Index": "583",
+    "UniqueName": "T4_WOOD"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T5_WOOD",
+    "LocalizationDescriptionVariable": "@ITEMS_T5_WOOD_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Cedar Logs"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Zedernholz"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Troncs de cèdre"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна мозаичного дерева"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale Cedru"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos de cedro"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Troncos de Cedro"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
+        }
+    ],
+    "Index": "584",
+    "UniqueName": "T5_WOOD"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T6_WOOD",
+    "LocalizationDescriptionVariable": "@ITEMS_T6_WOOD_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Bloodoak Logs"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Bluteichenholz"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Troncs de chêne rouge"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна кровавого дерева"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale Dębowe"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos de roble rojo"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Troncos de Carvalho-sangue"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
+        }
+    ],
+    "Index": "585",
+    "UniqueName": "T6_WOOD"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T7_WOOD",
+    "LocalizationDescriptionVariable": "@ITEMS_T7_WOOD_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Ashenbark Logs"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Eschenrindenholz"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Troncs de frêne"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна железного дерева"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale Jesionu"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos de cortezaceniza"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Troncos de Freixo"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
+        }
+    ],
+    "Index": "586",
+    "UniqueName": "T7_WOOD"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T8_WOOD",
+    "LocalizationDescriptionVariable": "@ITEMS_T8_WOOD_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Whitewood Logs"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Weißholz"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Troncs d\u0027épicéa"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна белого дерева"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale Topoli"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos de maderablanca"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Troncos de Pau-branco"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
+        }
+    ],
+    "Index": "587",
+    "UniqueName": "T8_WOOD"
+},
+{
     "LocalizationNameVariable": "@ITEMS_T2_PLANKS",
     "LocalizationDescriptionVariable": "@ITEMS_T2_PLANKS_DESC",
     "LocalizedNames": [
@@ -460,421 +876,5 @@
     ],
     "Index": "684",
     "UniqueName": "T8_PLANKS"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T2_WOOD",
-    "LocalizationDescriptionVariable": "@ITEMS_T2_WOOD_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Birch Logs"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Birkenholz"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Troncs de bouleau"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Березовые бревна"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale Brzozy"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos de abedul"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Troncos de Bétula"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
-        }
-    ],
-    "Index": "581",
-    "UniqueName": "T2_WOOD"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T3_WOOD",
-    "LocalizationDescriptionVariable": "@ITEMS_T3_WOOD_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Chestnut Logs"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Kastanienholz"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Troncs de châtaignier"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Каштановые бревна"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale Kasztanowca"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos de castaño"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Troncos de Castanheira"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
-        }
-    ],
-    "Index": "582",
-    "UniqueName": "T3_WOOD"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T4_WOOD",
-    "LocalizationDescriptionVariable": "@@ITEMS_T4_WOOD_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Pine Logs"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Kiefernholz"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Troncs de pin"
-        }],
-    "LocalizedDescriptions": [],
-    "Index": "583",
-    "UniqueName": "T4_WOOD"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T5_WOOD",
-    "LocalizationDescriptionVariable": "@ITEMS_T5_WOOD_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Cedar Logs"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Zedernholz"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Troncs de cèdre"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна мозаичного дерева"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale Cedru"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos de cedro"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Troncos de Cedro"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
-        }
-    ],
-    "Index": "584",
-    "UniqueName": "T5_WOOD"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T6_WOOD",
-    "LocalizationDescriptionVariable": "@ITEMS_T6_WOOD_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Bloodoak Logs"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Bluteichenholz"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Troncs de chêne rouge"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна кровавого дерева"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale Dębowe"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos de roble rojo"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Troncos de Carvalho-sangue"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
-        }
-    ],
-    "Index": "585",
-    "UniqueName": "T6_WOOD"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T7_WOOD",
-    "LocalizationDescriptionVariable": "@ITEMS_T7_WOOD_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Ashenbark Logs"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Eschenrindenholz"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Troncs de frêne"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна железного дерева"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale Jesionu"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos de cortezaceniza"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Troncos de Freixo"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
-        }
-    ],
-    "Index": "586",
-    "UniqueName": "T7_WOOD"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T8_WOOD",
-    "LocalizationDescriptionVariable": "@ITEMS_T8_WOOD_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Whitewood Logs"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Weißholz"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Troncs d\u0027épicéa"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна белого дерева"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale Topoli"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos de maderablanca"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Troncos de Pau-branco"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Logs used for crafting. Can be refined into planks or transmuted into higher-level material."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Holz für handwerkliche Zwecke. Kann zu Planken weiterverarbeitet oder in ein höherwertiges Material verwandelt werden."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Bois utilisé pour la fabrication. Peut être raffiné en planches ou transmuté en matériau de plus haut niveau."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Бревна используются для крафта. Могут быть переработаны в брусья или улучшены до более высокого уровня."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Bale drewniane używane w rzemiośle. Mogą zostać przerobione na deski lub przetransmutowane w surowiec wyższego stopnia."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Troncos usados para fabricación. Pueden ser refinados en tablas o transmutados en material de un mayor nivel."
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Tronco usado para fabricação. Pode ser transaformado em tábuas ou transmutado para um material de nível superior."
-        }
-    ],
-    "Index": "587",
-    "UniqueName": "T8_WOOD"
 }
 ]

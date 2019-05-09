@@ -1,467 +1,5 @@
 [
 {
-    "LocalizationNameVariable": "@ITEMS_T2_LEATHER",
-    "LocalizationDescriptionVariable": "@ITEMS_T2_LEATHER_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Stiff Leather"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Starres Leder"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Cuir raide"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Жесткая кожа"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Sztywna Skóra"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Cuero firme"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Couro Esticado"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Advanced material used in crafting, created by refining hide."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
-        }
-    ],
-    "Index": "729",
-    "UniqueName": "T2_LEATHER"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T3_LEATHER",
-    "LocalizationDescriptionVariable": "@ITEMS_T3_LEATHER_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Thick Leather"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Dickes Leder"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Cuir épais"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Толстая кожа"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Gruba Skóra"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Cuero grueso"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Couro Grosso"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Advanced material used in crafting, created by refining hide."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
-        }
-    ],
-    "Index": "730",
-    "UniqueName": "T3_LEATHER"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T4_LEATHER",
-    "LocalizationDescriptionVariable": "@ITEMS_T4_LEATHER_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Worked Leather"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Bearbeitetes Leder"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Cuir travaillé"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Обработанная кожа"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Znoszona Skóra"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Cuero trabajado"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Couro Trabalhado"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Advanced material used in crafting, created by refining hide."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
-        }
-    ],
-    "Index": "731",
-    "UniqueName": "T4_LEATHER"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T5_LEATHER",
-    "LocalizationDescriptionVariable": "@ITEMS_T5_LEATHER_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Cured Leather"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Gegerbtes Leder"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Cuir traité"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Выделанная кожа"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Suszona Skóra"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Cuero curtido"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Couro Curtido"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Advanced material used in crafting, created by refining hide."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
-        }
-    ],
-    "Index": "732",
-    "UniqueName": "T5_LEATHER"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T6_LEATHER",
-    "LocalizationDescriptionVariable": "@ITEMS_T6_LEATHER_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Hardened Leather"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Gehärtetes Leder"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Cuir durci"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Кожа демона"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Utwardzona Skóra"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Cuero endurecido"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Couro Endurecido"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Advanced material used in crafting, created by refining hide."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
-        }
-    ],
-    "Index": "733",
-    "UniqueName": "T6_LEATHER"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T7_LEATHER",
-    "LocalizationDescriptionVariable": "@ITEMS_T7_LEATHER_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Reinforced Leather"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Verstärktes Leder"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Cuir renforcé"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Прочная кожа"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Wzmocniona Skóra"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Cuero reforzado"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Couro Reforçado"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Advanced material used in crafting, created by refining hide."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
-        }
-    ],
-    "Index": "734",
-    "UniqueName": "T7_LEATHER"
-},
-{
-    "LocalizationNameVariable": "@ITEMS_T8_LEATHER",
-    "LocalizationDescriptionVariable": "@ITEMS_T8_LEATHER_DESC",
-    "LocalizedNames": [
-        {
-            "Key": "EN-US",
-            "Value": "Fortified Leather"
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Gefestigtes Leder"
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Cuir fortifié"
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Долговечная кожа"
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zahartowana Skóra"
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Cuero fortalecido"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Couro Fortificado"
-        }
-    ],
-    "LocalizedDescriptions": [
-        {
-            "Key": "EN-US",
-            "Value": "Advanced material used in crafting, created by refining hide."
-        },
-        {
-            "Key": "DE-DE",
-            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
-        },
-        {
-            "Key": "FR-FR",
-            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
-        },
-        {
-            "Key": "RU-RU",
-            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
-        },
-        {
-            "Key": "PL-PL",
-            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
-        },
-        {
-            "Key": "ES-ES",
-            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
-        },
-        {
-            "Key": "PT-BR",
-            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
-        }
-    ],
-    "Index": "735",
-    "UniqueName": "T8_LEATHER"
-},
-{
     "LocalizationNameVariable": "@ITEMS_T2_HIDE",
     "LocalizationDescriptionVariable": "@ITEMS_T2_HIDE_DESC",
     "LocalizedNames": [
@@ -922,5 +460,467 @@
     ],
     "Index": "640",
     "UniqueName": "T8_HIDE"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T2_LEATHER",
+    "LocalizationDescriptionVariable": "@ITEMS_T2_LEATHER_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Stiff Leather"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Starres Leder"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Cuir raide"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Жесткая кожа"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Sztywna Skóra"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Cuero firme"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Couro Esticado"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining hide."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
+        }
+    ],
+    "Index": "729",
+    "UniqueName": "T2_LEATHER"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T3_LEATHER",
+    "LocalizationDescriptionVariable": "@ITEMS_T3_LEATHER_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Thick Leather"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Dickes Leder"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Cuir épais"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Толстая кожа"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Gruba Skóra"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Cuero grueso"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Couro Grosso"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining hide."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
+        }
+    ],
+    "Index": "730",
+    "UniqueName": "T3_LEATHER"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T4_LEATHER",
+    "LocalizationDescriptionVariable": "@ITEMS_T4_LEATHER_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Worked Leather"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Bearbeitetes Leder"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Cuir travaillé"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Обработанная кожа"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Znoszona Skóra"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Cuero trabajado"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Couro Trabalhado"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining hide."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
+        }
+    ],
+    "Index": "731",
+    "UniqueName": "T4_LEATHER"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T5_LEATHER",
+    "LocalizationDescriptionVariable": "@ITEMS_T5_LEATHER_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Cured Leather"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Gegerbtes Leder"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Cuir traité"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Выделанная кожа"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Suszona Skóra"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Cuero curtido"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Couro Curtido"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining hide."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
+        }
+    ],
+    "Index": "732",
+    "UniqueName": "T5_LEATHER"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T6_LEATHER",
+    "LocalizationDescriptionVariable": "@ITEMS_T6_LEATHER_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Hardened Leather"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Gehärtetes Leder"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Cuir durci"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Кожа демона"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Utwardzona Skóra"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Cuero endurecido"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Couro Endurecido"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining hide."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
+        }
+    ],
+    "Index": "733",
+    "UniqueName": "T6_LEATHER"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T7_LEATHER",
+    "LocalizationDescriptionVariable": "@ITEMS_T7_LEATHER_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Reinforced Leather"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Verstärktes Leder"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Cuir renforcé"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Прочная кожа"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Wzmocniona Skóra"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Cuero reforzado"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Couro Reforçado"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining hide."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
+        }
+    ],
+    "Index": "734",
+    "UniqueName": "T7_LEATHER"
+},
+{
+    "LocalizationNameVariable": "@ITEMS_T8_LEATHER",
+    "LocalizationDescriptionVariable": "@ITEMS_T8_LEATHER_DESC",
+    "LocalizedNames": [
+        {
+            "Key": "EN-US",
+            "Value": "Fortified Leather"
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Gefestigtes Leder"
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Cuir fortifié"
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Долговечная кожа"
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zahartowana Skóra"
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Cuero fortalecido"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Couro Fortificado"
+        }
+    ],
+    "LocalizedDescriptions": [
+        {
+            "Key": "EN-US",
+            "Value": "Advanced material used in crafting, created by refining hide."
+        },
+        {
+            "Key": "DE-DE",
+            "Value": "Fortgeschrittenes Material fürs Handwerk, hergestellt durch die Veredlung von Fell."
+        },
+        {
+            "Key": "FR-FR",
+            "Value": "Matériau avancé utilisé dans la fabrication, créé à partir de cuir raffiné."
+        },
+        {
+            "Key": "RU-RU",
+            "Value": "Продвинутый материал для крафта, создаваемый при переработке шкур."
+        },
+        {
+            "Key": "PL-PL",
+            "Value": "Zaawansowany surowiec używany w rzemiośle, powstaje z przeróbki skór zwierzęcych."
+        },
+        {
+            "Key": "ES-ES",
+            "Value": "Material avanzado utilizado en fabricación, creado al refinar pieles"
+        },
+        {
+            "Key": "PT-BR",
+            "Value": "Material avançado usado na fabricação, criado ao refinar pelego."
+        }
+    ],
+    "Index": "735",
+    "UniqueName": "T8_LEATHER"
 }
 ]
