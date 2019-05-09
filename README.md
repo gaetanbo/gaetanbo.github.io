@@ -15,11 +15,10 @@ TODO :
 
 - [ ] Work on Items Price comparaison between Black Market and Caerleon
 
- https://gameinfo.albiononline.com/api/gameinfo/events/33204877
- 
-	Item Data:		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data/
+	https://gameinfo.albiononline.com/api/gameinfo/events/33204877
+	Item Data:		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data
 	item category : 	https://gameinfo.albiononline.com/api/gameinfo/items/_itemCategoryTree
-	item icon : 		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data/
+	item icon : 		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG
 
 AlbionOnline\game\Albion-Online_Data\StreamingAssets\GameData\items.xml
 

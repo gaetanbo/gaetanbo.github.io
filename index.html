@@ -10,21 +10,15 @@
     <style type="text/css">
         *{padding:0;margin:0;font-size: 3.3vmin;}
         .header{height: 5vh;width: 100vw;margin-bottom : 7px;}
-        .wrapper{height: 5vh;width: 100vw;margin-bottom : 7px;}
+        .wrapper{height: 5vh;width: 100vw;margin-bottom : 14px;}
         .select1{width: 31vw;}
         .select2{width: 15vw;}
         .content{height: 10vh;width: 80vw;font-size: 1rem;margin-bottom : 10px;}
         .red{background-color: red; }
         .green{background-color: green; }
-          /* table td,th{padding: 8px;} */
-          table,th,td{border: 1px solid black;}
-          tbody tr{border: 1px solid black;}
-        #citytradertable{
-          margin: 0;
-          padding: 0;
-          width: 100vw;
-        }
-        #citytradertable thead th{font-size: 2.3vmin;}
+         th,td{border: 1px solid black;} 
+        #citytradertable{margin: 0;padding: 0;width: 100vw;margin-bottom : 14px;}
+        #citytradertable thead th{font-size: 2.9vmin;}
 		.td_enchant{padding-left:25px;}
     </style>
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
@@ -39,7 +33,7 @@
       <h1>AlbionTavern</h1>
     </div>
 	
-    <div class="wrapper">
+    <div class="wrapper" style="">
             <div id="profile">
                 <select class="select1" id="select_ressource">
                     <option label="cuir" value="cuir">Cuir</option>
@@ -74,6 +68,12 @@
             </tbody>
         </table>
     </div>
+	
+	<div>
+		<p>Armure</p>
+		<p id="itemCategory"></p>
+		<select class="select1"></select>
+	</div>
     <script src="main.js"></script>
     </body>
 </html>

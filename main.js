@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
      $("#select_ressource").change(function(){
          let ressourceAsked = $("#select_ressource").children("option:selected").val();
@@ -223,6 +224,7 @@ $(document).ready(function(){
  });
 
 $(document).ready(function(){
+	
     // $("#Lootbtn").click(function(){
     //    $( ".content-loot" ).toggle();
     // });
@@ -314,3 +316,12 @@ $(document).ready(function(){
     }
     return array;
   };
+
+
+	
+	//	#itemCategory
+	//			https://gameinfo.albiononline.com/api/gameinfo/events/33204877
+	// Item Data:		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG
+	// item category : 	https://gameinfo.albiononline.com/api/gameinfo/items/_itemCategoryTree
+	// item icon : 		https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data/
+  
