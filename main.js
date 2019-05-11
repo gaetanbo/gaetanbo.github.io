@@ -1,5 +1,6 @@
 
 $(document).ready(function(){
+    blackbiz();
      $("#select_ressource").change(function(){
          let ressourceAsked = $("#select_ressource").children("option:selected").val();
          let jsonDoc = "ressources/"+ressourceAsked+".json";
@@ -299,7 +300,13 @@ $(document).ready(function(){
     return array;
   };
 
-
+  //#black_biz_result
+  // https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG
+  function blackbiz () {
+    $.get("https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG",function(d3){
+      console.log(d3);
+    });
+  }
 
 	//	#itemCategory
 	//			https://gameinfo.albiononline.com/api/gameinfo/events/33204877
