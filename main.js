@@ -300,10 +300,11 @@ $(document).ready(function(){
     return array;
   };
 
+
   //#black_biz_result
   // https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG
   function blackbiz () {
-    $.get("https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG",function(d3){
+    $.get("https://cors.io/?https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data",function(d3){
       console.log(d3);
     });
   }
