@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-    blackbiz();
+//    blackbiz();
      $("#select_ressource").change(function(){
          let ressourceAsked = $("#select_ressource").children("option:selected").val();
          let jsonDoc = "ressources/"+ressourceAsked+".json";
@@ -302,10 +302,12 @@ $(document).ready(function(){
 
 
   //#black_biz_result
+  //   https://cors.io/?
   // https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG
   function blackbiz () {
     $.get("https://cors.io/?https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data",function(d3){
       console.log(d3);
+      //console.log(d3.localizedDescriptions["FR-FR"]); 
     });
   }
 
