@@ -9,6 +9,7 @@ $(document).ready(function(){
 		//$("#select_kind_type").empty();
 		$.getJSON(jsonDoc2,function(data) {
 			console.log('get');
+			console.log(data);
 				$.each(data, function(key,val) {
 						var o = new Option(val.UniqueName,val.UniqueName);
 						console.log(o);
