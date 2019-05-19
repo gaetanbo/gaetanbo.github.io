@@ -22,31 +22,31 @@ $(document).ready(function(){
 
 
 });
-
-
-	let price_min;
-	let dataprice;
-	function fetchData (item, enchantLevel = 0,location = 0,quality = 0){
-		// location, enchantLevel et quality peuvent etre nul
-		var request = "https://www.albion-online-data.com/api/v2/stats/prices/"+item;
-			if (enchantLevel) {
-				request += enchantLevel;
-			} else {
-			 // console.log('no enchantLevelAsked');
-			}
-			if (location) {
-				request +="?locations=" +location;
-			} else {
-				// console.log('no locationAsked');
-			}
-			$.get(request, function(dataprice){
-				// price_min = dataprice[0].sell_price_min;
-				//        This only return the first city in the array, rarely the same city
-				// console.log("price min for "+item+"= "+price_min);
-				// console.log(dataprice);
-				return dataprice;
-			});
-	};
+	//
+	//
+	// let price_min;
+	// let dataprice;
+	// function fetchData (item, enchantLevel = 0,location = 0,quality = 0){
+	// 	// location, enchantLevel et quality peuvent etre nul
+	// 	var request = "https://www.albion-online-data.com/api/v2/stats/prices/"+item;
+	// 		if (enchantLevel) {
+	// 			request += enchantLevel;
+	// 		} else {
+	// 		 // console.log('no enchantLevelAsked');
+	// 		}
+	// 		if (location) {
+	// 			request +="?locations=" +location;
+	// 		} else {
+	// 			// console.log('no locationAsked');
+	// 		}
+	// 		$.get(request, function(dataprice){
+	// 			// price_min = dataprice[0].sell_price_min;
+	// 			//        This only return the first city in the array, rarely the same city
+	// 			// console.log("price min for "+item+"= "+price_min);
+	// 			// console.log(dataprice);
+	// 			return dataprice;
+	// 		});
+	// };
 
 	// IF PRICE ARE MAX BENEF , ADD CLASSES  to rd :
 	// 	'table-danger'		RED
