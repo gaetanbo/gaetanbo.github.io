@@ -10,58 +10,37 @@ $(document).ready(function(){
             $.getJSON(jsonDoc2,function(data) {
                 console.log('getted !');
                 $.each(data, function(key,val) {
-//                    console.log(val);
                     if ( val.UniqueName.indexOf("T2") >= 0 || val.UniqueName.indexOf("T1") >= 0 ) {
-//                        console.log("T2");
                     } else {
                        if (val.UniqueName.indexOf("T3") >= 0){
-//                            console.log("T3");
                        } else {
                             if(val.UniqueName.indexOf("@") >= 0){
-                               
-                               } else {
-                                   if(val.UniqueName.indexOf("ARMOR") >= 0) {
-                                       // find a way to access fr name
-                                       //console.log(val.LocalizedNames[2][1]);
-                                        var optionselectbbiz = new Option(val.UniqueName,val.UniqueName);  
-                                        $(optionselectbbiz).html(val.UniqueName);
+                            } else {
+                               		// console.log(kindTypeAsked);
+                               		// console.log(val.UniqueName);
+                               		if (val.UniqueName.indexOf(kindTypeAsked) >= 0 ) {
+	                                  	var nom_fr = val.LocalizedNames[2].Value;
+                                        var optionselectbbiz = new Option(nom_fr,val.UniqueName);  
+                                        $(optionselectbbiz).html(nom_fr);
                                         $("#select_equipment").append(optionselectbbiz);
-                                   } else {
-        //                               console.log('toutestperdu');
-                                   }
-                               }
+                               		} else {
+                               		}                            
+                             }
                        }
                     }
                 });
             });
        });
     });
+
+
+
+    $.("#select_equipment").change(function(){
+
+    });
+
 });
-	//
-	//
-	// let price_min;
-	// let dataprice;
-	// function fetchData (item, enchantLevel = 0,location = 0,quality = 0){
-	// 	// location, enchantLevel et quality peuvent etre nul
-	// 	var request = "https://www.albion-online-data.com/api/v2/stats/prices/"+item;
-	// 		if (enchantLevel) {
-	// 			request += enchantLevel;
-	// 		} else {
-	// 		 // console.log('no enchantLevelAsked');
-	// 		}
-	// 		if (location) {
-	// 			request +="?locations=" +location;
-	// 		} else {
-	// 			// console.log('no locationAsked');
-	// 		}
-	// 		$.get(request, function(dataprice){
-	// 			// price_min = dataprice[0].sell_price_min;
-	// 			//        This only return the first city in the array, rarely the same city
-	// 			// console.log("price min for "+item+"= "+price_min);
-	// 			// console.log(dataprice);
-	// 			return dataprice;
-	// 		});
-	// };
+
 
 	// IF PRICE ARE MAX BENEF , ADD CLASSES  to rd :
 	// 	'table-danger'		RED
