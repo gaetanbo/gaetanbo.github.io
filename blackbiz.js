@@ -6,7 +6,7 @@ $(document).ready(function(){
 		console.log(kindAsked);
 		let jsonDoc2 = "ressources/"+kindAsked+".json";
 		console.log(jsonDoc2);
-		$("#select_kind_type").empty();
+		//$("#select_kind_type").empty();
 		$.getJSON(jsonDoc2,function(data) {
 			console.log('get');
 				$.each(data, function(key,val) {
