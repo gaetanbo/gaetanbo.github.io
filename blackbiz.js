@@ -3,11 +3,15 @@ $(document).ready(function(){
 
 	$("#select_kind").change(function(){
 		let kindAsked = $("#select_kind").children("option:selected").val();
+		console.log(kindAsked);
 		let jsonDoc2 = "ressources/"+kindAsked+".json";
+		console.log(jsonDoc2);
 		$("#select_kind_type").empty();
 		$.getJSON(jsonDoc2,function(data) {
+			console.log('get');
 				$.each(data, function(key,val) {
 						var o = new Option(val.UniqueName,val.UniqueName);
+						console.log(o);
 						$(o).html(val.UniqueName);
 						$("#select_kind_type").append(o);
 				});
