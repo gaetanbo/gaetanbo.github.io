@@ -2,12 +2,30 @@
 $(document).ready(function(){
 
 	$("#select_kind").change(function(){
-		let kindAsked = $("#select_kind").children("option:selected").val();
-		let jsonDoc2 = "ressources/"+kindAsked+".json";
-        $("#select_kind_type").empty();
-        $.getJSON(jsonDoc2,function(data) {
-            console.log('getted !');
-        });
+        $("#select_equipment").empty();
+        $("#select_kind_type").change(function(){ 
+		              let kindAsked = $("#select_kind").children("option:selected").val();
+		              let kindTypeAsked = $("#select_kind_type").children("option:selected").val();
+                        console.log(kindTypeAsked);
+		              let jsonDoc2 = "ressources/"+kindAsked+".json";
+                    $.getJSON(jsonDoc2,function(data) {
+                    console.log('getted !');
+                    $.each(data, function(key,val) {
+                        if( val.UniqueName.includes("T1") || val.UniqueName.includes("T2")) {
+                        } else {
+                                var optionselectbbiz = new Option(val.UniqueName,val.UniqueName);
+                                $(optionselectbbiz).html(val.UniqueName);
+                                $("#select_equipment").append(optionselectbbiz);
+                            // add to select 
+        /*                    if ( val.UniqueName.includes("@")) {
+                                //    
+                                data.splice(key,1);
+                            } else {
+                            }*/
+                        }
+                    });
+                });
+       });
     });
 });
 	//
