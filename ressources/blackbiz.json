@@ -1,0 +1,112 @@
+[
+	{
+		"Type" : "armor",
+		"underType" :
+		{
+			"leather_armor" : "LEATHER ARMOR",
+			"cloth_armor" : "CLOTH ARMOR",
+			"plate_armor" : "PLATE ARMOR"
+		}
+	},
+	{
+		"Type" : "helmet",
+		"underType" :
+		{
+			"leather_helmet" : "LEATHER helmet",
+			"cloth_helmet" : "CLOTH helmet",
+			"plate_helmet" : "PLATE helmet"
+		}
+	},
+	{
+		"Type" : "shoes",
+		"underType" :
+		{
+			"leather_shoes" : "LEATHER shoes",
+			"cloth_shoes" : "CLOTH shoes",
+			"plate_shoes" : "PLATE shoes"
+		}
+	},
+	{
+		"Type" : "weapon",
+		"underType" :
+		{
+			"hunter_weapon" : "HUNTER WEAPON",
+			"mage_weapon" : "MAGE WEAPON",
+			"tank_weapon" : "TANK WEAPON"
+		}
+	},
+	{
+		"Type" : "secondaryweapon",
+		"underType" :
+		{
+			"hunter_secondaryweapon" : "TORCHS",
+			"mage_secondaryweapon" : "BOOKS",
+			"tank_secondaryweapon" : "SHIELDS"
+		}
+	},
+	{
+		"Type" : "tools",
+		"underType" :
+		{
+			"leather_tool" : "LEATHER TOOL",
+			"cloth_tool" : "CLOTH TOOL",
+			"wood_tool" : "WOOD TOOL",
+			"stone_tool" : "STONE TOOL",
+			"ore_tool" : "ORE TOOL",
+			"fish_tool" : "FISH TOOL"
+		}
+	},
+	{
+		"Type" : "bag",
+		"underType" :
+		{
+			"normal" : "normal",
+			"special" : "special"
+		}
+	},
+	{
+		"Type" : "cape",
+		"underType" :
+		{
+			"normal_cape" : "Normal Cape",
+			"special_cape" : "Special Cape",
+			"gatherer_cape" : "Gatherer Cape"
+		}
+	},
+	{
+		"Type" : "leather_armor",
+		"underType" :
+		{
+			"1" : "leather_armor_1",
+			"2" : "leather_armor_2",
+			"3" : "leather_armor_3",
+			"4" : "leather_armor_4",
+			"5" : "leather_armor_5",
+			"6" : "leather_armor_6"
+		}
+	},
+	{
+		"Type" : "cloth_armor",
+		"underType" :
+		{
+			"1" : "cloth_armor_1",
+			"2" : "cloth_armor_2",
+			"3" : "cloth_armor_3",
+			"4" : "cloth_armor_4",
+			"5" : "cloth_armor_5",
+			"6" : "cloth_armor_6"
+		}
+	},
+	{
+		"Type" : "plate_armor",
+		"underType" :
+		{
+			"1" : "plate_armor_1",
+			"2" : "plate_armor_2",
+			"3" : "plate_armor_3",
+			"4" : "plate_armor_4",
+			"5" : "plate_armor_5",
+			"6" : "plate_armor_6"
+		}
+	}
+]

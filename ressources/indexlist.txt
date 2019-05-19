@@ -1,0 +1,10 @@
+index : 
+  - 5872 : end of weapons
+  5873 - 5929 : furnitureitems trophy
+  5930 - 5935 : Unique
+  5936 - 5985: Armoiries de Capes
+
+
+
+
+214
