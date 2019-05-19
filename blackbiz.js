@@ -24,6 +24,7 @@ $(document).ready(function(){
                                         $(optionselectbbiz).html(nom_fr);
                                         $("#select_equipment").append(optionselectbbiz);
                                		} else {
+
                                		}                            
                              }
                        }
@@ -35,9 +36,9 @@ $(document).ready(function(){
 
 
 
-    $.("#select_equipment").change(function(){
+     $("#select_equipment").change(function(){
 
-    });
+     });
 
 });
 
