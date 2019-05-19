@@ -3,11 +3,10 @@ $(document).ready(function(){
 
 	$("#select_kind").change(function(){
 		let kindAsked = $("#select_kind").children("option:selected").val();
-		let jsonDoc = "ressources/"+ressourceAsked+".json";
+		let jsonDoc2 = "ressources/"+kindAsked+".json";
 		$("#select_kind_type").empty();
-		$.getJSON(jsonDoc,function(data) {
+		$.getJSON(jsonDoc2,function(data) {
 				$.each(data, function(key,val) {
-						var tierRessourceAsked = val.UniqueName;
 						var o = new Option(val.UniqueName,val.UniqueName);
 						$(o).html(val.UniqueName);
 						$("#select_kind_type").append(o);
