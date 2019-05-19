@@ -2,29 +2,36 @@
 $(document).ready(function(){
 
 	$("#select_kind").change(function(){
-        $("#select_equipment").empty();
         $("#select_kind_type").change(function(){ 
+            $("#select_equipment").empty();
             let kindAsked = $("#select_kind").children("option:selected").val();
 		    let kindTypeAsked = $("#select_kind_type").children("option:selected").val();
 		    let jsonDoc2 = "ressources/"+kindAsked+".json";
             $.getJSON(jsonDoc2,function(data) {
                 console.log('getted !');
                 $.each(data, function(key,val) {
-                        console.log(val[1]);
-                    // val.UniqueName.indexOf(kindTypeAsked))>=0
-                    // Cette eval est ne fonctionnne pas
-                        if (
-                            (val.UniqueName.indexOf(kindTypeAsked))>=0 ||
-                            (val.UniqueName.indexOf("T2"))>=0 ||
-                            (val.UniqueName.indexOf("T3"))>=0 ||
-                            (val.UniqueName.indexOf("@"))>=0 ) {
-//                            console.log(val.UniqueName);
-                        } else {
-                            var optionselectbbiz = new Option(val.UniqueName,val.UniqueName);  
-                            $(optionselectbbiz).html(val.UniqueName);
-                            $("#select_equipment").append(optionselectbbiz);
-
-                        }                    
+//                    console.log(val);
+                    if ( val.UniqueName.indexOf("T2") >= 0 || val.UniqueName.indexOf("T1") >= 0 ) {
+//                        console.log("T2");
+                    } else {
+                       if (val.UniqueName.indexOf("T3") >= 0){
+//                            console.log("T3");
+                       } else {
+                            if(val.UniqueName.indexOf("@") >= 0){
+                               
+                               } else {
+                                   if(val.UniqueName.indexOf("ARMOR") >= 0) {
+                                       // find a way to access fr name
+                                       //console.log(val.LocalizedNames[2][1]);
+                                        var optionselectbbiz = new Option(val.UniqueName,val.UniqueName);  
+                                        $(optionselectbbiz).html(val.UniqueName);
+                                        $("#select_equipment").append(optionselectbbiz);
+                                   } else {
+        //                               console.log('toutestperdu');
+                                   }
+                               }
+                       }
+                    }
                 });
             });
        });
