@@ -212,7 +212,7 @@ $(document).ready(function(){
                  });
                });
           } else {
-            console.log('else');
+           // console.log('else');
           }
          });
      });
@@ -250,7 +250,7 @@ $(document).ready(function(){
         // price_min = dataprice[0].sell_price_min;
         //        This only return the first city in the array, rarely the same city
         // console.log("price min for "+item+"= "+price_min);
-        console.log(dataprice);
+        // console.log(dataprice);
         return dataprice;
       });
   };
@@ -281,7 +281,7 @@ $(document).ready(function(){
   function cleanEmptyPrices(array) {
     for(var i = 0; i < array.length; i++) {
       if(array[i].sell_price_min === 0 ) {
-        console.log('empty price');
+        //console.log('empty price');
         array.splice(i,1);
         i--;
       }
@@ -306,7 +306,7 @@ $(document).ready(function(){
   // https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG
   function blackbiz () {
     $.get("https://cors.io/?https://gameinfo.albiononline.com/api/gameinfo/items/T2_BAG/data",function(d3){
-      console.log(d3);
+      //console.log(d3);
       //console.log(d3.localizedDescriptions["FR-FR"]); 
     });
   }
