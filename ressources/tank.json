@@ -1,4 +1,5 @@
-{
+[
+    {
     "LocalizationNameVariable": "@ITEMS_T2_HEAD_PLATE_SET1",
     "LocalizationDescriptionVariable": "@ITEMS_T2_HEAD_PLATE_SET1_DESC",
     "LocalizedNames": [
@@ -24154,3 +24155,4 @@
     "Index": "2525",
     "UniqueName": "T8_SHOES_PLATE_KEEPER@3"
 }
+]

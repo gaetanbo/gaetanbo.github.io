@@ -1,4 +1,5 @@
-{
+[
+    {
     "LocalizationNameVariable": "@ITEMS_T2_HEAD_CLOTH_SET1",
     "LocalizationDescriptionVariable": "@ITEMS_T2_HEAD_CLOTH_SET1_DESC",
     "LocalizedNames": [
@@ -24154,3 +24155,4 @@
     "Index": "3260",
     "UniqueName": "T8_SHOES_CLOTH_MORGANA@3"
 }
+]

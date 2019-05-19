@@ -1,4 +1,5 @@
-{
+[
+    {
     "LocalizationNameVariable": "@ITEMS_T1_HEAD_LEATHER_SET1",
     "LocalizationDescriptionVariable": "@ITEMS_T1_HEAD_LEATHER_SET1_DESC",
     "LocalizedNames": [
@@ -24352,3 +24353,4 @@
     "Index": "2894",
     "UniqueName": "T8_SHOES_LEATHER_UNDEAD@3"
 }
+]
