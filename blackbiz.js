@@ -12,14 +12,7 @@ $(document).ready(function(){
 						$("#select_kind_type").append(o);
 				});
 		});
-		blackbiz();
 	});
-
- 	function blackbiz () {
-		console.log('bbiz !');
-	};
-
-
 });
 	//
 	//
