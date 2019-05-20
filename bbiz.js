@@ -55,7 +55,7 @@ $(document).ready(function(){
 	    				q_level.forEach(q=> {
 	    					if(BM_prices[q] && Ca_prices[q] && diffs[q] && diffs[q] > profitWanted) {
 	    						//style=" + (diffs[q]>0?'color:green':'color:red') + ">
-		    					$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "></img>"+itemLocalName+"</td><td> Enchant : "+enchant +"<br>"+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
+		    					$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "></img>"+itemLocalName+"</td><td> Enchant : "+enchant +"<br> Qualité : "+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
 		    				}
 		    			});
 	    			}
@@ -63,5 +63,5 @@ $(document).ready(function(){
 	    	});
 	    });
 	}
-
 });
+jQuery.ajaxPrefilter(function(options) { if (options.crossDomain && jQuery.support.cors) { options.url = 'https://cors-anywhere.herokuapp.com/' + options.url; } });
