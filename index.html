@@ -120,7 +120,45 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
         <div class="card-body">
-            <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <button id="go" type="button" class=" btn btn-info">GO !!!!</button>      
+              </div>
+              <div id="black_biz_result" class="col-5">
+                  <select id="select_kind">
+                      <option label="hunter" value="hunter">Hunter</option>
+                      <option label="mage" value="mage">Mage</option>
+                      <option label="tank" value="tank">Tank</option>
+                  </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <table class="table table-sm table-dark table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Item</th>
+                      <th scope="col">Quality</th>
+                      <th scope="col">BM Price</th>
+                      <th scope="col">CA Price</th>
+                      <th scope="col">Benef</th>
+                    </tr>
+                  </thead>
+                  <tbody id="resultblackbiz">
+                    <tr>
+                      <th scope="row">Img obj + Name</th>
+                      <td>Quality</td>
+                      <td>15.200$</td>
+                      <td>14.200$</td>
+                      <td>1.000$</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col-4">
                       <button id="go" type="button" class=" btn btn-info">GO !!!!</button>      
@@ -157,10 +195,9 @@
                         <tbody id="resultblackbiz">
                         </tbody>
                       </table>
-                      <!-- <select id="select_equipment"></select> -->
                     </div>  
                 </div>
-            </div>
+            </div> -->
       </div>
     </div>
   </div>
@@ -194,6 +231,7 @@
 </div>
 
     <script src="main.js"></script>
-    <script src="blackbiz.js"></script>
+    <!--<script src="blackbiz.js"></script>-->
+	<script src="bbiz.js"></script>
     </body>
 </html>
