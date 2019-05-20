@@ -1,17 +1,43 @@
 		
 $(document).ready(function(){
+
 	$("#select_kind").change(function(){ 
+		fillTable();
+	});
+	$("#profit_wanted").change(function(){ 
+		fillTable();
+	});
+
+	function fillTable() {
 		$("#resultblackbiz").empty();
 		let kindAsked = $("#select_kind").children("option:selected").val();
 		let jsonDoc2 = "ressources/"+kindAsked+".json";
 	    $.getJSON(jsonDoc2,function(data) { 
-	    	//console.log(data);
 	    	$.each(data, function(key,val) {
 	    		var item = val.UniqueName;
 	    		var itemLocalName = val.LocalizedNames[2].Value;
-	    		console.log(itemLocalName);
+	    		if ( item.includes("@1") ) {
+	    			//item is .1
+	    			// console.log(".1");
+	    			var enchant = ".1";
+	    		} else if ( item.includes("@2") ) {
+	    			//item is .2
+	    			// console.log(".2");
+	    			var enchant = ".2";
+	    		} else if ( item.includes("@3") ) {
+	    			//item is .3
+	    			// console.log(".3");
+	    			var enchant = ".3";
+	    		} else {
+	    			// item is .0
+	    			// console.log("flat");
+	    			var enchant = "flat";
+	    		}
+	    		var profitWanted = $("#profit_wanted").children("option:selected").val();
+	    			var q_level = [1,2,3,4,5];
+	    			var q_text = ["None", "Normale","Acceptable","Admirable","Formidable","Exceptionnelle"];
+	    			let Ca_prices = [];let BM_prices = [];let diffs = []; 
 	    		var request = "https://www.albion-online-data.com/api/v2/stats/prices/"+item+"?locations=Caerleon,BlackMarket";
-	    		var q_level = [1,2,3,4,5];let Ca_prices = [];let BM_prices = [];let diffs = [];
 	    		$.get(request,function(apiPrice) {
 	    			apiPrice.forEach( x=> {
 	    				switch(x.city){
@@ -27,21 +53,15 @@ $(document).ready(function(){
 	    			if(diffs.some(diff => diff > 0)){
 	    				// APPEND TO TABLE
 	    				q_level.forEach(q=> {
-	    					if(BM_prices[q] && Ca_prices[q] && diffs[q] && diffs[q] > 0) {
-		    					$("#resultblackbiz").append("<tr><td>"+itemLocalName+"</td><td></td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td></tr>");
+	    					if(BM_prices[q] && Ca_prices[q] && diffs[q] && diffs[q] > profitWanted) {
+	    						//style=" + (diffs[q]>0?'color:green':'color:red') + ">
+		    					$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "></img>"+itemLocalName+"</td><td> Enchant : "+enchant +"<br>"+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
 		    				}
 		    			});
 	    			}
 	    		});
-
-//	    		$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "></img></td><td></td><td></td><td></td><td></td></tr>");
-//	    		<img width=\"64\" height=\"64\" src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "></img>	
-	    		// 	if (val.UniqueName.indexOf(kindAsked) >= 0) {
-	    		// 		console.log('cest oui');
-	    		// 	} else {
-	    		// 		console.log('cest non');
-	    		// 	}
 	    	});
 	    });
-	});
+	}
+
 });
