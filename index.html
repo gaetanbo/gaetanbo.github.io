@@ -206,12 +206,58 @@
   <div class="card">
     <div class="card-header" id="headingThree">
       <!-- <h5 class="mb-0"> -->
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
-          WIP
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          Player Infos
         </button>
       <!-- </h5> -->
     </div>
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <input type="text" name="input_player" id="input_player"/>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="col-12">
+              <p id="player_results"></p>
+              <table class="table table-dark table-bordered table-striped">
+                <thead>
+                  <tr><td>Crafting Fame</td><td>Gathering Fame</td><td>PVE</td><td>DeathFame</td><td>KDA</td></tr>
+                </thead>
+                <tbody  id="tbody_player_results"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <!-- <h5 class="mb-0"> -->
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Guild Infos
+        </button>
+      <!-- </h5> -->
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <!-- <h5 class="mb-0"> -->
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          WIP
+        </button>
+      <!-- </h5> -->
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
       <div class="card-body">
 
 
@@ -234,5 +280,6 @@
     <script src="main.js"></script>
     <!--<script src="blackbiz.js"></script>-->
 	<script src="bbiz.js"></script>
+  <script src="players.js"></script>
     </body>
 </html>
