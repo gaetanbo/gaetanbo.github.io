@@ -2,7 +2,11 @@ $(document).ready(function(){
 
 	$(document).on('keypress',function(e) {
 	if(e.which == 13) {
-		$("#player_results").empty();
+        var player = $('#input_player').val();
+        var guild = $('#input_guild').val();
+        if (guild === undefined) {
+        	console.log("on cherche un joueur ");
+	        $("#player_results").empty();
 	        var player = $('#input_player').val();
 			$.get("https://gameinfo.albiononline.com/api/gameinfo/search?q="+player,function(data)  {
 				if (data.players === undefined || data.players.length == 0) {
@@ -30,12 +34,24 @@ $(document).ready(function(){
 						if(x.GuildName === null || x.GuildName === "") {
 							$("#player_results").append("<p><strong>"+x.Name+"</strong> riding guildLess </p>");
 						}else {
-							$("#player_results").append("<p><strong>"+x.Name+"</strong> from "+x.GuildName+"</p>");						}
+							$("#player_results").append("<p><strong>"+x.Name+"</strong> from "+x.GuildName+"</p>");						
+						}
 					});
 				}
 			});
+        } else {
+        	console.log("on cherche une guilde ");
+        }
+
 	}
+
+
 	});
+
+
+
+
+
 
 	function addCommas(nStr)
 	{

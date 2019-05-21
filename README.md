@@ -15,6 +15,7 @@ TODO :
 
 - [ ] function cleanCrossCity doesnt properly sort out all cities coming !!!!
 - [ ] Display prices using $12,450 instead of 12450 !!!
+- [ ] Pour ta partie "Le Tradeur marathonien" tu devrais aussier rajouter une unité du style ( profit / tile) avec le bénéf a faire divisé par le nombre de tuile a passer pour aller entre les villes
 
 		// https://forum.albiononline.com/index.php/Thread/51253-Albion-Static-Data/?postID=518548#post518548
 
@@ -28,5 +29,3 @@ TODO :
 -	https://gameinfo.albiononline.com/api/gameinfo/guilds/ + ID 
 -	https://gameinfo.albiononline.com/api/gameinfo/guilds/ + ID + /members
 
-
-- Pour ta partie "Le Tradeur marathonien" tu devrais aussier rajouter une unité du style ( profit / tile) avec le bénéf a faire divisé par le nombre de tuile a passer pour aller entre les villes
