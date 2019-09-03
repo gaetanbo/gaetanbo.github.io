@@ -6,13 +6,11 @@
 html {
   font-size: 1rem;
 }
-
 @include media-breakpoint-up(sm) {
   html {
     font-size: 1.2rem;
   }
 }
-
 .enchant0{background-color: whitesmoke}
 .enchant1{background-color: olivedrab}
 .enchant2{background-color: aqua}
