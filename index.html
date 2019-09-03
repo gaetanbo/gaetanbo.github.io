@@ -1,164 +1,217 @@
 <!DOCTYPE HTML>
 <html lang="fr">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=yes">
-    <title>Albion Tavern</title>
-    <link rel="icon" type="image.jpg" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9178573.jpg">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-    <style type="text/css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,height=device-height, user-scalable=yes">
+  <title>Albion Tavern</title>
+  <link rel="icon" type="image.jpg" href="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX9178573.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <style type="text/css">
 
-      .col-3{background-color: aliceblue;}
+    .col-3{background-color: aliceblue;}
 
+    html {
+      font-size: 1rem;
+    }
+    @include media-breakpoint-up(sm) {
       html {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
-      @include media-breakpoint-up(sm) {
-        html {
-          font-size: 1.2rem;
-        }
-      }
+    }
 
-    </style>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-    <div class="jumbotron">
-      <h1 class="display-4">Albion Tavern</h1>
-      <p>This is a simple project hosted on Github using <a href="https://www.albion-online-data.com/">albion-online-data.com</a> Api</p>
-      <!--<p id="gogogo">LETS GO </p>-->
-    </div>
-    <!-- <ul class="nav">
-      <li class="nav-item">
-        <p>
-          <a class="nav-link active btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-            Le Tradeur marathonien
-          </a>
-        </p>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-    </ul> -->
-    <div class="container collapse" id="collapseExample">
+    /*regear css to be moved*/
+    /*.regear-container{width: auto;height: auto;}*/
+    .regear-sub-container{border: 1px black solid;}
+    .class1{}
+    .class2{}
+    .class3{}
+    /*.undertext{color: grey;z-index: -1;padding-left:40px;padding-top: 10px}*/
+    /*regear css to be moved*/
+  </style>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4">Albion Tavern</h1>
+    <p>This is a simple project hosted on Github using <a href="https://www.albion-online-data.com/">albion-online-data.com</a> Api</p>
+  </div>
 
-    </div>
-
-    <div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Le Tradeur marathonien
-        </button>
-      </h5>
-    </div>
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <select class="form-control" id="select_ressource">
-                  <option label="cuir" value="cuir">Cuir</option>
-                  <option label="tissu" value="tissu">Tissu</option>
-                  <option label="bois" value="bois">Bois</option>
-                  <option label="minerai" value="minerai">Minerai</option>
-                  <option label="pierre" value="pierre">Pierre</option>
-              </select>
-            </div>
-            <div class="col-6">
-              <select class="form-control" id="select_ressource_type">
-              </select>
-            </div>
+    <div class="container">
+      <p>Prices shown are obtain via <a href="https://www.albion-online-data.com/">albion-online-data</a> and therefore could be out of date</p>
+      <div id="regear-container" class="container" style="">
+        <div class="row">
+          <div class="regear-sub-container class1">
+            <p class="undertext">Bag</p>
+            <!-- https://gameinfo.albiononline.com/api/gameinfo/items/T6_SHOES_PLATE_UNDEAD@3.png?count=1&quality=3 -->
+            <!-- <img class="img-fluid" src="https://albiononline2d.ams3.cdn.digitaloceanspaces.com/thumbnails/128/T8_BAG"> -->
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_BAG@3.png" style="width: 64px;">
+          </div>
+          <div class="regear-sub-container class1">
+            <p class="undertext">Head</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_HEAD_LEATHER_HELL@3.png" style="width: 64px;">
+          </div>
+          <div class="regear-sub-container class1">
+            <p class="undertext">Cape</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_CAPE@3.png" style="width: 64px;">
           </div>
         </div>
-        <hr class="my-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-3 border"><p>Enchant</p></div>
-            <div class="col-3 border"><p>Le - cher</p></div>
-            <div class="col-3 border"><p>Le + cher</p></div>
-            <div class="col-3 border"><p>Benef / unit</p></div>
+        <div class="row">
+          <div class="regear-sub-container class2">
+            <p class="undertext">MainWeapon</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_2H_WARBOW@3.png" style="width: 64px;">
           </div>
-          <div class="row">
-            <div class="col-3 border"> 0 </div>
-            <div class="col-3 border" id="sortedPrices0"></div>
-            <div class="col-3 border" id="sortedPricesmax0"></div>
-            <div class="col-3 border" id="sortedPricesmax0benef"></div>
+          <div class="regear-sub-container class2">
+            <p class="undertext">Torso</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_ARMOR_LEATHER_SET1@3.png" style="width: 64px;">
           </div>
-          <div class="row">
-            <div class="col-3 border"> .1 </div>
-            <div class="col-3 border" id="sortedPrices"></div>
-            <div class="col-3 border" id="sortedPricesmax"></div>
-            <div class="col-3 border" id="sortedPricesmaxbenef"></div>
+          <div class="regear-sub-container class2">
+            <p class="undertext">Offhand</p>
+              <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_OFF_JESTERCANE_HELL@3.png" style="width: 64px;">
           </div>
-          <div class="row">
-            <div class="col-3 border"> .2 </div>
-            <div class="col-3 border" id="sortedPrices2"></div>
-            <div class="col-3 border" id="sortedPricesmax2"></div>
-            <div class="col-3 border" id="sortedPricesmax2benef"></div>
+        </div>
+        <div class="row">         
+          <div class="regear-sub-container class3">
+            <p class="undertext">Food</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T7_MEAL_OMELETTE@3.png" style="width: 64px;">
           </div>
-          <div class="row">
-            <div class="col-3 border"> .3 </div>
-            <div class="col-3 border" id="sortedPrices3"></div>
-            <div class="col-3 border" id="sortedPricesmax3"></div>
-            <div class="col-3 border" id="sortedPricesmax3benef"></div>
+          <div class="regear-sub-container class3">
+            <p class="undertext">Boots</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_SHOES_LEATHER_SET3@3.png" style="width: 64px;">
+          </div>
+          <div class="regear-sub-container class3">
+            <p class="undertext">Potion</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_POTION_COOLDOWN@3.png" style="width: 64px;">
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-4 "></div>
+          <div class="col-4 regear-sub-container class4">
+            <p class="undertext">Mount</p>
+            <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_MOUNT_HORSE@3.png" style="width: 64px;">
+          </div>
+          <div class="col-4 "></div>
+        </div>
+      </div>        
+
+    </div>
+
+
+
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Le Tradeur marathonien
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-6">
+                  <select class="form-control" id="select_ressource">
+                    <option label="cuir" value="cuir">Cuir</option>
+                    <option label="tissu" value="tissu">Tissu</option>
+                    <option label="bois" value="bois">Bois</option>
+                    <option label="minerai" value="minerai">Minerai</option>
+                    <option label="pierre" value="pierre">Pierre</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <select class="form-control" id="select_ressource_type">
+                  </select>
+                </div>
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="container">
+              <div class="row">
+                <div class="col-3 border"><p>Enchant</p></div>
+                <div class="col-3 border"><p>Le - cher</p></div>
+                <div class="col-3 border"><p>Le + cher</p></div>
+                <div class="col-3 border"><p>Benef / unit</p></div>
+              </div>
+              <div class="row">
+                <div class="col-3 border"> 0 </div>
+                <div class="col-3 border" id="sortedPrices0"></div>
+                <div class="col-3 border" id="sortedPricesmax0"></div>
+                <div class="col-3 border" id="sortedPricesmax0benef"></div>
+              </div>
+              <div class="row">
+                <div class="col-3 border"> .1 </div>
+                <div class="col-3 border" id="sortedPrices"></div>
+                <div class="col-3 border" id="sortedPricesmax"></div>
+                <div class="col-3 border" id="sortedPricesmaxbenef"></div>
+              </div>
+              <div class="row">
+                <div class="col-3 border"> .2 </div>
+                <div class="col-3 border" id="sortedPrices2"></div>
+                <div class="col-3 border" id="sortedPricesmax2"></div>
+                <div class="col-3 border" id="sortedPricesmax2benef"></div>
+              </div>
+              <div class="row">
+                <div class="col-3 border"> .3 </div>
+                <div class="col-3 border" id="sortedPrices3"></div>
+                <div class="col-3 border" id="sortedPricesmax3"></div>
+                <div class="col-3 border" id="sortedPricesmax3benef"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <!-- <h5 class="mb-0"> -->
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Le Black - biz
-        </button>
-      <!-- </h5> -->
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-        <div class="card-body">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                  <p>Selectionner le type d'armure</p>
-                  <select id="select_kind">
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <!-- <h5 class="mb-0"> -->
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Le Black - biz
+            </button>
+            <!-- </h5> -->
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    <p>Selectionner le type d'armure</p>
+                    <select id="select_kind">
                       <option label="hunter" value="hunter">Hunter</option>
                       <option label="mage" value="mage">Mage</option>
                       <option label="tank" value="tank">Tank</option>
-                  </select>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <p>Affiner la recherche en selectionnant le profit par Unit voulu</p>
+                    <select id="profit_wanted">
+                      <option label="50000" value="50000">50.000/u</option>
+                      <option label="30000" value="30000">30.000/u</option>
+                      <option label="20000" value="20000">20.000/u</option>
+                      <option label="10000" value="10000">10.000/u</option>
+                      <option label="5000" value="5000">5.000/u</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <table class="table table-sm table-dark table-bordered table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Item</th>
+                          <th scope="col">Quality</th>
+                          <th scope="col">BM Price</th>
+                          <th scope="col">CA Price</th>
+                          <th scope="col">Benef</th>
+                        </tr>
+                      </thead>
+                      <tbody id="resultblackbiz">
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <div class="col-6">
-                <p>Affiner la recherche en selectionnant le profit par Unit voulu</p>
-                <select id="profit_wanted">
-                  <option label="50000" value="50000">50.000/u</option>
-                  <option label="30000" value="30000">30.000/u</option>
-                  <option label="20000" value="20000">20.000/u</option>
-                  <option label="10000" value="10000">10.000/u</option>
-                  <option label="5000" value="5000">5.000/u</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <table class="table table-sm table-dark table-bordered table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Item</th>
-                      <th scope="col">Quality</th>
-                      <th scope="col">BM Price</th>
-                      <th scope="col">CA Price</th>
-                      <th scope="col">Benef</th>
-                    </tr>
-                  </thead>
-                  <tbody id="resultblackbiz">
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
             <!-- <div class="container">
                 <div class="row">
                     <div class="col-4">
@@ -198,103 +251,126 @@
                       </table>
                     </div>  
                 </div>
-            </div> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <!-- <h5 class="mb-0"> -->
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-          Player Infos
-        </button>
-      <!-- </h5> -->
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <input type="text" name="input_player" id="input_player"/>
-            </div>
-          </div>
-          <div class="row"> 
-            <div class="col-12">
-              <p id="player_results"></p>
-              <table class="table table-bordered table-striped">
-                <thead>
-                  <tr><td>Crafting Fame</td><td>Gathering Fame</td><td>PVE</td><td>DeathFame</td><td>KDA</td></tr>
-                </thead>
-                <tbody  id="tbody_player_results"></tbody>
-              </table>
+              </div> -->
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="card">
-    <div class="card-header" id="headingFour">
-      <!-- <h5 class="mb-0"> -->
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Guild Infos
-        </button>
-      <!-- </h5> -->
-    </div>
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-      <div class="card-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <input type="text" name="input_guild" id=""/>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <!-- <h5 class="mb-0"> -->
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                Player Infos
+              </button>
+              <!-- </h5> -->
             </div>
-            <div class="col-12">
-              <table class="table table-bordered table-striped">
-                <thead>
-                  <tr><td>Player Name<td>Crafting Fame</td><td>Gathering Fame</td><td>PVE</td><td>DeathFame</td><td>KDA</td></tr>
-                </thead>
-                <tbody  id="tbody_guild_results"></tbody>
-              </table>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <input type="text" name="input_player" id="input_player"/>
+                    </div>
+                  </div>
+                  <div class="row"> 
+                    <div class="col-12">
+                      <p id="player_results"></p>
+                      <table class="table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="row">Crafting Fame</th>
+                            <th scope="row">Gathering Fame</th>
+                            <th scope="row">PVE</th>
+                            <th scope="row">DeathFame</th>
+                            <th scope="row">KDA</th>
+                          </tr>
+                        </thead>
+                        <tbody  id="tbody_player_results"></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="card">
-    <div class="card-header" id="headingFive">
-      <!-- <h5 class="mb-0"> -->
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          WIP
-        </button>
-      <!-- </h5> -->
-    </div>
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-      <div class="card-body">
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <!-- <h5 class="mb-0"> -->
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Guild Infos
+                </button>
+                <!-- </h5> -->
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="text" name="input_guild" id=""/>
+                      </div>
+                      <div class="col-12">
+                        <table class="table table-bordered table-striped">
+                          <thead>
+                            <tr><td>Player Name<td>Crafting Fame</td><td>Gathering Fame</td><td>PVE</td><td>DeathFame</td><td>KDA</td></tr>
+                          </thead>
+                          <tbody  id="tbody_guild_results"></tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <!-- <h5 class="mb-0"> -->
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    Re-gear Calculator
+                  </button>
+                  <!-- </h5> -->
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    <!-- Regear Content-->     
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <!-- <h5 class="mb-0"> -->
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      WIP
+                    </button>
+                    <!-- </h5> -->
+                  </div>
+                  <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
 
 
 
 
-        <!--<p>" Vous entendez ça ? Il parait que je suis malpoli ! Qu'est-ce que vous en pensez bande de trous-du-cul ?." François Rollin, Kaamelott.</p> -->
-        <!--<p>" Bon. Ca c'est bien gentil mais… À quel moment on trahit ?" François Rollin, Kaamelott.</p> -->
-        <!-- <p>" Le peu de volonté que j'avais de me farcir une réunion avec ce débile de Dagonet a définitivement disparu. Je suis une sorte de meuble." François Rollin, Kaamelott.</p> -->
-        <!-- <p>" Les mômes maintenant, ils lisent, ils lisent, ils lisent et résultat...ils sont encore puceaux à 10 ans..." François Rollin, Kaamelott.</p> -->
-        <blockquote class="blockquote">
-          <p class="mb-0">" Si on cueille pas les cerises tant qu'elles sont sur l'arbre, on fera tintin pour le clafoutis"</p>
-          <footer class="blockquote-footer">François Rollin <cite title="Source Title">Kaamelott</cite></footer>
-        </blockquote>
-      </div>
-    </div>
-  </div>
+                      <!--<p>" Vous entendez ça ? Il parait que je suis malpoli ! Qu'est-ce que vous en pensez bande de trous-du-cul ?." François Rollin, Kaamelott.</p> -->
+                      <!--<p>" Bon. Ca c'est bien gentil mais… À quel moment on trahit ?" François Rollin, Kaamelott.</p> -->
+                      <!-- <p>" Le peu de volonté que j'avais de me farcir une réunion avec ce débile de Dagonet a définitivement disparu. Je suis une sorte de meuble." François Rollin, Kaamelott.</p> -->
+                      <!-- <p>" Les mômes maintenant, ils lisent, ils lisent, ils lisent et résultat...ils sont encore puceaux à 10 ans..." François Rollin, Kaamelott.</p> -->
+                      <!-- <p>" Si on cueille pas les cerises tant qu'elles sont sur l'arbre, on fera tintin pour le clafoutis " François Rollin, Kaamelott.</p> -->
 
-</div>
+                      <blockquote class="blockquote">
+                        <p class="mb-0">" Les mômes maintenant, ils lisent, ils lisent, ils lisent et résultat...ils sont encore puceaux à 10 ans..."</p>
+                        <footer class="blockquote-footer">François Rollin <cite title="Source Title">Kaamelott</cite></footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
 
-    <script src="main.js"></script>
-    <!--<script src="blackbiz.js"></script>-->
-	<script src="bbiz.js"></script>
-  <script src="players.js"></script>
-    </body>
-</html>
+              </div>
+
+              <script src="main.js"></script>
+              <!--<script src="blackbiz.js"></script>-->
+              <script src="bbiz.js"></script>
+              <script src="players.js"></script>
+            </body>
+            </html>

@@ -1,48 +1,62 @@
 $(document).ready(function(){ 
 
+
+
 	$(document).on('keypress',function(e) {
 	if(e.which == 13) {
         var player = $('#input_player').val();
-        var guild = $('#input_guild').val();
-        if (guild === undefined) {
-        	console.log("on cherche un joueur ");
-	        $("#player_results").empty();
-	        var player = $('#input_player').val();
-			$.get("https://gameinfo.albiononline.com/api/gameinfo/search?q="+player,function(data)  {
-				if (data.players === undefined || data.players.length == 0) {
-					alert('No player Found');
-				} else if(data.players.length == 1) {
-				 	var playerId = data.players[0].Id;
-					console.log(data.players);
-				 	$("#player_results").append("<p><strong>"+data.players[0].Name+"</strong></p>");
-					$.get("https://gameinfo.albiononline.com/api/gameinfo/players/"+playerId,function(playerdata)  {
-						console.log(playerdata);
-						var craftot = addCommas(playerdata.LifetimeStatistics.Crafting.Total);
-						var gathertot = addCommas(playerdata.LifetimeStatistics.Gathering.All.Total);
-						var pvetot = addCommas(playerdata.LifetimeStatistics.PvE.Total);
-						var deathtot = addCommas(playerdata.DeathFame);
-						$("#tbody_player_results").append("<tr>");
-						$("#tbody_player_results").append("<td>"+craftot+"</td>");
-						$("#tbody_player_results").append("<td>"+gathertot+"</td>");
-						$("#tbody_player_results").append("<td>"+pvetot+"</td>");
-						$("#tbody_player_results").append("<td>"+deathtot+"</td>");
-						$("#tbody_player_results").append("<td>"+playerdata.FameRatio+"</td>");
-						$("#tbody_player_results").append("</tr>");
-					});
-				} else{
-					data.players.forEach(x=> {
-						if(x.GuildName === null || x.GuildName === "") {
-							$("#player_results").append("<p><strong>"+x.Name+"</strong> riding guildLess </p>");
-						}else {
-							$("#player_results").append("<p><strong>"+x.Name+"</strong> from "+x.GuildName+"</p>");						
-						}
-					});
-				}
-			});
-        } else {
-        	console.log("on cherche une guilde ");
-        }
+		//$("#tbody_player_results").empty();
+		//$("#player_results").empty();
 
+        var settings = {
+          'cache': false,
+          'dataType': "jsonp",
+          "async": true,
+          "crossDomain": true,
+          "url": "https://gameinfo.albiononline.com/api/gameinfo/search?q="+player,
+          "method": "GET",
+          "headers": {
+              "Access-Control-Allow-Origin":"*"
+          	}
+      	}
+
+      	$.ajax(settings).done(function (response) {
+          	console.log(response);
+   //        	if (response.players === undefined || response.players.length == 0) {
+			// 	alert('No player Found');
+			// } else if(response.players.length == 1) {
+			//  	var playerId = response.players[0].Id;
+			//  	$("#player_results").append("<p><strong>"+response.players[0].Name+"</strong></p>");
+			// 	$.get("https://gameinfo.albiononline.com/api/gameinfo/players/"+playerId,function(playerdata)  {
+			// 		var craftot = addCommas(playerdata.LifetimeStatistics.Crafting.Total);
+			// 		var gathertot = addCommas(playerdata.LifetimeStatistics.Gathering.All.Total);
+			// 		var pvetot = addCommas(playerdata.LifetimeStatistics.PvE.Total);
+			// 		var deathtot = addCommas(playerdata.DeathFame);
+			// 		$("#tbody_player_results").append("<tr>");
+			// 		$("#tbody_player_results").append("<td>"+craftot+"</td>");
+			// 		$("#tbody_player_results").append("<td>"+gathertot+"</td>");
+			// 		$("#tbody_player_results").append("<td>"+pvetot+"</td>");
+			// 		$("#tbody_player_results").append("<td>"+deathtot+"</td>");
+			// 		$("#tbody_player_results").append("<td>"+playerdata.FameRatio+"</td>");
+			// 		$("#tbody_player_results").append("</tr>");
+			// 	});
+			// } else{
+			// 	response.players.forEach(x=> {
+			// 		if(x.GuildName === null || x.GuildName === "") {
+			// 			$("#player_results").append("<p><strong>"+x.Name+"</strong> riding guildLess </p>");
+			// 		}else {
+			// 			$("#player_results").append("<p><strong>"+x.Name+"</strong> from "+x.GuildName+"</p>");						
+			// 		}
+			// 	});
+			// }
+      	});
+
+
+
+
+		// $.get("https://gameinfo.albiononline.com/api/gameinfo/search?q="+player,function(data)  {
+
+		// });
 	}
 
 
