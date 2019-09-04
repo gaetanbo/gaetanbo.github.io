@@ -226,7 +226,6 @@ $(document).ready(function(){
      });
  });
 
-  // STARTED FROM THE BOTTOM NOW WE HERE
   // https://www.albion-online-data.com/api/v2/stats/prices/T4_ORE_LEVEL2@2?location=Bridgewatch,Caerleon
   // https://albiononline2d.ams3.cdn.digitaloceanspaces.com/thumbnails/128/T5_METALBAR_LEVEL3
 
