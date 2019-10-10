@@ -1,0 +1,1455 @@
+[
+    
+    {
+        "LocalizationNameVariable": "@ITEMS_T2_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T2_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Novice\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Novizen"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027apprenti"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка новичка"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Nowicjusza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del novato"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Novato"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1751",
+        "UniqueName": "T2_BAG"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T3_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T3_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Journeyman\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Gesellen"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du compagnon"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка странника"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Czeladnika"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del obrero"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Iniciante"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1752",
+        "UniqueName": "T3_BAG"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Adept\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Adepten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027adepte"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка знатока"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Adepta"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del iniciado"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Adepto"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1753",
+        "UniqueName": "T4_BAG"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Adept\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Adepten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027adepte"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка знатока"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Adepta"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del iniciado"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Adepto"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1754",
+        "UniqueName": "T4_BAG@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Adept\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Adepten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027adepte"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка знатока"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Adepta"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del iniciado"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Adepto"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1755",
+        "UniqueName": "T4_BAG@2"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Adept\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Adepten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027adepte"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка знатока"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Adepta"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del iniciado"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Adepto"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1756",
+        "UniqueName": "T4_BAG@3"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Expert\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Experten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027expert"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка эксперта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Znawcy"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del experto"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Perito"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1757",
+        "UniqueName": "T5_BAG"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Expert\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Experten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027expert"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка эксперта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Znawcy"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del experto"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Perito"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1758",
+        "UniqueName": "T5_BAG@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Expert\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Experten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027expert"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка эксперта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Znawcy"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del experto"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Perito"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1759",
+        "UniqueName": "T5_BAG@2"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Expert\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Experten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac de l\u0027expert"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка эксперта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Znawcy"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del experto"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Perito"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1760",
+        "UniqueName": "T5_BAG@3"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Master\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Meisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка мастера"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Mistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1761",
+        "UniqueName": "T6_BAG"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Master\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Meisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка мастера"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Mistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1762",
+        "UniqueName": "T6_BAG@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Master\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Meisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка мастера"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Mistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1763",
+        "UniqueName": "T6_BAG@2"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Master\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Meisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка мастера"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Mistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1764",
+        "UniqueName": "T6_BAG@3"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Grandmaster\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Großmeisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du grand maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка магистра"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Wszechmistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del gran maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Grão-mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1765",
+        "UniqueName": "T7_BAG"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Grandmaster\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Großmeisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du grand maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка магистра"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Wszechmistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del gran maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Grão-mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1766",
+        "UniqueName": "T7_BAG@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Grandmaster\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Großmeisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du grand maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка магистра"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Wszechmistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del gran maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Grão-mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1767",
+        "UniqueName": "T7_BAG@2"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Grandmaster\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Großmeisters"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du grand maître"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка магистра"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Wszechmistrza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del gran maestro"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Grão-mestre"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1768",
+        "UniqueName": "T7_BAG@3"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Elder\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Ältesten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du sage"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка старейшины"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Starszego"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del anciano"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Ancião"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1769",
+        "UniqueName": "T8_BAG"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Elder\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Ältesten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du sage"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка старейшины"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Starszego"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del anciano"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Ancião"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1770",
+        "UniqueName": "T8_BAG@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Elder\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Ältesten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du sage"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка старейшины"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Starszego"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del anciano"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Ancião"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1771",
+        "UniqueName": "T8_BAG@2"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_BAG",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_BAG_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Elder\u0027s Bag"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Tasche des Ältesten"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Sac du sage"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сумка старейшины"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Sakwa Starszego"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Bolsa del anciano"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Bolsa do Ancião"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Equipment Item"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ausrüstungsgegenstand"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Pièce d\u0027équipement"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Снаряжение"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przedmiot do wyposażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Objeto de equipo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Item de Equipamento"
+            }
+        ],
+        "Index": "1772",
+        "UniqueName": "T8_BAG@3"
+    }
+]

@@ -1,0 +1,2180 @@
+[
+    {
+        "LocalizationNameVariable": "@ITEMS_T2_POTION_HEAL",
+        "LocalizationDescriptionVariable": "@ITEMS_T2_POTION_HEAL_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Minor Healing Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Kleiner Lebenstrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Petite flasque de soin"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Малый эликсир здоровья"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mniejsza Tynktura Lecząca"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Frasco menor de curación"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Frasco de Cura Menor"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Glowing potion. Restores some health over time."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Leuchtender Trank. Heilt nach und nach etwas Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion rayonnante. Restaure de la santé sur la durée."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Сияющий эликсир. Постепенно восстанавливает часть здоровья."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Świecąca Mikstura. Przywraca część życia z upływem czasu."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Brillante. Cura algo de salud con el tiempo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Brilhante. Cura vida ao longo do tempo."
+            }
+        ],
+        "Index": "383",
+        "UniqueName": "T2_POTION_HEAL"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_POTION_HEAL",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_POTION_HEAL_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Healing Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Lebenstrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion de soin"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир здоровья"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Lecznicza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de curación"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Cura"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Glowing potion. Restores some health over time."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Leuchtender Trank. Heilt nach und nach etwas Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion rayonnante. Restaure votre santé maximale sur la durée."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Мерцающий эликсир. Постепенно восстанавливает здоровье."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Świecąca mikstura. Z czasem przywraca część zdrowia."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción brillante. Cura algo de vida con el tiempo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Brilhante. Cura vida ao longo do tempo."
+            }
+        ],
+        "Index": "384",
+        "UniqueName": "T4_POTION_HEAL"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_POTION_HEAL",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_POTION_HEAL_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Healing Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Lebenstrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion de soin"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир здоровья"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Lecznicza"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de curación"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Cura"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Glowing potion. Restores some health over time."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Leuchtender Trank. Heilt nach und nach etwas Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion rayonnante. Restaure votre santé maximale sur la durée."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Мерцающий эликсир. Постепенно восстанавливает здоровье."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Świecąca mikstura. Z czasem przywraca część zdrowia."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción brillante. Cura algo de vida con el tiempo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Brilhante. Cura vida ao longo do tempo."
+            }
+        ],
+        "Index": "385",
+        "UniqueName": "T4_POTION_HEAL@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_POTION_HEAL",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_POTION_HEAL_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Healing Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Lebenstrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion de soin"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир здоровья"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Tynktura Lecząca"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Frasco mayor de curación"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Frasco de Cura Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Glowing potion. Heals some health over time."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Leuchtender Trank. Heilt nach und nach 24 % deiner maximalen Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion rayonnante. Restaure petit à petit 24 % de votre santé max."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Мерцающий эликсир. Постепенно восстанавливает здоровье (24% от максимума)."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Świecąca mikstura. Leczy w czasie 24% twojego maksymalnego zdrowia."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción brillante. Cura el 24 % de tu salud progresivamente."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção brilhante. Cura 24% do máximo de vida ao longo do tempo."
+            }
+        ],
+        "Index": "386",
+        "UniqueName": "T6_POTION_HEAL"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_POTION_HEAL",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_POTION_HEAL_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Healing Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Lebenstrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion de soin"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир здоровья"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Tynktura Lecząca"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Frasco mayor de curación"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Frasco de Cura Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Glowing potion. Heals some health over time."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Leuchtender Trank. Heilt nach und nach 24 % deiner maximalen Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion rayonnante. Restaure petit à petit 24 % de votre santé max."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Мерцающий эликсир. Постепенно восстанавливает здоровье (24% от максимума)."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Świecąca mikstura. Leczy w czasie 24% twojego maksymalnego zdrowia."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción brillante. Cura el 24 % de tu salud progresivamente."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção brilhante. Cura 24% do máximo de vida ao longo do tempo."
+            }
+        ],
+        "Index": "387",
+        "UniqueName": "T6_POTION_HEAL@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T2_POTION_ENERGY",
+        "LocalizationDescriptionVariable": "@ITEMS_T2_POTION_ENERGY_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Minor Energy Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Kleiner Energietrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Petite potion d\u0027énergie"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Малый эликсир энергии"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mniejsza Mikstura Energii"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción menor de energía"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Energia Menor"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Fizzing potion. Instantly restores some energy."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Zischender Trank. Stellt sofort wieder etwas Energie her."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion pétillante. Restaure instantanément votre énergie."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Шипучий эликсир. Мгновенно восстанавливает часть энергии."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Musująca mikstura. Natychmiastowo przywraca część energii."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción burbujeante. Restaura energía mientras se bebe."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Efervescente. Restaura a energia imediatamente."
+            }
+        ],
+        "Index": "388",
+        "UniqueName": "T2_POTION_ENERGY"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_POTION_ENERGY",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_POTION_ENERGY_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Energy Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Energietrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion d\u0027énergie"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир энергии"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Energii"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de energía"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Energia"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Fizzing potion. Instantly restores some energy."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Zischender Trank. Stellt nach und nach 30 % der Energie wieder her."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion pétillante. Restaure 30 % de l\u0027énergie petit à petit"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Шипучий эликсир. Постепенно восстанавливает 30% вашей энергии."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Musująca mikstura. Odnawia w czasie 30% energii."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción burbujeante. Restaura el 30 % de energía progresivamente."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção efervescente. Restaura a energia ao longo do tempo enquanto bebe."
+            }
+        ],
+        "Index": "389",
+        "UniqueName": "T4_POTION_ENERGY"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_POTION_ENERGY",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_POTION_ENERGY_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Energy Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Energietrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion d\u0027énergie"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир энергии"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Energii"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de energía"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Energia"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Fizzing potion. Instantly restores some energy."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Zischender Trank. Stellt nach und nach 30 % der Energie wieder her."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion pétillante. Restaure 30 % de l\u0027énergie petit à petit"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Шипучий эликсир. Постепенно восстанавливает 30% вашей энергии."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Musująca mikstura. Odnawia w czasie 30% energii."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción burbujeante. Restaura el 30 % de energía progresivamente."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção efervescente. Restaura a energia ao longo do tempo enquanto bebe."
+            }
+        ],
+        "Index": "390",
+        "UniqueName": "T4_POTION_ENERGY@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_POTION_ENERGY",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_POTION_ENERGY_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Energy Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Energietrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion d\u0027énergie"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир энергии"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Mikstura Energii"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción mayor de energía"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Energia Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Fizzing potion. Instantly restores some energy."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Zischender Trank. Stellt nach und nach 40 % der Energie wieder her."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion pétillante. Restaure 40% de l\u0027énergie petit à petit"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Шипучий эликсир. Постепенно восстанавливает 40% вашей энергии."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Musująca mikstura. Odnawia w czasie 40% energii."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción burbujeante. Restaura energía mientras se bebe."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção efervescente. Restaura a energia ao longo do tempo enquanto bebe."
+            }
+        ],
+        "Index": "391",
+        "UniqueName": "T6_POTION_ENERGY"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_POTION_ENERGY",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_POTION_ENERGY_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Energy Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Energietrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion d\u0027énergie"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир энергии"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Mikstura Energii"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción mayor de energía"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Energia Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Fizzing potion. Instantly restores some energy."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Zischender Trank. Stellt nach und nach 40 % der Energie wieder her."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion pétillante. Restaure 40% de l\u0027énergie petit à petit"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Шипучий эликсир. Постепенно восстанавливает 40% вашей энергии."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Musująca mikstura. Odnawia w czasie 40% energii."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción burbujeante. Restaura energía mientras se bebe."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção efervescente. Restaura a energia ao longo do tempo enquanto bebe."
+            }
+        ],
+        "Index": "392",
+        "UniqueName": "T6_POTION_ENERGY@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T3_POTION_REVIVE",
+        "LocalizationDescriptionVariable": "@ITEMS_T3_POTION_REVIVE_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Minor Gigantify Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Kleiner Trank des Riesenwuchses"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Petite potion de gigantisme"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Малое зелье гиганта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mniejsza Mikstura Powiększenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Sobrecarga Menor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Gigantificadora Menor"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Mystical Potion. Temporarily increases your max load and max health."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Mystischer Trank. Erhöht für eine kurze Zeit deine maximale Tragkraft und Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion mystique. Augmente temporairement votre capacité de charge maximale et votre santé maximale."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Волшебное зелье. Временно повышает максимальное здоровье и грузоподъемность."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mistyczna mikstura. Zwiększa twój maksymalny udźwig i punkty życia przez pewien czas."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Mística. Aumenta temporalmente tu carga máxima y tu salud máxima."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Mística. Aumenta temporariamente sua capacidade máxima de carga e sua vida máxima."
+            }
+        ],
+        "Index": "393",
+        "UniqueName": "T3_POTION_REVIVE"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_POTION_REVIVE",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_POTION_REVIVE_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Gigantify Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Trank des Riesenwuchses"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion de gigantisme"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Зелье гиганта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Powiększenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Sobrecarga"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Gigantificadora"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Mystical Potion. Temporarily increases your max load and max health."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Mystischer Trank. Erhöht für eine kurze Zeit deine maximale Tragkraft und Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion mystique. Augmente temporairement votre capacité de charge maximale et votre santé maximale."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Волшебное зелье. Временно повышает максимальное здоровье и грузоподъемность."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mistyczna mikstura. Zwiększa twój maksymalny udźwig i punkty życia przez pewien czas."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Mística. Aumenta temporalmente tu carga máxima y tu salud máxima."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Mística. Aumenta temporariamente sua capacidade máxima de carga e sua vida máxima."
+            }
+        ],
+        "Index": "394",
+        "UniqueName": "T5_POTION_REVIVE"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_POTION_REVIVE",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_POTION_REVIVE_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Gigantify Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Trank des Riesenwuchses"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion de gigantisme"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Зелье гиганта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Powiększenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Sobrecarga"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Gigantificadora"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Mystical Potion. Temporarily increases your max load and max health."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Mystischer Trank. Erhöht für eine kurze Zeit deine maximale Tragkraft und Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion mystique. Augmente temporairement votre capacité de charge maximale et votre santé maximale."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Волшебное зелье. Временно повышает максимальное здоровье и грузоподъемность."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mistyczna mikstura. Zwiększa twój maksymalny udźwig i punkty życia przez pewien czas."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Mística. Aumenta temporalmente tu carga máxima y tu salud máxima."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Mística. Aumenta temporariamente sua capacidade máxima de carga e sua vida máxima."
+            }
+        ],
+        "Index": "395",
+        "UniqueName": "T5_POTION_REVIVE@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_POTION_REVIVE",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_POTION_REVIVE_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Gigantify Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Trank des Riesenwuchses"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion de gigantisme"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большое зелье гиганта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Mikstura Powiększenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Sobrecarga Mayor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Gigantificadora Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Mystical Potion. Temporarily increases your max load and max health."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Mystischer Trank. Erhöht für eine kurze Zeit deine maximale Tragkraft und Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion mystique. Augmente temporairement votre capacité de charge maximale et votre santé maximale."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Волшебное зелье. Временно повышает максимальное здоровье и грузоподъемность."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mistyczna mikstura. Zwiększa twój maksymalny udźwig i punkty życia przez pewien czas."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Mística. Aumenta temporalmente tu carga máxima y tu salud máxima."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Mística. Aumenta temporariamente sua capacidade máxima de carga e sua vida máxima."
+            }
+        ],
+        "Index": "396",
+        "UniqueName": "T7_POTION_REVIVE"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_POTION_REVIVE",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_POTION_REVIVE_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Gigantify Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Trank des Riesenwuchses"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion de gigantisme"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большое зелье гиганта"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Mikstura Powiększenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Sobrecarga Mayor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Gigantificadora Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Mystical Potion. Temporarily increases your max load and max health."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Mystischer Trank. Erhöht für eine kurze Zeit deine maximale Tragkraft und Gesundheit."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion mystique. Augmente temporairement votre capacité de charge maximale et votre santé maximale."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Волшебное зелье. Временно повышает максимальное здоровье и грузоподъемность."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mistyczna mikstura. Zwiększa twój maksymalny udźwig i punkty życia przez pewien czas."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Mística. Aumenta temporalmente tu carga máxima y tu salud máxima."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Mística. Aumenta temporariamente sua capacidade máxima de carga e sua vida máxima."
+            }
+        ],
+        "Index": "397",
+        "UniqueName": "T7_POTION_REVIVE@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T3_POTION_STONESKIN",
+        "LocalizationDescriptionVariable": "@ITEMS_T3_POTION_STONESKIN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Minor Resistance Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Kleiner Steinhauttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Petite potion peau de pierre"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Малый эликсир защиты"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mniejsza Mikstura Skałoskóry"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción menor de piel de piedra"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Pele-dura Menor"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Sluggish potion. Increases defenses substantially for a short period."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Dickflüssiger Trank. Erhöht die Verteidigung für kurze Zeit beträchtlich."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion molle. Augmente considérablement les défenses pendant un instant."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Густой эликсир. На короткое время значительно усиливает защиту."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura ospałości. Na krótko znacznie wzmacnia obronę."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción lenta. Refuerza notablemente las defensas durante unos momentos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção espessa. Aumenta substancialmente as defesas por um curto período."
+            }
+        ],
+        "Index": "398",
+        "UniqueName": "T3_POTION_STONESKIN"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_POTION_STONESKIN",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_POTION_STONESKIN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Resistance Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Steinhauttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion peau de pierre"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир защиты"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Skałoskóry"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de piel de piedra"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Pele-dura"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Sluggish potion. Increases defenses substantially for a short period."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Dickflüssiger Trank. Erhöht die Verteidigung für kurze Zeit beträchtlich."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion molle. Augmente considérablement les défenses pendant un instant."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Густой эликсир. На короткое время значительно усиливает защиту."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura ospałości. Na krótko znacznie wzmacnia obronę."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción lenta. Refuerza notablemente las defensas durante unos momentos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção espessa. Aumenta substancialmente as defesas por um curto período."
+            }
+        ],
+        "Index": "399",
+        "UniqueName": "T5_POTION_STONESKIN"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_POTION_STONESKIN",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_POTION_STONESKIN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Resistance Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Steinhauttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion peau de pierre"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир защиты"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Skałoskóry"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de piel de piedra"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Pele-dura"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Sluggish potion. Increases defenses substantially for a short period."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Dickflüssiger Trank. Erhöht die Verteidigung für kurze Zeit beträchtlich."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion molle. Augmente considérablement les défenses pendant un instant."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Густой эликсир. На короткое время значительно усиливает защиту."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura ospałości. Na krótko znacznie wzmacnia obronę."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción lenta. Refuerza notablemente las defensas durante unos momentos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção espessa. Aumenta substancialmente as defesas por um curto período."
+            }
+        ],
+        "Index": "400",
+        "UniqueName": "T5_POTION_STONESKIN@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_POTION_STONESKIN",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_POTION_STONESKIN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Resistance Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Steinhauttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion peau de pierre"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир защиты"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Mikstura Skałoskóry"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción mayor de piel de piedra"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Pele-dura Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Sluggish potion. Increases defenses substantially for a short period."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Dickflüssiger Trank. Erhöht die Verteidigung für kurze Zeit beträchtlich."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion molle. Augmente considérablement les défenses pendant un instant."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Густой эликсир. На короткое время значительно усиливает защиту."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura ospałości. Na krótko znacznie wzmacnia obronę."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción lenta. Refuerza notablemente las defensas durante unos momentos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção espessa. Aumenta substancialmente as defesas por um curto período."
+            }
+        ],
+        "Index": "401",
+        "UniqueName": "T7_POTION_STONESKIN"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_POTION_STONESKIN",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_POTION_STONESKIN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Resistance Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Steinhauttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion peau de pierre"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир защиты"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Mikstura Skałoskóry"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción mayor de piel de piedra"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Pele-dura Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Sluggish potion. Increases defenses substantially for a short period."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Dickflüssiger Trank. Erhöht die Verteidigung für kurze Zeit beträchtlich."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion molle. Augmente considérablement les défenses pendant un instant."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Густой эликсир. На короткое время значительно усиливает защиту."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura ospałości. Na krótko znacznie wzmacnia obronę."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción lenta. Refuerza notablemente las defensas durante unos momentos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção espessa. Aumenta substancialmente as defesas por um curto período."
+            }
+        ],
+        "Index": "402",
+        "UniqueName": "T7_POTION_STONESKIN@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T3_POTION_SLOWFIELD",
+        "LocalizationDescriptionVariable": "@ITEMS_T3_POTION_SLOWFIELD_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Minor Sticky Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Kleiner klebriger Trank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Petite potion collante"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Малая вязкая настойка"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mniejsza Kleista Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Pegajosa Menor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Viscosa Menor"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "A viscous potion. Throw it on a ground location to create an area that slows and reduces the enemy\u0027s damage."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ein zäher Trank. Wirf ihn auf den Boden und erzeuge dort eine Fläche, die verlangsamt und den Schaden des Gegners reduziert."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Une potion visqueuse. Lancez-la à un endroit ciblé pour créer une zone qui réduira la vitesse et les dégâts ennemis."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Бутыль со льдом. Бросьте на землю, чтобы создать область замедляющую врагов, снижающую урон противника."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Lepka mikstura. Rzuć ją w punkt na ziemi, tworząc obszar spowalniający wrogów i obniżający ich zadawane obrażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Una Poción viscosa. Tírala al suelo para crear un área que ralentiza y reduce el daño del enemigo"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Uma poção pegajosa. Jogue a no chão para criar uma área que desacelera e reduz o dano do inimigo."
+            }
+        ],
+        "Index": "403",
+        "UniqueName": "T3_POTION_SLOWFIELD"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_POTION_SLOWFIELD",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_POTION_SLOWFIELD_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Sticky Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Klebriger Trank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion collante"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Вязкая настойка"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Kleista Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Pegajosa"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Viscosa"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "A viscous potion. Throw it on a ground location to create an area that slows and reduces the enemy\u0027s damage."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ein zäher Trank. Wirf ihn auf den Boden und erzeuge dort eine Fläche, die verlangsamt und den Schaden des Gegners reduziert."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Une potion visqueuse. Lancez-la à un endroit ciblé pour créer une zone qui réduira la vitesse et les dégâts ennemis."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Бутыль со льдом. Бросьте на землю, чтобы создать область замедляющую врагов, снижающую урон противника."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Lepka mikstura. Rzuć ją w punkt na ziemi, tworząc obszar spowalniający wrogów i obniżający ich zadawane obrażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Una poción viscosa. Tírala al suelo para crear un área que ralentiza y reduce el daño del enemigo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Uma poção pegajosa. Jogue a no chão para criar uma área que desacelera e reduz o dano do inimigo."
+            }
+        ],
+        "Index": "404",
+        "UniqueName": "T5_POTION_SLOWFIELD"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T5_POTION_SLOWFIELD",
+        "LocalizationDescriptionVariable": "@ITEMS_T5_POTION_SLOWFIELD_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Sticky Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Klebriger Trank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion collante"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Вязкая настойка"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Kleista Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Pegajosa"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Viscosa"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "A viscous potion. Throw it on a ground location to create an area that slows and reduces the enemy\u0027s damage."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ein zäher Trank. Wirf ihn auf den Boden und erzeuge dort eine Fläche, die verlangsamt und den Schaden des Gegners reduziert."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Une potion visqueuse. Lancez-la à un endroit ciblé pour créer une zone qui réduira la vitesse et les dégâts ennemis."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Бутыль со льдом. Бросьте на землю, чтобы создать область замедляющую врагов, снижающую урон противника."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Lepka mikstura. Rzuć ją w punkt na ziemi, tworząc obszar spowalniający wrogów i obniżający ich zadawane obrażenia"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Una poción viscosa. Tírala al suelo para crear un área que ralentiza y reduce el daño del enemigo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Uma poção pegajosa. Jogue a no chão para criar uma área que desacelera e reduz o dano do inimigo."
+            }
+        ],
+        "Index": "405",
+        "UniqueName": "T5_POTION_SLOWFIELD@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_POTION_SLOWFIELD",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_POTION_SLOWFIELD_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Sticky Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer klebriger Trank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion collante"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большая вязкая настойка"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Kleista Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Pegajosa Mayor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Viscosa Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "A viscous potion. Throw it on a ground location to create an area that slows and reduces the enemy\u0027s damage."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ein zäher Trank. Wirf ihn auf den Boden und erzeuge dort eine Fläche, die verlangsamt und den Schaden des Gegners reduziert."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Une potion visqueuse. Lancez-la à un endroit ciblé pour créer une zone qui réduira la vitesse et les dégâts ennemis."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Бутыль со льдом. Бросьте на землю, чтобы создать область замедляющую врагов, снижающую урон противника."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Lepka mikstura. Rzuć ją w punkt na ziemi, tworząc obszar spowalniający wrogów i obniżający ich zadawane obrażenia."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Una poción viscosa. Tírala al suelo para crear un área que ralentiza y reduce el daño del enemigo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Uma poção pegajosa. Jogue a no chão para criar uma área que desacelera e reduz o dano do inimigo."
+            }
+        ],
+        "Index": "406",
+        "UniqueName": "T7_POTION_SLOWFIELD"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T7_POTION_SLOWFIELD",
+        "LocalizationDescriptionVariable": "@ITEMS_T7_POTION_SLOWFIELD_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Sticky Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer klebriger Trank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion collante"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большая вязкая настойка"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Kleista Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Pegajosa Mayor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Viscosa Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "A viscous potion. Throw it on a ground location to create an area that slows and reduces the enemy\u0027s damage."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Ein zäher Trank. Wirf ihn auf den Boden und erzeuge dort eine Fläche, die verlangsamt und den Schaden des Gegners reduziert."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Une potion visqueuse. Lancez-la à un endroit ciblé pour créer une zone qui réduira la vitesse et les dégâts ennemis."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Бутыль со льдом. Бросьте на землю, чтобы создать область замедляющую врагов, снижающую урон противника."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Lepka mikstura. Rzuć ją w punkt na ziemi, tworząc obszar spowalniający wrogów i obniżający ich zadawane obrażenia."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Una poción viscosa. Tírala al suelo para crear un área que ralentiza y reduce el daño del enemigo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Uma poção pegajosa. Jogue a no chão para criar uma área que desacelera e reduz o dano do inimigo."
+            }
+        ],
+        "Index": "407",
+        "UniqueName": "T7_POTION_SLOWFIELD@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_POTION_COOLDOWN",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_POTION_COOLDOWN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Minor Poison Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Kleiner Gifttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Petite potion de poison"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Малый эликсир яда"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mniejsza Trująca Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Venenosa Menor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Venenosa Menor"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Poisonous potion. Can be thrown at enemies to poison them."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Vergifteter Trank. Kann auf Gegner geworfen werden, um sie zu vergiften."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion empoisonnée. Peut être lancée sur des ennemis pour les empoisonner."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Отравленный эликсир. Можно бросить во врага, чтобы отравить."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Zatruta mikstura. Można rzucić nią we wrogów, aby ich zatruć."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Envenenada. Puede ser usada en los enemigos para envenenarlos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção envenenada. Pode ser jogada nos inimigos para envenená-los."
+            }
+        ],
+        "Index": "408",
+        "UniqueName": "T4_POTION_COOLDOWN"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T4_POTION_COOLDOWN",
+        "LocalizationDescriptionVariable": "@ITEMS_T4_POTION_COOLDOWN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Minor Poison Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Kleiner Gifttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Petite potion de poison"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Малый эликсир яда"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mniejsza Trująca Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Venenosa Menor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Venenosa Menor"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Poisonous potion. Can be thrown at enemies to poison them."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Vergifteter Trank. Kann auf Gegner geworfen werden, um sie zu vergiften."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion empoisonnée. Peut être lancée sur des ennemis pour les empoisonner."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Отравленный эликсир. Можно бросить во врага, чтобы отравить."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Zatruta mikstura. Można rzucić nią we wrogów, aby ich zatruć."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Envenenada. Puede ser usada en los enemigos para envenenarlos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção envenenada. Pode ser jogada nos inimigos para envenená-los."
+            }
+        ],
+        "Index": "409",
+        "UniqueName": "T4_POTION_COOLDOWN@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_POTION_COOLDOWN",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_POTION_COOLDOWN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Poison Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Gifttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion de poison"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир яда"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Trująca Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Veneno"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Venenosa"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Poisoned Potion. Can be thrown at enemies to poison them."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Vergifteter Trank. Kann auf Gegner geworfen werden, um sie zu vergiften."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion empoisonnée. Peut être lancée sur des ennemis pour les empoisonner."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Отравленный эликсир. Можно бросить во врага, чтобы отравить."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Zatruta mikstura. Można rzucić nią we wrogów, aby ich zatruć."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Veneno.  Puede ser usada en los enemigos para envenenarlos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção envenenada. Pode ser jogada nos inimigos para envenená-los."
+            }
+        ],
+        "Index": "410",
+        "UniqueName": "T6_POTION_COOLDOWN"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T6_POTION_COOLDOWN",
+        "LocalizationDescriptionVariable": "@ITEMS_T6_POTION_COOLDOWN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Poison Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Gifttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion de poison"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир яда"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Trująca Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Veneno"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Venenosa"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Poisoned Potion. Can be thrown at enemies to poison them."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Vergifteter Trank. Kann auf Gegner geworfen werden, um sie zu vergiften."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion empoisonnée. Peut être lancée sur des ennemis pour les empoisonner."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Отравленный эликсир. Можно бросить во врага, чтобы отравить."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Zatruta mikstura. Można rzucić nią we wrogów, aby ich zatruć."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Veneno.  Puede ser usada en los enemigos para envenenarlos."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção envenenada. Pode ser jogada nos inimigos para envenená-los."
+            }
+        ],
+        "Index": "411",
+        "UniqueName": "T6_POTION_COOLDOWN@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_POTION_COOLDOWN",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_POTION_COOLDOWN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Poison Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Gifttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion de poison"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир яда"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Trująca Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Venenosa Mayor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Venenosa Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Poisoned Potion. Can be thrown at enemies to poison them."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Vergifteter Trank. Kann auf Gegner geworfen werden, um sie zu vergiften."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion empoisonnée. Peut être lancée sur des ennemis pour les empoisonner."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Отравленный эликсир. Можно бросить во врага, чтобы отравить."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Zatruta mikstura. Można rzucić nią we wrogów, aby ich zatruć."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Una poción viscosa. Tírala al suelo para crear un área que ralentiza y reduce el daño del enemigo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção envenenada. Pode ser jogada nos inimigos para envenená-los."
+            }
+        ],
+        "Index": "412",
+        "UniqueName": "T8_POTION_COOLDOWN"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_POTION_COOLDOWN",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_POTION_COOLDOWN_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Major Poison Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Großer Gifttrank"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Grande potion de poison"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Большой эликсир яда"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Większa Trująca Mikstura"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción Venenosa Mayor"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção Venenosa Maior"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Poisoned Potion. Can be thrown at enemies to poison them."
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Vergifteter Trank. Kann auf Gegner geworfen werden, um sie zu vergiften."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion empoisonnée. Peut être lancée sur des ennemis pour les empoisonner."
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Отравленный эликсир. Можно бросить во врага, чтобы отравить."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Zatruta mikstura. Można rzucić nią we wrogów, aby ich zatruć."
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Una poción viscosa. Tírala al suelo para crear un área que ralentiza y reduce el daño del enemigo."
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção envenenada. Pode ser jogada nos inimigos para envenená-los."
+            }
+        ],
+        "Index": "413",
+        "UniqueName": "T8_POTION_COOLDOWN@1"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_POTION_CLEANSE",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_POTION_CLEANSE_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Invisibility Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Trank der Unsichtbarkeit"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion d\u0027invisibilité"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир невидимости"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Niewidzialności"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Invisibilidad"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Invisibilidade"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Clear potion. Makes you temporarily invisible after drinking"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Klarer Trank. Macht dich mit der Einnahme kurzzeitig unsichtbar."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion transparente. Vous rends invisible quand vous la buvez"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Прозрачный эликсир. Выпейте его, чтобы стать невидимым на время."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przezroczysta mikstura. Po wypiciu czyni cię niewidzialnym przez pewien czas"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción limpiadora. Te hace invisible después de tomarla"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção límpida. Te faz invisível temporariamente após tomá-la"
+            }
+        ],
+        "Index": "414",
+        "UniqueName": "T8_POTION_CLEANSE"
+    },
+    {
+        "LocalizationNameVariable": "@ITEMS_T8_POTION_CLEANSE",
+        "LocalizationDescriptionVariable": "@ITEMS_T8_POTION_CLEANSE_DESC",
+        "LocalizedNames": [
+            {
+                "Key": "EN-US",
+                "Value": "Invisibility Potion"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Trank der Unsichtbarkeit"
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion d\u0027invisibilité"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Эликсир невидимости"
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Mikstura Niewidzialności"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción de Invisibilidad"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção de Invisibilidade"
+            }
+        ],
+        "LocalizedDescriptions": [
+            {
+                "Key": "EN-US",
+                "Value": "Clear potion. Makes you temporarily invisible after drinking"
+            },
+            {
+                "Key": "DE-DE",
+                "Value": "Klarer Trank. Macht dich mit der Einnahme kurzzeitig unsichtbar."
+            },
+            {
+                "Key": "FR-FR",
+                "Value": "Potion transparente. Vous rends invisible quand vous la buvez"
+            },
+            {
+                "Key": "RU-RU",
+                "Value": "Прозрачный эликсир. Выпейте его, чтобы стать невидимым на время."
+            },
+            {
+                "Key": "PL-PL",
+                "Value": "Przezroczysta mikstura. Po wypiciu czyni cię niewidzialnym przez pewien czas"
+            },
+            {
+                "Key": "ES-ES",
+                "Value": "Poción limpiadora. Te hace invisible después de tomarla"
+            },
+            {
+                "Key": "PT-BR",
+                "Value": "Poção límpida. Te faz invisível temporariamente após tomá-la"
+            }
+        ],
+        "Index": "415",
+        "UniqueName": "T8_POTION_CLEANSE@1"
+    }
+]
