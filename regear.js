@@ -7,9 +7,11 @@ $(document).ready(function(){
             // Do a foreach on each piece of gear instead of this ugly one by one way im doing now
             // Actually use a variable for city instead of hard coding as it is now
             // Red-color prices if they are more than a 12h(one day ??) old.
-            // Add possibility to choose quantity for food and potions
+            
 
+            // Add possibility to choose quantity for food and potions
             // Find a way for user to input the gear he want to get prices for
+            // FIX the css for mobile user
 
         // gears : T4_BAG, T6_HEAD_LEATHER_SET3, T4_CAPEITEM_FW_LYMHURST,T6_2H_INFERNOSTAFF,T6_ARMOR_CLOTH_SET1,T6_SHOES_CLOTH_SET1 ,T7_MEAL_OMELETTE,T4_POTION_COOLDOWN,T5_MOUNT_ARMORED_HORSE
         $.get("https://www.albion-online-data.com/api/v2/stats/prices/T4_BAG?locations=Martlock",function(d3){
