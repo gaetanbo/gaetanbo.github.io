@@ -7,6 +7,7 @@ $(document).ready(function(){
             // Do a foreach on each piece of gear instead of this ugly one by one way im doing now
             // Actually use a variable for city instead of hard coding as it is now
             // Red-color prices if they are more than a 12h(one day ??) old.
+            // Clean fm_bag and others to prevent triple append 
             
 
             // Add possibility to choose quantity for food and potions
