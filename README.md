@@ -15,7 +15,7 @@ TODO :
 
 - [x] function cleanCrossCity doesnt properly sort out all cities coming !!!!
 - [ ] Display prices using $12,450 instead of 12450 !!!
-- [ ] Pour ta partie "Le Tradeur marathonien" tu devrais aussier rajouter une unité du style ( profit / tile) avec le bénéf a faire divisé par le nombre de tuile a passer pour aller entre les villes
+- [ ] Pour la partie "Le Tradeur marathonien"  rajouter une unité du style ( profit / tile) avec le bénéf a faire divisé par le nombre de tuile a passer pour aller entre les villes
 
 	// Regear TODOS
 - [ ] Find a way to cumulate price each time we pull one and then display total price at top
