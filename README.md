@@ -13,9 +13,19 @@ TODO :
 - [ ] Work on Items Price comparaison between Black Market and Caerleon
 - [ ] Figure a way to automatically color Code if  tier is written somewhere
 
-- [ ] function cleanCrossCity doesnt properly sort out all cities coming !!!!
+- [x] function cleanCrossCity doesnt properly sort out all cities coming !!!!
 - [ ] Display prices using $12,450 instead of 12450 !!!
 - [ ] Pour ta partie "Le Tradeur marathonien" tu devrais aussier rajouter une unité du style ( profit / tile) avec le bénéf a faire divisé par le nombre de tuile a passer pour aller entre les villes
+
+	// Regear TODOS
+- [ ] Find a way to cumulate price each time we pull one and then display total price at top
+- [ ] Do a foreach on each piece of gear instead of this ugly one by one way im doing now
+- [ ] Actually use a variable for city instead of hard coding as it is now
+- [ ] Red-color prices if they are more than a 12h(one day ??) old.
+- [ ] Add possibility to choose quantity for food and potions
+- [ ] Find a way for user to input the gear he want to get prices for
+- [ ] FIX the css for mobile user        
+- [ ] Clean fm_bag and others to prevent triple append
 
 		// https://forum.albiononline.com/index.php/Thread/51253-Albion-Static-Data/?postID=518548#post518548
 

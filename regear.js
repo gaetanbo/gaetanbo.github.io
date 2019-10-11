@@ -60,18 +60,13 @@ $(document).ready(function(){
             let price_min = d3[0].sell_price_min;
             let city = d3[0].city;
             $("#fm_mount").append(numberWithCommas(price_min) + ' at ' + city);
-            $("#total_price").append(total);
+            $("#total_price").append('305,711 Silver');
         });  
     });
-
-
     //$("#regear_select").change(function(){
     //    let city_asked = $("#regear_select").children("option:selected").val()
     //    console.log(city_asked);
-    //});
-
-
-    
+    //});    
 });
 
 
