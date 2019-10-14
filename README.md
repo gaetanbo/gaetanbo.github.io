@@ -17,6 +17,9 @@ TODO :
 - [ ] Display prices using $12,450 instead of 12450 !!!
 - [ ] Pour la partie "Le Tradeur marathonien"  rajouter une unité du style ( profit / tile) avec le bénéf a faire divisé par le nombre de tuile a passer pour aller entre les villes
 
+	// BlackBiz TODOS
+- [ ] Loader should dissapear once prices starts to comes in
+
 	// Regear TODOS
 - [ ] Find a way to cumulate price each time we pull one and then display total price at top
 - [ ] Do a foreach on each piece of gear instead of this ugly one by one way im doing now
