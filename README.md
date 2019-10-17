@@ -18,7 +18,7 @@ TODO :
 - [ ] Pour la partie "Le Tradeur marathonien"  rajouter une unité du style ( profit / tile) avec le bénéf a faire divisé par le nombre de tuile a passer pour aller entre les villes
 
 	// BlackBiz TODOS
-- [ ] Loader should dissapear once prices starts to comes in
+- [ ] Loader should disapear once prices starts to comes in
 
 	// Regear TODOS
 - [ ] Find a way to cumulate price each time we pull one and then display total price at top

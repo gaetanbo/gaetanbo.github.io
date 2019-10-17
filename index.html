@@ -15,8 +15,8 @@
     /*regear css to be moved*/
     /*.regear-container{width: auto;height: auto;}*/
     /*.class1{}    .class2{}    .class3{} */
-    .regear-sub-container{border: 1px black solid;max-width: 260px;}
-    .undertext{color: grey;z-index: -1;padding-left: 94px;}
+    .regear-sub-container{border: 1px black solid;max-width: 260px;min-height: 75px;}
+    .undertext{color: grey;z-index: -1;padding-left: 65px;}
     /*regear css to be moved*/
     
     </style>
@@ -28,7 +28,7 @@
     <div class="jumbotron">
       <h1 class="display-4">Albion Tavern</h1>
       <p>This is a simple project hosted on Github using <a href="https://www.albion-online-data.com/">albion-online-data.com</a> Api</p>
-      <p>If you wish to help getting up to date prices, go to <a target="_blank" href="https://github.com/BroderickHyman/albiondata-client/releases">github/albion-online-data</a> and install the latest version on albion-online-data client</p>
+      <p>If you wish to help getting up to date prices, go to <a target="_blank" href="https://github.com/BroderickHyman/albiondata-client/releases">github/albion-online-data</a> and install the latest version of the albion-online-data client</p>
       <!--<p id="gogogo">LETS GO </p>-->
     </div>
     <!-- <ul class="nav">
@@ -279,19 +279,22 @@
         <div class="card-body">
           <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <p>Prices shown are obtain via <a href="https://www.albion-online-data.com/">albion-online-data</a> and therefore could be out of date</p>
             </div>
+          </div>
+          <div class="row">
             <div class="col-6">
-                <select id="regear_select" class="form-control">            
-                    <option label="caerleon" value="caerleon">Caerleon</option>
-                    <option label="lymhurst" value="lymhurst">Lymhurst</option>
-                    <option label="fortsterling" value="fortsterling">Fort Sterling</option>
-                    <option label="thetford" value="thetford">Thetford</option>
-                    <option label="martlock" value="martlock">Martlock</option>
-                    <option label="bridgewatch" value="bridgewatch">Bridgewatch</option>
-                </select>
+              <select id="regear_select_city" class="form-control">            
+                  <option label="Caerleon" value="caerleon">Caerleon</option>
+                  <option label="Lymhurst" value="lymhurst">Lymhurst</option>
+                  <option label="FortSterling" value="FortSterling">Fort Sterling</option>
+                  <option label="Thetford" value="thetford">Thetford</option>
+                  <option label="Martlock" value="Martlock">Martlock</option>
+                  <option label="Bridgewatch" value="bridgewatch">Bridgewatch</option>
+              </select>
             </div>
+            <div class="col-6"><button id="regear_pul_prices">Pull Prices</button></div>
           </div>
           <!--<div class="row">
             <div class="col-6">
@@ -314,34 +317,34 @@
           -->
           <div id="regear-container" class="container" style="">
             <div class="row">
-              <div class="col-4 regear-sub-container class1">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T4_BAG.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class1">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T4_BAG.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Bag</u></p>
                 <p class="undertext fm_bag" id="fm_bag"></p>
               </div>
-              <div class="col-4 regear-sub-container class1">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_HEAD_LEATHER_SET3.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class1">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_HEAD_LEATHER_SET3.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Head</u></p>
                 <p class="undertext fm_head" id="fm_head"></p>
               </div>
-              <div class="col-4 regear-sub-container class1">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T4_CAPEITEM_FW_LYMHURST.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class1">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T4_CAPEITEM_FW_LYMHURST.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Cape</u></p>
                 <p class="undertext fm_cape" id="fm_cape"></p>
               </div>
             </div>
             <div class="row">
-              <div class="col-4 regear-sub-container class2">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_2H_INFERNOSTAFF.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class2">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_2H_INFERNOSTAFF.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>MainWeapon</u></p>
                 <p class="undertext fm_main" id="fm_main"></p>
               </div>
-              <div class="col-4 regear-sub-container class2">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_ARMOR_CLOTH_SET1.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class2">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_ARMOR_CLOTH_SET1.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Torso</u></p>
                 <p class="undertext fm_torso" id="fm_torso"></p>
               </div>
-              <div class="col-4 regear-sub-container class2">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class2">
                 <!--
                   <p class="undertext">Offhand</p>
                   <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T8_OFF_JESTERCANE_HELL@3.png" style="width: 64px;">
@@ -349,32 +352,32 @@
               </div>
             </div>
             <div class="row">         
-              <div class="col-4 regear-sub-container class3">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T7_MEAL_OMELETTE.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class3">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T7_MEAL_OMELETTE.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Food</u></p>
                 <p class="undertext fm_food" id="fm_food"></p>
               </div>
-              <div class="col-4 regear-sub-container class3">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_SHOES_CLOTH_SET1.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class3">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T6_SHOES_CLOTH_SET1.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Boots</u></p>
                 <p class="undertext fm_boot" id="fm_boot"></p>
               </div>
-              <div class="col-4 regear-sub-container class3">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T4_POTION_COOLDOWN.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class3">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T4_POTION_COOLDOWN.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Potion</u></p>
                 <p class="undertext fm_potion" id="fm_potion"></p>
               </div> 
             </div>
             <div class="row">
-              <div class="col-4 regear-sub-container class4">
-                <p id="fm_test">Click me !</p>
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class4">
+                <!--<p id="fm_test">Click me !</p>-->
               </div>
-              <div class="col-4 regear-sub-container class4">
-                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T5_MOUNT_ARMORED_HORSE.png" style="width: 64px;">
+              <div class="col-xs-2 col-sm-2 col-4 regear-sub-container class4">
+                <img class="img-fluid" src="https://gameinfo.albiononline.com/api/gameinfo/items/T5_MOUNT_ARMORED_HORSE.png" style="width: 64px;position:absolute;">
                 <p class="undertext"><u>Mount</u></p>
                 <p class="undertext fm_mount" id="fm_mount"></p>
               </div>
-              <div class="col-4 regear-sub-container class4">
+              <div class="col-4 col-sm-2 regear-sub-container class4">
                 <p class="col-12 undertext" id="total_price" style="margin-top: 60px;margin-left: 20px;">Total : </p>
               </div>
             </div>
