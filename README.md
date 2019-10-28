@@ -12,6 +12,7 @@ TODO :
 - [ ] and then append all values at one
 - [ ] Work on Items Price comparaison between Black Market and Caerleon
 - [ ] Figure a way to automatically color Code if  tier is written somewhere
+- [ ] Fix french still around
 
 - [x] function cleanCrossCity doesnt properly sort out all cities coming !!!!
 - [ ] Display prices using $12,450 instead of 12450 !!!
