@@ -13,15 +13,21 @@ a{
 .a_jumbotron{
   text-decoration: underline;
 }
+
+
+
 @include media-breakpoint-up(sm) {
   html {
     font-size: 1.2rem;
   }
 }
-.enchant0{background-color: whitesmoke}
-.enchant1{background-color: olivedrab}
-.enchant2{background-color: aqua}
-.enchant3{background-color: orangered;}
+
+/* Need to find a way to color only first line of text */
+.enchant0{color: whitesmoke}
+.enchant1{color: rgb(29, 155, 39)}
+.enchant2{color: rgb(0, 112, 211)}
+.enchant3{color: #8530e6;}
+
 
 /** LOADER CSS **/ 
 .lds-ring {
