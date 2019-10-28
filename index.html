@@ -21,8 +21,8 @@
     <body>
     <div class="jumbotron">
       <h1 class="display-4">Albion Tavern</h1>
-      <p>This is a simple project hosted on Github using <a href="https://www.albion-online-data.com/">albion-online-data.com</a> Api</p>
-      <p>If you wish to help getting up to date prices, go to <a target="_blank" href="https://github.com/BroderickHyman/albiondata-client/releases">github/albion-online-data</a> and install the latest version of the albion-online-data client</p>
+      <p>This is a simple project hosted on Github using <a class="a_jumbotron" href="https://www.albion-online-data.com/">albion-online-data.com</a> Api</p>
+      <p>If you wish to help getting up to date prices, go to <a class="a_jumbotron" target="_blank" href="https://github.com/BroderickHyman/albiondata-client/releases">github/albion-online-data</a> and install the latest version of the albion-online-data client</p>
       <!--<p id="gogogo">LETS GO </p>-->
     </div>
     <!-- <ul class="nav">
@@ -46,7 +46,7 @@
       <div class="card-header" id="headingOne">
         <h5 class="mb-0">
           <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Le Tradeur marathonien - Earn money by moving ressources around 
+            The Running Tradeur - Earn money by moving ressources around 
           </button>
         </h5>
       </div>
@@ -109,7 +109,7 @@
     <div class="card-header" id="headingTwo">
       <!-- <h5 class="mb-0"> -->
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Le Black - biz
+          Black - biz
         </button>
       <!-- </h5> -->
     </div>
@@ -146,7 +146,7 @@
                       <th scope="col">Quality</th>
                       <th scope="col">BM Price</th>
                       <th scope="col">CA Price</th>
-                      <th scope="col">Benef</th>
+                      <th scope="col">Profit</th>
                     </tr>
                   </thead>
                   <tbody id="resultblackbiz">
@@ -155,46 +155,6 @@
               </div>
             </div>
           </div>
-            <!-- <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                      <button id="go" type="button" class=" btn btn-info">GO !!!!</button>      
-                    </div>
-                    <div id="black_biz_result" class="col-4">
-                        <select id="select_kind">
-                            <option label="hunter" value="hunter">Hunter</option>
-                            <option label="mage" value="mage">Mage</option>
-                            <option label="tank" value="tank">Tank</option>
-                        </select>
-                    </div>
-                    <div class="col-4">
-                      <select id="select_kind_type">
-                          <option label="shoes" value="SHOES">SHOES</option>
-                          <option label="head" vaue="HEAD">HEAD</option>
-                          <option label="armor" value="ARMOR">ARMOR</option>
-                      </select>
-                    </div>
-                </div>
-                <hr class="my-4">
-                <div class="row">
-                    <div class="col-12">
-                      <table class="table table-striped table-bordered table-dark">
-                        <thead>
-                          <tr>
-                            <th scope="col">Item</th>
-                            <th scope="col">T4</th>
-                            <th scope="col">T5</th>
-                            <th scope="col">T6</th>
-                            <th scope="col">T7</th>
-                            <th scope="col">T8</th>
-                          </tr>
-                        </thead>
-                        <tbody id="resultblackbiz">
-                        </tbody>
-                      </table>
-                    </div>  
-                </div>
-            </div> -->
       </div>
     </div>
   </div>
@@ -264,22 +224,22 @@
 
   <div class="card">
       <div class="card-header" id="headingFive">
-          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" id="regear">
+          <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" id="regear">
               Re-gear Price Check
           </button>
       </div>
       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
         <div class="card-body">
           <div class="container">
-          <div class="row">
-            <div class="col-12">
+          <div class="row ">
+            <div class="col-sm-9">
                 <p>Prices shown in <font color="red">red</font> are from more than 12 hours ago.</p>
-                <p> Please use <a href="https://www.albion-online-data.com/">albion-online-data</a> to help getting those prices up to date</p>
+                <p> Please help getting the price up to date by using <a class="a_jumbotron" href="https://www.albion-online-data.com/">albion-online-data</a></p>
             </div>
           </div>
           <div class="row">
-            <div class="col-6">
-              <select id="regear_select_city" class="form-control">            
+            <div class="col-4">
+              <select id="regear_select_city" class="form-control custom-select">            
                   <option label="Caerleon" value="caerleon">Caerleon</option>
                   <option label="Lymhurst" value="lymhurst">Lymhurst</option>
                   <option label="FortSterling" value="FortSterling">Fort Sterling</option>
@@ -288,24 +248,26 @@
                   <option label="Bridgewatch" value="bridgewatch">Bridgewatch</option>
               </select>
             </div>
-            <div class="col-6"><button id="regear_pul_prices">Pull Prices</button></div>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <select class="form-control" id="regear_select_gearset">
+            <div class="col-4">
+              <select id="regear_select_gearset" class="form-control custom-select">
                 <option label="Fire" value="fire">Brimstone</option>
                 <option label="Tank" value="tank">Groovekeeper</option>
                 <option label="Heal" value="heal">Fallen</option>
               </select>
             </div>
-            <!--<div class="col-6">
+            <div class="col-4">
+                <button  type="button" class="btn btn-info" id="regear_pul_prices">Pull Prices</button>
+            </div>
+          </div>
+          <!--<div class="row">
+            <div class="col-6">
               <select class="form-control" id="regear_enchant">
                 <option label=".1" value="@1">.1</option>
                 <option label=".2" value="@2">.2</option>
                 <option label=".3" value="@3">.3</option>
               </select>
-            </div>-->
-          </div>
+            </div>
+          </div>-->
           <div class="container regear_container_result">
             <div id="regear_result" class="row column">
 
@@ -344,8 +306,13 @@
         </blockquote>
       </div>
     </div>
-    </div>
+
   </div>
+
+</div>
+<div style="font-size:smaller;color: grey;position:absolute;position: fixed;bottom: 0;right: 0; ">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+
+</div>
 
     <script src="main.js"></script>
     <!--<script src="blackbiz.js"></script>-->
