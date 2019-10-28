@@ -10,10 +10,11 @@ $(document).ready(function(){
 
 	function fillTable() {
 		$("#resultblackbiz").empty();
+		$("#resultblackbiz").append("<div class=\"lds-ring\"><div></div><div></div><div></div><div></div></div>");
 		let kindAsked = $("#select_kind").children("option:selected").val();
 		let jsonDoc2 = "ressources/"+kindAsked+".json";
-	    $.getJSON(jsonDoc2,function(data) { 
-	    	$.each(data, function(key,val) {
+	    $.getJSON(jsonDoc2,function(data) { 	
+			$.each(data, function(key,val) {
 	    		var item = val.UniqueName;
 	    		var itemLocalName = val.LocalizedNames[2].Value;
 	    		if ( item.includes("@1") ) {
@@ -53,10 +54,14 @@ $(document).ready(function(){
 	    			if(diffs.some(diff => diff > 0)){
 	    				q_level.forEach(q=> {
 	    					if(BM_prices[q] && Ca_prices[q] && diffs[q] && diffs[q] > profitWanted) {
-		    					$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "?quality="+q+"></img>"+itemLocalName+"</td><td> Enchant : "+enchant +"<br> Qualite : "+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
-		    					//$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://albiononline2d.ams3.cdn.digitaloceanspaces.com/thumbnails/128/"+ item + "></img>"+itemLocalName+"</td><td> Enchant : "+enchant +"<br> Qualite : "+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
-							$(".lds-ring").remove();
-		    				}
+								$(".lds-ring").remove();
+		    					$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "?quality="+q+"></img>"+itemLocalName+"</td><td> Enchant : "+enchant +"<br> Quality : "+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
+							}
+							else{
+								//$(".lds-ring").remove();
+								//$("#resultblackbiz").append("<tr><td>No items found with your criteria :( Maybe try to lower the profit wanted ? </td></tr>");
+								//$("#resultblackbizz").append("");
+							}
 		    			});
 	    			}
 	    		});

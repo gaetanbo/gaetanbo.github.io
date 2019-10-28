@@ -21,14 +21,16 @@ TODO :
 - [ ] Loader should disapear once prices starts to comes in
 
 	// Regear TODOS
-- [ ] Find a way to cumulate price each time we pull one and then display total price at top
-- [ ] Do a foreach on each piece of gear instead of this ugly one by one way im doing now
-- [ ] Actually use a variable for city instead of hard coding as it is now
-- [ ] Red-color prices if they are more than a 12h(one day ??) old.
+- [ ] Use .then to display total_gear_cost only after the $.get	gets finished
+- [ ] Once the page has loaded once, allow user to click on img_logo to change tier, enchantment level and quality via a tooltip
+- [ ] Same with food and potions but for quantity and enchant level
+
+- [x] Red-color prices if they are more than a 12h(one day ??) old.
 - [ ] Add possibility to choose quantity for food and potions
 - [ ] Find a way for user to input the gear he want to get prices for
 - [ ] FIX the css for mobile user        
-- [ ] Clean fm_bag and others to prevent triple append
+
+
 
 		// https://forum.albiononline.com/index.php/Thread/51253-Albion-Static-Data/?postID=518548#post518548
 

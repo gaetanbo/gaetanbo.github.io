@@ -54,3 +54,36 @@ html {
   }
 }
 /** LOADER CSS **/ 
+
+/** REGEAR CSS **/ 
+
+.img_logo{
+  max-width: 64px;;
+}
+.undertext{
+  color:grey;
+  font-size: smaller;
+}
+
+.regear-sub-container{
+  /*border:solid #000 1px ;
+  background-color: red;*/
+  max-width: 260px;min-height: 75px;
+  /*width: 100px;  
+  height: 100px; */
+  margin: auto;  
+}
+.colum{
+  flex: 33,333%;
+  max-width: 100px;
+}
+.regear_container_result{
+  display :flex;
+  max-width:680px;
+  flex-wrap:wrap;
+  flex-direction: row;
+  align-content:space-around;
+}
+/*.recent_price{color: green;}
+.old_price{color: red;}*/
+/** REGEAR CSS **/

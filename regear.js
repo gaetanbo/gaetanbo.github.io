@@ -1,31 +1,47 @@
 
 $(document).ready(function(){ 
-    $("#fm_test").click(function(){
-        console.log('test');
-    });
+
+
 
     $("#regear_pul_prices").click(function(){
+            
+        let gear_set = $("#regear_select_gearset").children("option:selected").val();
+        switch (gear_set) {
+            case 'tank':
+                var gears = ['T6_BAG','T8_HEAD_PLATE_SET2','T4_CAPEITEM_FW_MARTLOCK','T8_2H_RAM_KEEPER','T8_ARMOR_PLATE_SET3','T5_MOUNT_ARMORED_HORSE','T8_SHOES_LEATHER_SET2','T8_MEAL_SANDWICH','T7_POTION_STONESKIN'];
+                break;
+            case 'fire':
+                var gears = ['T6_BAG','T6_HEAD_LEATHER_SET3','T4_CAPEITEM_FW_LYMHURST','T6_2H_INFERNOSTAFF','T6_ARMOR_CLOTH_SET1','T5_MOUNT_ARMORED_HORSE','T6_SHOES_CLOTH_SET1','T7_MEAL_OMELETTE','T4_POTION_COOLDOWN'];
+                break;
+            case 'heal':
+                    var gears = ['T6_BAG','T8_HEAD_LEATHER_SET1','T4_CAPEITEM_FW_FORTSTERLING','T8_2H_HOLYSTAFF_HELL','T8_ARMOR_CLOTH_SET2','T5_MOUNT_ARMORED_HORSE','T8_SHOES_CLOTH_SET1','T7_MEAL_OMELETTE','T7_POTION_STONESKIN'];
+                break;
+            default:
+                var gears = ['T6_BAG','T8_HEAD_LEATHER_SET1','T4_CAPEITEM_FW_FORTSTERLING','T8_2H_HOLYSTAFF_HELL','T8_ARMOR_CLOTH_SET2','T5_MOUNT_ARMORED_HORSE','T8_SHOES_CLOTH_SET1','T7_MEAL_OMELETTE','T4_POTION_COOLDOWN'];
+                break;
+        }
         // var cities = {"1" : "Bridgewatch","2" : "Caerleon","3" : "Fort Sterling","5" : "Lymhurst","6" : "Martlock","10" : "Thetford"};
-        $("#fm_cape").empty();
-        $("#fm_head").empty();
-        $("#fm_bag").empty();
-        $("#fm_main").empty();
-        $("#fm_torso").empty();
-        $("#fm_boot").empty();
-        $("#fm_food").empty();
-        $("#fm_potion").empty();
-        $("#fm_mount").empty();
-
+        $("#regear_result").empty();
         let city = $("#regear_select_city").children("option:selected").val();
-        var gears= ['T4_BAG','T6_HEAD_LEATHER_SET3','T4_CAPEITEM_FW_LYMHURST','T6_2H_INFERNOSTAFF','T6_ARMOR_CLOTH_SET1','T5_MOUNT_ARMORED_HORSE','T6_SHOES_CLOTH_SET1','T6_SHOES_CLOTH_SET1','T7_MEAL_OMELETTE','T4_POTION_COOLDOWN'];
-        
+        let gear_total_cost = 0;
         gears.forEach(function(element){
-            console.log(element);
             $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+element+"?locations="+city,function(d3){
-                let price_min = d3[0].sell_price_min;
-                let date = d3[0].sell_price_min_date;
-                console.log(element + ' at : ' + price_min + ' in ' + city);
+                let dirty_name = d3[0].item_id;
+                let name = dirty_name.replace(/_/g, " ");
+                let dirty_price_min = d3[0].sell_price_min;
+                let price_min = numberWithCommas(dirty_price_min);
+                let price_date = d3[0].sell_price_min_date;
+                let price_date_in_second = Date.parse(price_date);
+                let date_now = Date.now();
+                if ( (date_now - price_date_in_second) > 42000000) { // si la date reçu est supérieure à 12h from now
+                    $("#regear_result").append("<div class=\"regear-sub-container\"><img class=\"img_logo\" src=\"https://gameinfo.albiononline.com/api/gameinfo/items/"+element+".png\"><p><u class=\"undertext\">"+name+"</u></p><p><font color=\"red\"> "+price_min+"</font> silver at "+city+"</p></div>");
+                } else{
+                    $("#regear_result").append("<div class=\"regear-sub-container\"><img class=\"img_logo\" src=\"https://gameinfo.albiononline.com/api/gameinfo/items/"+element+".png\"><p><u class=\"undertext\">"+name+"</u></p><p><font color=\"green\"> "+price_min+"</font> silver at "+city+"</p></div>");
+                }
+                gear_total_cost = gear_total_cost + dirty_price_min;
             });
+            //console.log("TOTAL GEAR COST : "+gear_total_cost);
+            //$("#regear_result").append("<p>Total : "+gear_total_cost);        
         });
     });
 });
