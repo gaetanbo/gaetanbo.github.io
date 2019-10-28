@@ -11,7 +11,7 @@ $(document).ready(function(){
                 var gears = ['T6_BAG','T8_HEAD_PLATE_SET2','T4_CAPEITEM_FW_MARTLOCK','T8_2H_RAM_KEEPER','T8_ARMOR_PLATE_SET3','T5_MOUNT_ARMORED_HORSE','T8_SHOES_LEATHER_SET2','T8_MEAL_SANDWICH','T7_POTION_STONESKIN'];
                 break;
             case 'fire':
-                var gears = ['T6_BAG','T6_HEAD_LEATHER_SET3','T4_CAPEITEM_FW_LYMHURST','T6_2H_INFERNOSTAFF','T6_ARMOR_CLOTH_SET1','T5_MOUNT_ARMORED_HORSE','T6_SHOES_CLOTH_SET1','T7_MEAL_OMELETTE','T4_POTION_COOLDOWN'];
+                var gears = ['T6_BAG','T8_HEAD_PLATE_SET2','T4_CAPEITEM_FW_FORTSTERLING','T8_2H_INFERNOSTAFF','T8_ARMOR_CLOTH_SET2','T5_MOUNT_ARMORED_HORSE','T8_SHOES_CLOTH_SET1','T8_MEAL_STEW','T4_POTION_COOLDOWN'];
                 break;
             case 'heal':
                     var gears = ['T6_BAG','T8_HEAD_LEATHER_SET1','T4_CAPEITEM_FW_FORTSTERLING','T8_2H_HOLYSTAFF_HELL','T8_ARMOR_CLOTH_SET2','T5_MOUNT_ARMORED_HORSE','T8_SHOES_CLOTH_SET1','T7_MEAL_OMELETTE','T7_POTION_STONESKIN'];
@@ -39,8 +39,8 @@ $(document).ready(function(){
                     $("#regear_result").append("<div class=\"regear-sub-container\"><img class=\"img_logo\" src=\"https://gameinfo.albiononline.com/api/gameinfo/items/"+element+".png\"><p><u class=\"undertext\">"+name+"</u></p><p><font color=\"green\"> "+price_min+"</font> silver at "+city+"</p></div>");
                 }
                 gear_total_cost = gear_total_cost + dirty_price_min;
+                console.log("TOTAL GEAR COST : "+numberWithCommas(gear_total_cost));
             });
-            //console.log("TOTAL GEAR COST : "+gear_total_cost);
             //$("#regear_result").append("<p>Total : "+gear_total_cost);        
         });
     });

@@ -24,10 +24,8 @@ TODO :
 - [ ] Use .then to display total_gear_cost only after the $.get	gets finished
 - [ ] Once the page has loaded once, allow user to click on img_logo to change tier, enchantment level and quality via a tooltip
 - [ ] Same with food and potions but for quantity and enchant level
-
+- [ ] Fix Bug when no prices get found for the item&city asked
 - [x] Red-color prices if they are more than a 12h(one day ??) old.
-- [ ] Add possibility to choose quantity for food and potions
-- [ ] Find a way for user to input the gear he want to get prices for
 - [ ] FIX the css for mobile user        
 
 
