@@ -261,7 +261,7 @@ $(document).ready(function(){
   let benef2;
   function sortMinAndAppend(donnee,destinataire,tiers) {
     const sortdonnee = donnee.sort((a,b) => (a.sell_price_min > b.sell_price_min ? 1 : -1));
-    $(destinataire).append(sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city);
+    $(destinataire).append(numberWithCommas(sortdonnee[0].sell_price_min)+" in "+sortdonnee[0].city);
     benef = sortdonnee[0].sell_price_min;
   };
   function sortMaxAndAppend(donnee,destinataire,tiers) {
@@ -271,8 +271,8 @@ $(document).ready(function(){
     destinataire2 = destinataire+"benef";
     $(destinataire).empty();
     $(destinataire2).empty();
-    $(destinataire).append(sortdonnee[0].sell_price_min+" in "+sortdonnee[0].city);
-    $(destinataire2).append(benef2);
+    $(destinataire).append(numberWithCommas(sortdonnee[0].sell_price_min)+" in "+sortdonnee[0].city);
+    $(destinataire2).append(numberWithCommas(benef2));
     //return benef;
   };
 
