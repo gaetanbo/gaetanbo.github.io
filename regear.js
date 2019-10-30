@@ -19,15 +19,11 @@ $(document).ready(function(){
         }
         $("#regear_result").empty();
         let city = $("#regear_select_city").children("option:selected").val();
-        let gear_total_cost = 0;
         gears.forEach(function(element){
             $.get("https://www.albion-online-data.com/api/v2/stats/prices/"+element+"?locations="+city,function(d3){
                 let dirty_name = d3[0].item_id;
                 let name = dirty_name.replace(/_/g, " ");
                 let dirty_price_min = d3[0].sell_price_min;
-                gear_total_cost = gear_total_cost + dirty_price_min;
-                AddTotal(numberWithCommas(gear_total_cost));
-                //console.log("TOTAL GEAR COST : "+numberWithCommas(gear_total_cost));
                 let price_min = numberWithCommas(d3[0].sell_price_min);
                 let price_date = d3[0].sell_price_min_date;
                 let price_date_in_second = Date.parse(price_date);
@@ -43,22 +39,3 @@ $(document).ready(function(){
 });
 
 
-function AddTotal(number){
-    console.log('TOTAL ' +number);
-}
-function numberWithCommas(number) {
-    var parts = number.toString().split(".");
-    parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    return parts.join(".");
-  }
-
-//$.get("https://www.albion-online-data.com/api/v2/stats/prices/"+ressource_typeAsked+"_LEVEL2@2",function(d){});
-//        $("#select_ressource_type").empty();
-//        $.getJSON(jsonDoc,function(data) {
-//             $.each(data, function(key,val) {
-//                 var tierRessourceAsked = val.UniqueName;
-//                 var o = new Option(val.UniqueName,val.UniqueName);
-//                 $(o).html(val.UniqueName);
-//                 $("#select_ressource_type").append(o);
-//             });
-//         });

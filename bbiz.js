@@ -12,7 +12,7 @@ $(document).ready(function(){
 		$("#resultblackbiz").empty();
 		$("#resultblackbiz").append("<div class=\"lds-ring\"><div></div><div></div><div></div><div></div></div>");
 		let kindAsked = $("#select_kind").children("option:selected").val();
-		let jsonDoc2 = "ressources/"+kindAsked+".json";
+		let jsonDoc2 = "ressources/items/"+kindAsked+".json";
 	    $.getJSON(jsonDoc2,function(data) { 	
 			$.each(data, function(key,val) {
 				var item = val.UniqueName;
@@ -47,7 +47,7 @@ $(document).ready(function(){
 	    				q_level.forEach(q=> {
 	    					if(BM_prices[q] && Ca_prices[q] && diffs[q] && diffs[q] > profitWanted) {
 								$(".lds-ring").remove();
-		    					$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "?quality="+q+"></img>"+itemLocalName+"</td><td><span class=\"enchant"+enchant+"\"> Enchant : "+enchant +"</span><br> Quality : "+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
+		    					$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "?quality="+q+"></img>"+itemLocalName+"</td><td><span class=\"enchant"+enchant+"\"> Enchant : "+enchant +"</span><br> Quality : "+ q_text[q]+"</td><td>"+numberWithCommas(BM_prices[q])+"</td><td>"+numberWithCommas(Ca_prices[q])+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+numberWithCommas(diffs[q])+"</td></tr>");
 		    					//$("#resultblackbiz").append("<tr><td><img width=\"64\" height=\"64\" title=" + item + " src=" + "  https://gameinfo.albiononline.com/api/gameinfo/items/"+ item + "?quality="+q+"></img>"+itemLocalName+"</td><td> Enchant : "+enchant +"<br> Quality : "+ q_text[q]+"</td><td>"+BM_prices[q]+"</td><td>"+Ca_prices[q]+"</td><td style=" + (diffs[q]>0?'color:green':'color:red') + ">"+diffs[q]+"</td></tr>");
 							}
 							else{
